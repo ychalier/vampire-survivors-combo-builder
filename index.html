@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Combo Builder • Vampire Survivors</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/ychalier/pifekit/pifekit.min.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/ychalier/pifekit/pifekit.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="master.js" type="module"></script>
+</head>
+
+<body>
+
+    <div class="background">
+        <div class="tile-shelves-tall"></div>
+        <div class="tile-floor-fancy"></div>
+    </div>
+
+    <div class="text-center">
+        <img src="tiles/title.png" />
+    </div>
+    <h1>Combo Builder</h1>
+
+    <div class="columns">
+        
+        <div class="column col-3">
+            
+            <div class="inventory">
+                <b class="text-light">Weapons</b>
+                <div class="inventory-row inventory-weapons">
+                    <div class="inventory-cell"></div>
+                    <div class="inventory-cell"></div>
+                    <div class="inventory-cell"></div>
+                    <div class="inventory-cell"></div>
+                    <div class="inventory-cell"></div>
+                    <div class="inventory-cell"></div>
+                </div>
+                <span> </span>
+                <b class="text-light">Items</b>
+                <div class="inventory-row inventory-items">
+                    <div class="inventory-cell"></div>
+                    <div class="inventory-cell"></div>
+                    <div class="inventory-cell"></div>
+                    <div class="inventory-cell"></div>
+                    <div class="inventory-cell"></div>
+                    <div class="inventory-cell"></div>
+                </div>
+                <b class="text-light">Map Items</b>
+                <div class="inventory-row inventory-bonus-items">
+                    <div class="inventory-cell"></div>
+                    <div class="inventory-cell"></div>
+                    <div class="inventory-cell"></div>
+                    <div class="inventory-cell"></div>
+                    <div class="inventory-cell"></div>
+                    <div class="inventory-cell"></div>
+                </div>
+                <span> </span>
+                <b class="text-light">Ban</b>
+                <div class="inventory-row inventory-row-ban">
+                    <div class="inventory-cell"></div>
+                    <div class="inventory-cell"></div>
+                    <div class="inventory-cell"></div>
+                    <div class="inventory-cell"></div>
+                    <div class="inventory-cell"></div>
+                    <div class="inventory-cell"></div>
+                    <div class="inventory-cell"></div>
+                    <div class="inventory-cell"></div>
+                    <div class="inventory-cell"></div>
+                    <div class="inventory-cell"></div>
+                    <div class="inventory-cell"></div>
+                    <div class="inventory-cell"></div>
+                </div>
+            </div>
+
+            <span> </span>
+
+            <p class="text-center text-light">
+                Combo: <span id="combo-score" class="label">0</span>
+            </p>
+        
+            <div class="commands">
+                <div class="button button-blue" id="button-generate">Generate</div>
+                 
+                <div class="button button-red" id="button-reset">Reset</div>
+            </div>
+            
+        </div>
+
+        <div class="column col-9">
+            <b class="text-light">Base weapons</b>
+            <div class="item-list list-weapons-base"></div>
+            <b class="text-light">Evolved weapons</b>
+            <div class="item-list list-weapons-evolved"></div>
+            <b class="text-light">Items</b>
+            <div class="item-list list-items"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

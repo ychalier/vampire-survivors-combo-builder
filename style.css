@@ -1,0 +1,129 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    --color-yellow: #f2f051;
+    image-rendering: pixelated;
+}
+
+body {
+    background: url("tiles/floor_default.png") repeat;
+}
+
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    user-select: none;
+    pointer-events: none;
+    z-index: -1;
+    width: 100vw;
+    height: 100%;
+}
+
+.background-padding {
+    height: 102px;
+}
+
+
+.tile-floor-fancy {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+    height: 64px;
+    background: url("tiles/floor_fancy.png") repeat;
+}
+
+.tile-shelves-tall {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+    height: 102px;
+    background: url("tiles/shelves_tall.png") repeat;
+}
+
+h1 {
+    text-align: center;
+    color: var(--color-yellow);
+    /*text-shadow: 0px 0px 1px #636222;*/
+    text-shadow: 0px 0px 4px #000000;
+    font-weight: bold;
+}
+
+.dialog-box {
+    background: #4b4f74;
+    border: 4px solid #8f5e1d;
+    outline: 4px solid #ffce67;
+    border-radius: 4px;
+}
+
+.inventory {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inventory-row {
+    display: flex;
+    flex-direction: row;
+    max-width: 312px;
+    flex-wrap: wrap;
+}
+
+.inventory-cell {
+    width: 48px;
+    height: 48px;
+    background: url("tiles/inventory.png");
+    margin: .1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.inventory-item {
+    transform: scale(2);
+}
+
+.button {
+    width: 100px;
+    height: 33px;
+    background: url("tiles/button.png");
+    text-align: center;
+    line-height: 33px;
+    user-select: none;
+    cursor: pointer;
+    color: white;
+    font-weight: 500;
+}
+
+.button-blue {
+    background: url("tiles/button_blue.png");
+}
+
+.button-red {
+    background: url("tiles/button_red.png");
+}
+
+.button-blue:active, .button-blue:focus {
+    background: url("tiles/button_blue_pressed.png");
+}
+
+.button-red:active, .button-red:focus {
+    background: url("tiles/button_red_pressed.png");
+}
+
+.commands {
+    display: flex;
+    justify-content: center;
+}
+
+.item-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
