@@ -14,4 +14,6 @@ Some mitigations:
 - The model maximizes the number of combos and evolutions, but sometimes evolving a weapon can decrease the number of combos satisfied. Hence, there is a trade-off to perform, by setting coefficients on those criteria. Different coefficients will produce different results. I believe most people would want to target evolutions first.
 - Other than combos and evolutions, the model ignores everything: DPS, player stats, weapon or item rarity, etc. Produced builds are only called *optimal* regarding the number of satisfied combos and evolutions. 
 
-[Try it yourself!](https://ychalier.github.io/vampire-survivors-combo-builder/)
+The generator relies on a linear programming problem solved using [GLPK](https://www.gnu.org/software/glpk/). Data comes from [Vampire Survivors Wiki](https://vampire-survivors.fandom.com/wiki/Vampire_Survivors_Wiki). Assets are extracted from original game assets.
+
+[Try it yourself!](https://ychalier.github.io/vampire-survivors-combo-builder/) 
