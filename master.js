@@ -97,12 +97,11 @@ class Model {
         this.data.evolutions.forEach(evolution => {
             evolution.base_weapons.forEach(weapon => {
                 weapons_with_evolution[weapon] = true;
-    
+
                 // Evolution requires weapon
                 this.problem.subjectTo.push({
                     name: `evolution_requires_weapon_${weapon}`,
-                    vars: [
-                        {
+                    vars: [{
                             name: `e_${evolution.evolved_weapon}`,
                             coef: 1
                         },
@@ -116,12 +115,11 @@ class Model {
                         ub: 0,
                     }
                 });
-    
+
                 // Evolution consumes weapon
                 this.problem.subjectTo.push({
                     name: `inventory_evolved_${weapon}`,
-                    vars: [
-                        {
+                    vars: [{
                             name: `w_${weapon}`,
                             coef: 1
                         },
@@ -140,14 +138,13 @@ class Model {
                         lb: 0
                     }
                 });
-    
+
             });
-    
+
             // Evolving a weapon adds it to inventory
             this.problem.subjectTo.push({
                 name: `inventory_evolution_${evolution.evolved_weapon}`,
-                vars: [
-                    {
+                vars: [{
                         name: `w_${evolution.evolved_weapon}`,
                         coef: 1
                     },
@@ -162,13 +159,12 @@ class Model {
                     lb: 0
                 }
             });
-    
+
             // Evolution requires item
             if (evolution.item != null) {
                 this.problem.subjectTo.push({
                     name: `evolution_requires_item_${evolution.item}`,
-                    vars: [
-                        {
+                    vars: [{
                             name: `e_${evolution.evolved_weapon}`,
                             coef: 1
                         },
@@ -183,16 +179,15 @@ class Model {
                     }
                 });
             }
-            
+
         });
-    
+
         // Weapons not evolved are in inventory
         this.data.weapons.base.forEach(weapon => {
             if (!(weapon in weapons_with_evolution)) {
                 this.problem.subjectTo.push({
                     name: `inventory_not_evolved_${weapon}`,
-                    vars: [
-                        {
+                    vars: [{
                             name: `w_${weapon}`,
                             coef: 1
                         },
@@ -217,8 +212,7 @@ class Model {
                 if (this.data.combos[weapon][item] > 0) {
                     this.problem.subjectTo.push({
                         name: `combo_weapon_${weapon}_${item}`,
-                        vars: [
-                            {
+                        vars: [{
                                 name: `c_${weapon}_${item}`,
                                 coef: 1
                             },
@@ -234,8 +228,7 @@ class Model {
                     });
                     this.problem.subjectTo.push({
                         name: `combo_item_${weapon}_${item}`,
-                        vars: [
-                            {
+                        vars: [{
                                 name: `c_${weapon}_${item}`,
                                 coef: 1
                             },
@@ -259,12 +252,10 @@ class Model {
             if (this.data.weapons.base.includes(weapon)) {
                 this.problem.subjectTo.push({
                     name: `config_weapon_base_${weapon}`,
-                    vars: [
-                        {
-                            name: `b_${weapon}`,
-                            coef: 1
-                        }
-                    ],
+                    vars: [{
+                        name: `b_${weapon}`,
+                        coef: 1
+                    }],
                     bnds: {
                         type: glpk.GLP_FX,
                         ub: 1,
@@ -274,12 +265,10 @@ class Model {
             } else if (this.data.weapons.evolved.includes(weapon)) {
                 this.problem.subjectTo.push({
                     name: `config_weapon_evolved_${weapon}`,
-                    vars: [
-                        {
-                            name: `e_${weapon}`,
-                            coef: 1
-                        }
-                    ],
+                    vars: [{
+                        name: `e_${weapon}`,
+                        coef: 1
+                    }],
                     bnds: {
                         type: glpk.GLP_FX,
                         ub: 1,
@@ -292,12 +281,10 @@ class Model {
         this.config.items.concat(this.config.map_items).forEach(item => {
             this.problem.subjectTo.push({
                 name: `config_item_${item}`,
-                vars: [
-                    {
-                        name: `i_${item}`,
-                        coef: 1
-                    }
-                ],
+                vars: [{
+                    name: `i_${item}`,
+                    coef: 1
+                }],
                 bnds: {
                     type: glpk.GLP_FX,
                     ub: 1,
@@ -310,12 +297,10 @@ class Model {
             if (this.data.weapons.base.includes(tag)) {
                 this.problem.subjectTo.push({
                     name: `config_ban_${tag}`,
-                    vars: [
-                        {
-                            name: `b_${tag}`,
-                            coef: 1
-                        }
-                    ],
+                    vars: [{
+                        name: `b_${tag}`,
+                        coef: 1
+                    }],
                     bnds: {
                         type: glpk.GLP_FX,
                         ub: 0,
@@ -325,12 +310,10 @@ class Model {
             } else if (this.data.weapons.evolved.includes(tag)) {
                 this.problem.subjectTo.push({
                     name: `config_ban_${tag}`,
-                    vars: [
-                        {
-                            name: `e_${tag}`,
-                            coef: 1
-                        }
-                    ],
+                    vars: [{
+                        name: `e_${tag}`,
+                        coef: 1
+                    }],
                     bnds: {
                         type: glpk.GLP_FX,
                         ub: 0,
@@ -340,12 +323,10 @@ class Model {
             } else if (this.data.items.includes(tag)) {
                 this.problem.subjectTo.push({
                     name: `config_ban_${tag}`,
-                    vars: [
-                        {
-                            name: `i_${tag}`,
-                            coef: 1
-                        }
-                    ],
+                    vars: [{
+                        name: `i_${tag}`,
+                        coef: 1
+                    }],
                     bnds: {
                         type: glpk.GLP_FX,
                         ub: 0,
@@ -505,7 +486,18 @@ function readConfig() {
         map_items: [],
         ban: [],
         coefCombo: 1,
-        coefEvolution: 10
+        coefEvolution: 1
+    }
+    let configCoefInput = document.getElementById("config-coef");
+    if (configCoefInput.value == 1) {
+        config.coefCombo = 100;
+        config.coefEvolution = 1;
+    } else if (configCoefInput.value == 2) {
+        config.coefCombo = 1;
+        config.coefEvolution = 1;
+    } else if (configCoefInput.value == 3) {
+        config.coefCombo = 1;
+        config.coefEvolution = 100;
     }
     document.querySelectorAll(".inventory-weapons img").forEach(imageInsideCell => {
         config.weapons.push(imageInsideCell.getAttribute("tag"));
@@ -549,68 +541,93 @@ function getInventoryRowType(inventoryRow) {
 }
 
 
-window.addEventListener("load", () => {
-    fetch(DATA_URL).then(res => res.json()).then(data => {
+function removeTagFromInventory(tag) {
+    document.querySelectorAll(".inventory .inventory-cell").forEach(inventoryCellAux => {
+        let imageInsideCell = inventoryCellAux.querySelector("img");
+        if (imageInsideCell && imageInsideCell.src.endsWith(`sprites/${tag}.png`)) {
+            inventoryCellAux.removeChild(imageInsideCell);
+        }
+    });
+}
 
-        let itemLists = [
-            {
-                selector: ".list-weapons-base",
-                array: data.weapons.base,
-                type: "weapon"
-            },
-            {
-                selector: ".list-weapons-evolved",
-                array: data.weapons.evolved,
-                type: "weapon"
-            },
-            {
-                selector: ".list-items",
-                array: data.items,
-                type: "item"
-            }
-        ];
-        itemLists.forEach(itemList => {
-            let container = document.querySelector(itemList.selector);
-            container.innerHTML = "";
-            itemList.array.forEach(tag => {
-                let image = createInventoryItemImage(data, tag);
-                let wrapper = document.createElement("div");
-                wrapper.appendChild(image);
-                wrapper.className = "inventory-cell";
-                container.appendChild(wrapper);
-            });
-        });
 
-        document.querySelectorAll(".inventory-row").forEach(inventoryRow => {
-            inventoryRow.querySelectorAll(".inventory-cell").forEach(inventoryCell => {
-                inventoryCell.addEventListener("drop", (event) => {
-                    event.preventDefault();
-                    let tag = event.dataTransfer.getData("text/plain");
-                    if (!inventoryCell.hasChildNodes() && (getInventoryRowType(inventoryRow) == null || getInventoryRowType(inventoryRow) == getTagType(data, tag))) {
-                        let image = createInventoryItemImage(data, tag);
-                        document.querySelectorAll(".inventory .inventory-cell").forEach(inventoryCellAux => {
-                            let imageInsideCell = inventoryCellAux.querySelector("img");
-                            if (imageInsideCell && imageInsideCell.src.endsWith(`sprites/${tag}.png`)) {
-                                inventoryCellAux.removeChild(imageInsideCell);
-                            }
-                        });
-                        event.target.appendChild(image);
-                    }
-                });
-                inventoryCell.addEventListener("dragover", (event) => {
-                    event.preventDefault();
-                    event.dataTransfer.dropEffect = "move";
-                });
-            });
-        });
-
-        document.getElementById("button-reset").addEventListener("click", () => {
-            resetInventory();
-        });
-
-        document.getElementById("button-generate").addEventListener("click", () => {
-            let config = readConfig();
-            solveProblem(data, config);
+function loadData(data) {
+    let itemLists = [{
+            selector: ".list-weapons-base",
+            array: data.weapons.base,
+            type: "weapon"
+        },
+        {
+            selector: ".list-weapons-evolved",
+            array: data.weapons.evolved,
+            type: "weapon"
+        },
+        {
+            selector: ".list-items",
+            array: data.items,
+            type: "item"
+        }
+    ];
+    itemLists.forEach(itemList => {
+        let container = document.querySelector(itemList.selector);
+        container.innerHTML = "";
+        itemList.array.forEach(tag => {
+            let image = createInventoryItemImage(data, tag);
+            let wrapper = document.createElement("div");
+            wrapper.appendChild(image);
+            wrapper.className = "inventory-cell";
+            container.appendChild(wrapper);
         });
     });
+
+    document.querySelectorAll(".inventory-row").forEach(inventoryRow => {
+        inventoryRow.querySelectorAll(".inventory-cell").forEach(inventoryCell => {
+            inventoryCell.addEventListener("drop", (event) => {
+                console.log("Drop on cell");
+                event.preventDefault();
+                event.stopPropagation();
+                let tag = event.dataTransfer.getData("text/plain");
+                if (!inventoryCell.hasChildNodes() && (getInventoryRowType(inventoryRow) == null || getInventoryRowType(inventoryRow) == getTagType(data, tag))) {
+                    let image = createInventoryItemImage(data, tag);
+                    removeTagFromInventory(tag);
+                    event.target.appendChild(image);
+                }
+            });
+            inventoryCell.addEventListener("dragover", (event) => {
+                let tag = event.dataTransfer.getData("text/plain");
+                if (!inventoryCell.hasChildNodes() && (getInventoryRowType(inventoryRow) == null || getInventoryRowType(inventoryRow) == getTagType(data, tag))) {
+                    event.preventDefault();
+                    event.dataTransfer.dropEffect = "move";
+                }
+            });
+        });
+    });
+
+    document.getElementById("drop-delete").addEventListener("dragover", (event) => {
+        event.preventDefault();
+        event.dataTransfer.dropEffect = "move";
+    });
+
+    document.getElementById("drop-delete").addEventListener("drop", (event) => {
+        let tag = event.dataTransfer.getData("text/plain");
+        if (getTagType(data, tag) != null) {
+            event.preventDefault();
+            event.stopPropagation();
+            removeTagFromInventory(tag);
+        }
+    });
+
+    document.getElementById("button-reset").addEventListener("click", () => {
+        resetInventory();
+    });
+
+    document.getElementById("button-generate").addEventListener("click", () => {
+        let config = readConfig();
+        solveProblem(data, config);
+    });
+}
+
+
+window.addEventListener("load", () => {
+    fetch(DATA_URL).then(res => res.json()).then(loadData);
 });
