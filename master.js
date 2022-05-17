@@ -505,7 +505,18 @@ function readConfig() {
         map_items: [],
         ban: [],
         coefCombo: 1,
-        coefEvolution: 10
+        coefEvolution: 1
+    }
+    let configCoefInput = document.getElementById("config-coef");
+    if (configCoefInput.value == 1) {
+        config.coefCombo = 100;
+        config.coefEvolution = 1;
+    } else if (configCoefInput.value == 2) {
+        config.coefCombo = 1;
+        config.coefEvolution = 1;
+    } else if (configCoefInput.value == 3) {
+        config.coefCombo = 1;
+        config.coefEvolution = 100;
     }
     document.querySelectorAll(".inventory-weapons img").forEach(imageInsideCell => {
         config.weapons.push(imageInsideCell.getAttribute("tag"));
