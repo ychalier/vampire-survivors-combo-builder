@@ -1,8 +1,8 @@
 import GLPK from './glpk.js';
 
 const DATA_URL = "data.json";
-let glpk;
-
+var glpk;
+var PREVIOUS_CONFIG = null;
 
 class Model {
     constructor(data, config) {
@@ -514,6 +514,17 @@ function readConfig() {
     return config;
 }
 
+function updateComboScore(data) {
+    let config = readConfig();
+    let score = 0;
+    config.weapons.forEach(weapon => {
+        config.items.forEach(item => {
+            score += data.combos[weapon][item];
+        });
+    });
+    document.getElementById("combo-score").textContent = score;
+}
+
 
 function getTagType(data, tag) {
     if (data.items.includes(tag)) {
@@ -583,7 +594,6 @@ function loadData(data) {
     document.querySelectorAll(".inventory-row").forEach(inventoryRow => {
         inventoryRow.querySelectorAll(".inventory-cell").forEach(inventoryCell => {
             inventoryCell.addEventListener("drop", (event) => {
-                console.log("Drop on cell");
                 event.preventDefault();
                 event.stopPropagation();
                 let tag = event.dataTransfer.getData("text/plain");
@@ -592,6 +602,7 @@ function loadData(data) {
                     removeTagFromInventory(tag);
                     event.target.appendChild(image);
                 }
+                updateComboScore(data);
             });
             inventoryCell.addEventListener("dragover", (event) => {
                 let tag = event.dataTransfer.getData("text/plain");
@@ -615,14 +626,39 @@ function loadData(data) {
             event.stopPropagation();
             removeTagFromInventory(tag);
         }
+        updateComboScore(data);
     });
 
     document.getElementById("button-reset").addEventListener("click", () => {
         resetInventory();
     });
 
+    document.getElementById("button-clear").addEventListener("click", () => {
+        resetInventory();
+        if (PREVIOUS_CONFIG != null) {
+            let container;
+            container = document.querySelector(".inventory-weapons");
+            PREVIOUS_CONFIG.weapons.forEach((tag, index) => {
+                container.querySelector(`.inventory-cell:nth-child(${index + 1}`).appendChild(createInventoryItemImage(data, tag));
+            });
+            container = document.querySelector(".inventory-items");
+            PREVIOUS_CONFIG.items.forEach((tag, index) => {
+                container.querySelector(`.inventory-cell:nth-child(${index + 1}`).appendChild(createInventoryItemImage(data, tag));
+            });
+            container = document.querySelector(".inventory-bonus-items");
+            PREVIOUS_CONFIG.map_items.forEach((tag, index) => {
+                container.querySelector(`.inventory-cell:nth-child(${index + 1}`).appendChild(createInventoryItemImage(data, tag));
+            });
+            container = document.querySelector(".inventory-row-ban");
+            PREVIOUS_CONFIG.ban.forEach((tag, index) => {
+                container.querySelector(`.inventory-cell:nth-child(${index + 1}`).appendChild(createInventoryItemImage(data, tag));
+            });
+        }
+    });
+
     document.getElementById("button-generate").addEventListener("click", () => {
         let config = readConfig();
+        PREVIOUS_CONFIG = config;
         solveProblem(data, config);
     });
 }

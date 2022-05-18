@@ -5,46 +5,8 @@
 }
 
 body {
-    background: url("tiles/floor_default.png") repeat;
-}
-
-
-.background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    user-select: none;
-    pointer-events: none;
-    z-index: -1;
-    width: 100vw;
-    height: 100%;
-}
-
-.background-bookshelves {
-    position: absolute;
-    top: 0%;
-    left: 0;
-    width: 100%;
-    pointer-events: none;
-    height: 102px;
-    background: url("tiles/shelves_tall.png") repeat;
-}
-
-.background-parquet {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    pointer-events: none;
-    height: 64px;
-    background: url("tiles/floor_fancy.png") repeat;
-}
-
-h1 {
-    text-align: center;
-    color: #f2f051;
-    text-shadow: 0px 0px 4px #000000;
-    font-weight: bold;
+    background-image: url("assets/background.png");
+    background-size: cover;
 }
 
 .flex-row {
@@ -62,19 +24,20 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 }
 
 .inventory-row {
     display: flex;
     flex-direction: row;
-    width: 312px;
+    max-width: 312px;
     flex-wrap: wrap;
 }
 
 .inventory-cell {
     width: 48px;
     height: 48px;
-    background: url("tiles/inventory.png");
+    background: url("assets/inventory.png");
     margin: .1rem;
     display: flex;
     flex-direction: row;
@@ -90,7 +53,7 @@ h1 {
 .button {
     width: 100px;
     height: 33px;
-    background: url("tiles/button.png");
+    background: url("assets/button.png");
     text-align: center;
     line-height: 33px;
     user-select: none;
@@ -100,19 +63,19 @@ h1 {
 }
 
 .button-blue {
-    background: url("tiles/button_blue.png");
+    background: url("assets/button_blue.png");
 }
 
 .button-red {
-    background: url("tiles/button_red.png");
+    background: url("assets/button_red.png");
 }
 
 .button-blue:active, .button-blue:focus {
-    background: url("tiles/button_blue_pressed.png");
+    background: url("assets/button_blue_pressed.png");
 }
 
 .button-red:active, .button-red:focus {
-    background: url("tiles/button_red_pressed.png");
+    background: url("assets/button_red_pressed.png");
 }
 
 .commands {
@@ -142,6 +105,7 @@ h1 {
     color: #869aff;
     height: 19px;
     width: 19px;
+    line-height: 20px;
     margin-left: .4rem;
 }
 
@@ -149,4 +113,10 @@ h1 {
     background: var(--color-secondary-0);
     border-radius: .4rem;
     padding: .8rem;
+}
+
+.highlight_box {
+    padding: .8rem;
+    border-radius: .2rem;
+    background: #000000b0;
 }
