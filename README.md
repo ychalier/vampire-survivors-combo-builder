@@ -11,7 +11,7 @@ Weapons and items are limited in number: 6 weapons and 6 items (plus bonus items
 
 Some mitigations:
 
-- The model maximizes the number of combos and evolutions, but sometimes evolving a weapon can decrease the number of combos satisfied. Hence, there is a trade-off to perform, by setting coefficients on those criteria. Different coefficients will produce different results. I believe most people would want to target evolutions first.
+- The model maximizes the number of combos and evolutions, but sometimes evolving a weapon can decrease the number of combos satisfied. Hence, there is a trade-off to perform, using coefficients. Different coefficients will produce different results. I believe most people would want to target evolutions first.
 - Other than combos and evolutions, the model ignores everything: DPS, player stats, weapon or item rarity, etc. Produced builds are only called *optimal* regarding the number of satisfied combos and evolutions. 
 
 The generator relies on an [integer linear programming (ILP)](https://en.wikipedia.org/wiki/Integer_programming) problem solved using [GLPK](https://www.gnu.org/software/glpk/). Data comes from [Vampire Survivors Wiki](https://vampire-survivors.fandom.com/wiki/Vampire_Survivors_Wiki). Assets are extracted from original game assets.

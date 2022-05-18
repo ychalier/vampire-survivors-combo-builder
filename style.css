@@ -47,13 +47,13 @@ h1 {
     font-weight: bold;
 }
 
-.layout {
+.flex-row {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
 }
 
-.layout > .layout-column {
+.flex-row > * {
     margin-left: .8rem;
     margin-right: .8rem;
 }
@@ -126,26 +126,27 @@ h1 {
     flex-wrap: wrap;
 }
 
-.page_wrapper {
-    position: relative;
-    min-height: 100vh;
-}
-
-.content_wrapper {
-    padding-bottom: 3rem;
-}
-
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 2.5rem;
-}
-
-footer a {
+.bg-dark a {
     color: #869aff;
 }
 
-footer a:hover {
+.bg-dark a:hover {
     color: rgb(64, 96, 255);
+}
+
+.infobox {
+    display: inline-block;
+    text-align: center;
+    background: var(--color-secondary-0);
+    border-radius: 50%;
+    color: #869aff;
+    height: 19px;
+    width: 19px;
+    margin-left: .4rem;
+}
+
+.infobox ~ .popover-container {
+    background: var(--color-secondary-0);
+    border-radius: .4rem;
+    padding: .8rem;
 }

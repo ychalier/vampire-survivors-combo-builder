@@ -21,107 +21,169 @@
 
     <div id="drop-delete">
 
-        <div class="page_wrapper">
+        <div class="text-center">
+            <img src="tiles/title.png" />
+        </div>
+        <h1>Combo Builder</h1>
 
-            <div class="content_wrapper">
+        <div class="layout">
 
-                <div class="text-center">
-                    <img src="tiles/title.png" />
-                </div>
-                <h1>Combo Builder</h1>
+            
 
-                <div class="layout">
+            
+        </div>
 
-                    <div class="layout-column">
+    </div>
 
-                        <div class="inventory">
-                            <b>Weapons</b>
-                            <div class="inventory-row inventory-weapons">
-                                <div class="inventory-cell"></div>
-                                <div class="inventory-cell"></div>
-                                <div class="inventory-cell"></div>
-                                <div class="inventory-cell"></div>
-                                <div class="inventory-cell"></div>
-                                <div class="inventory-cell"></div>
-                            </div>
-                            <span> </span>
-                            <b>Items</b>
-                            <div class="inventory-row inventory-items">
-                                <div class="inventory-cell"></div>
-                                <div class="inventory-cell"></div>
-                                <div class="inventory-cell"></div>
-                                <div class="inventory-cell"></div>
-                                <div class="inventory-cell"></div>
-                                <div class="inventory-cell"></div>
-                            </div>
-                            <b>Map Items</b>
-                            <div class="inventory-row inventory-bonus-items">
-                                <div class="inventory-cell"></div>
-                                <div class="inventory-cell"></div>
-                                <div class="inventory-cell"></div>
-                                <div class="inventory-cell"></div>
-                                <div class="inventory-cell"></div>
-                                <div class="inventory-cell"></div>
-                            </div>
-                            <span> </span>
-                            <b>Ban</b>
-                            <div class="inventory-row inventory-row-ban">
-                                <div class="inventory-cell"></div>
-                                <div class="inventory-cell"></div>
-                                <div class="inventory-cell"></div>
-                                <div class="inventory-cell"></div>
-                                <div class="inventory-cell"></div>
-                                <div class="inventory-cell"></div>
-                                <div class="inventory-cell"></div>
-                                <div class="inventory-cell"></div>
-                                <div class="inventory-cell"></div>
-                                <div class="inventory-cell"></div>
-                                <div class="inventory-cell"></div>
-                                <div class="inventory-cell"></div>
-                            </div>
-                        </div>
+    
 
-                        <span> </span>
+    <div class="columns">
 
-                        <p class="text-center">
-                            Combo: <span id="combo-score" class="label">0</span>
-                        </p>
-
-                        <p>
-                            <div style="display: flex; justify-content: center;">
-                                <span style="width: 114px; text-align: right">Combos </span>
-                                <input id="config-coef" class="slider" style="width: 84px" type="range" min="1" max="3" value="2" />
-                                <span style="width: 114px;"> Evolutions</span>
-                            </div>
-                        </p>
-                
-                        <div class="commands">
-                            <div class="button button-blue" id="button-generate">Generate</div>
-                             
-                            <div class="button button-red" id="button-reset">Reset</div>
-                        </div>
-                    
+        <div class="column col-6 col-xs-12 container">    
+            
+            
+            <div class="flex-row">
+                <div class="inventory">
+                    <span>
+                        <b>Weapons</b><span class="popover popover-right"><span class="infobox">?</span><div class="popover-container">
+                            Put weapons here to force the generator to choose them. Base weapons can be replaced by their evolved version.
+                        </div></span>
+                    </span>
+                    <div class="inventory-row inventory-weapons">
+                        <div class="inventory-cell"></div>
+                        <div class="inventory-cell"></div>
+                        <div class="inventory-cell"></div>
+                        <div class="inventory-cell"></div>
+                        <div class="inventory-cell"></div>
+                        <div class="inventory-cell"></div>
                     </div>
-
-                    <div class="layout-column">
-                        <b>Base weapons</b>
-                        <div class="item-list list-weapons-base"></div>
-                        <b>Evolved weapons</b>
-                        <div class="item-list list-weapons-evolved"></div>
-                        <b>Items</b>
-                        <div class="item-list list-items"></div>
+                    <span> </span>
+                    <span>
+                        <b>Items</b><span class="popover popover-right"><span class="infobox">?</span><div class="popover-container">
+                            Put items here to force the generator to choose them.
+                        </div></span>
+                    </span>
+                    <div class="inventory-row inventory-items">
+                        <div class="inventory-cell"></div>
+                        <div class="inventory-cell"></div>
+                        <div class="inventory-cell"></div>
+                        <div class="inventory-cell"></div>
+                        <div class="inventory-cell"></div>
+                        <div class="inventory-cell"></div>
+                    </div>
+                    <span>
+                        <b>Stage Items</b><span class="popover popover-right"><span class="infobox">?</span><div class="popover-container">
+                            On each normal stage, certain items spawn on the map.
+                            Picking them up once the item inventory is full will add them as extras,
+                            allowing the player to carry more than 6 items.
+                            <dl>
+                                <dt>Mad Forest</dt>
+                                <dd>Spinach, Hollow Heart, Pummarola, Clover, Skull O'Maniac</dd>
+                                <dt>Inlaid Library</dt>
+                                <dd>Stone Mask, Empty Tome</dd>
+                                <dt>Dairy Plant</dt>
+                                <dd>Attractorb, Candelabrador, Wings, Armor</dd>
+                                <dt>Gallo Tower</dt>
+                                <dd>Bracer, Spellbinder</dd>
+                            </dl>
+                            Put items here to force the generator to choose them. Only put items you plan to pick up after you filled your item inventory.
+                        </div></span>
+                    </span>
+                    <div class="inventory-row inventory-bonus-items">
+                        <div class="inventory-cell"></div>
+                        <div class="inventory-cell"></div>
+                        <div class="inventory-cell"></div>
+                        <div class="inventory-cell"></div>
+                        <div class="inventory-cell"></div>
+                        <div class="inventory-cell"></div>
+                    </div>
+                    <span> </span>
+                    <span>
+                        <b>Ban</b><span class="popover popover-right"><span class="infobox">?</span><div class="popover-container">
+                            Put weapons or items here to prevent the generator from choosing them.
+                        </div></span>
+                    </span>
+                    <div class="inventory-row inventory-row-ban">
+                        <div class="inventory-cell"></div>
+                        <div class="inventory-cell"></div>
+                        <div class="inventory-cell"></div>
+                        <div class="inventory-cell"></div>
+                        <div class="inventory-cell"></div>
+                        <div class="inventory-cell"></div>
+                        <div class="inventory-cell"></div>
+                        <div class="inventory-cell"></div>
+                        <div class="inventory-cell"></div>
+                        <div class="inventory-cell"></div>
+                        <div class="inventory-cell"></div>
+                        <div class="inventory-cell"></div>
                     </div>
                 </div>
-
+        
+                <div class="layout-column" style="width: 468px">
+                    <b>Base weapons</b>
+                    <div class="item-list list-weapons-base"></div>
+                    <b>Evolved weapons</b>
+                    <div class="item-list list-weapons-evolved"></div>
+                    <b>Items</b>
+                    <div class="item-list list-items"></div>
+                </div>
             </div>
 
-            <footer class="bg-dark p-2">
-                Developped and maintained by <a href="https://chalier.fr/">Yohan Chalier</a>. Hosted on <a href="https://github.com/ychalier/vampire-survivors-combo-builder/">GitHub</a>.
-            </footer>
+                <div class="text-center">
+                    Combo: <span id="combo-score" class="label">0</span> <span class="popover popover-right"><span class="infobox">?</span><div class="popover-container text-left">
+                        This is the total number of interactions between weapons and items in the inventory, which is maximized by the generator.
+                        All possible interactions are listed on the <a href="https://vampire-survivors.fandom.com/wiki/Combos">wiki</a>.
+                    </div></span>
+                </div>
+
+                <p>
+                    <div style="display: flex; justify-content: center;">
+                        <span style="width: 114px; text-align: right">Combos </span>
+                        <input id="config-coef" class="slider" style="width: 84px" type="range" min="1" max="3" value="2" />
+                        <span style="width: 114px;"> Evolutions</span>
+                        <span class="popover popover-right"><span class="infobox">?</span><div class="popover-container text-left">
+                            Evolving a weapon may change its interactions with items.
+                            Thus we have to balance between maximizing evolutions or maximizing combos. 
+                            This cursor allows you to choose between <i>combo first</i>, <i>evolution first</i> or <i>2 combos for 1 evolution</i> priority modes. 
+                        </div></span>
+                    </div>
+                </p>
+        
+                <div class="commands">
+                    <div class="button button-blue" id="button-generate" title="Fill current inventory">Generate</div>
+                     
+                    <div class="button button-red" id="button-reset" title="Empty current inventory">Reset</div>
+                </div>
+
+            <div>
+                <h2>About the generator</h2>
+                <p>
+                    <a href="https://store.steampowered.com/app/1794680/Vampire_Survivors/">Vampire Survivors</a> is an action roguelike game where the player has to survive against waves of approaching enemies. The player acquires weapons and items while levelling up (this is called creating a <i>build</i>).
+                </p>
+                <p>
+                    Items can impact a weapon in two ways:
+                </p>
+                <ul>
+                    <li>by increasing a stat the weapon relies on (a <a href="https://vampire-survivors.fandom.com/wiki/Combos">combo</a>),</li>
+                    <li>by changing it into a stronger weapon (an <a href="https://vampire-survivors.fandom.com/wiki/Evolution">evolution</a>).</li>
+                </ul>
+                <p>
+                    Weapons and items are limited in number: 6 weapons and 6 items (plus bonus items directly gathered on the map). This enforces the player to make choices: given the current build, which weapon or item to get next?
+                </p>
+                <p class="text-bold">
+                    This generator produces optimal builds, regarding two criteria: combos and evolutions.
+                </p>
+            </div>
+
+        </div>
 
         </div>
 
     </div>
+
+    <footer class="bg-dark p-2 text-center">
+        Developped and maintained by <a href="https://chalier.fr/">Yohan Chalier</a> &mid; Hosted on <a href="https://github.com/ychalier/vampire-survivors-combo-builder/">GitHub</a>
+    </footer>
 
 </body>
 
