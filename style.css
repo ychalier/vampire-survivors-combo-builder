@@ -1,7 +1,7 @@
 * {
-    font-family: 'Courier New', Courier, monospace;
-    --color-yellow: #f2f051;
+    font-family: "Courier New", Courier, monospace;
     image-rendering: pixelated;
+    color: white;
 }
 
 body {
@@ -20,22 +20,7 @@ body {
     height: 100%;
 }
 
-.background-padding {
-    height: 102px;
-}
-
-
-.tile-floor-fancy {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    pointer-events: none;
-    height: 64px;
-    background: url("tiles/floor_fancy.png") repeat;
-}
-
-.tile-shelves-tall {
+.background-bookshelves {
     position: absolute;
     top: 0%;
     left: 0;
@@ -45,19 +30,32 @@ body {
     background: url("tiles/shelves_tall.png") repeat;
 }
 
+.background-parquet {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+    height: 64px;
+    background: url("tiles/floor_fancy.png") repeat;
+}
+
 h1 {
     text-align: center;
-    color: var(--color-yellow);
-    /*text-shadow: 0px 0px 1px #636222;*/
+    color: #f2f051;
     text-shadow: 0px 0px 4px #000000;
     font-weight: bold;
 }
 
-.dialog-box {
-    background: #4b4f74;
-    border: 4px solid #8f5e1d;
-    outline: 4px solid #ffce67;
-    border-radius: 4px;
+.layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.layout > .layout-column {
+    margin-left: .8rem;
+    margin-right: .8rem;
 }
 
 .inventory {
@@ -69,7 +67,7 @@ h1 {
 .inventory-row {
     display: flex;
     flex-direction: row;
-    max-width: 312px;
+    width: 312px;
     flex-wrap: wrap;
 }
 
@@ -126,4 +124,28 @@ h1 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+.page_wrapper {
+    position: relative;
+    min-height: 100vh;
+}
+
+.content_wrapper {
+    padding-bottom: 3rem;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
+
+footer a {
+    color: #869aff;
+}
+
+footer a:hover {
+    color: rgb(64, 96, 255);
 }
