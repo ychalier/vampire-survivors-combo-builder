@@ -44,7 +44,9 @@
             "phieraggi",
             "vicious_hunger",
             "mannajja",
-            "valkyrie_turner"
+            "valkyrie_turner",
+            "infinite_corridor",
+            "crimson_shroud"
         ]
     },
     "items": [
@@ -63,7 +65,11 @@
         "tiragisu",
         "stone_mask",
         "skull_o_maniac",
-        "wings"
+        "wings",
+        "silver_ring",
+        "gold_ring",
+        "metaglio_left",
+        "metaglio_right"
     ],
     "evolutions": [
         {
@@ -150,6 +156,16 @@
             "base_weapons": ["shadow_pinion"],
             "items": ["wings"],
             "evolved_weapon": "valkyrie_turner"
+        },
+        {
+            "base_weapons": ["laurel"],
+            "items": ["metaglio_left", "metaglio_right"],
+            "evolved_weapon": "crimson_shroud"
+        },
+        {
+            "base_weapons": ["clock_lancet"],
+            "items": ["silver_ring", "gold_ring"],
+            "evolved_weapon": "infinite_corridor"
         }
     ],
     "combos": {
@@ -169,7 +185,11 @@
             "tiragisu": 0,
             "stone_mask": 0,
             "skull_o_maniac": 0,
-            "wings": 0
+            "wings": 0,
+            "silver_ring": 0,
+            "gold_ring": 0,
+            "metaglio_left": 0,
+            "metaglio_right": 0
         },
         "magic_wand": {
             "hollow_heart": 0,
@@ -187,7 +207,11 @@
             "tiragisu": 0,
             "stone_mask": 0,
             "skull_o_maniac": 0,
-            "wings": 0
+            "wings": 0,
+            "silver_ring": 0,
+            "gold_ring": 0,
+            "metaglio_left": 0,
+            "metaglio_right": 0
         },
         "knife": {
             "hollow_heart": 0,
@@ -205,7 +229,11 @@
             "tiragisu": 0,
             "stone_mask": 0,
             "skull_o_maniac": 0,
-            "wings": 0
+            "wings": 0,
+            "silver_ring": 0,
+            "gold_ring": 0,
+            "metaglio_left": 0,
+            "metaglio_right": 0
         },
         "axe": {
             "hollow_heart": 0,
@@ -223,7 +251,11 @@
             "tiragisu": 0,
             "stone_mask": 0,
             "skull_o_maniac": 0,
-            "wings": 0
+            "wings": 0,
+            "silver_ring": 0,
+            "gold_ring": 0,
+            "metaglio_left": 0,
+            "metaglio_right": 0
         },
         "cross": {
             "hollow_heart": 0,
@@ -241,7 +273,11 @@
             "tiragisu": 0,
             "stone_mask": 0,
             "skull_o_maniac": 0,
-            "wings": 0
+            "wings": 0,
+            "silver_ring": 0,
+            "gold_ring": 0,
+            "metaglio_left": 0,
+            "metaglio_right": 0
         },
         "king_bible": {
             "hollow_heart": 0,
@@ -259,7 +295,11 @@
             "tiragisu": 0,
             "stone_mask": 0,
             "skull_o_maniac": 0,
-            "wings": 0
+            "wings": 0,
+            "silver_ring": 0,
+            "gold_ring": 0,
+            "metaglio_left": 0,
+            "metaglio_right": 0
         },
         "fire_wand": {
             "hollow_heart": 0,
@@ -277,7 +317,11 @@
             "tiragisu": 0,
             "stone_mask": 0,
             "skull_o_maniac": 0,
-            "wings": 0
+            "wings": 0,
+            "silver_ring": 0,
+            "gold_ring": 0,
+            "metaglio_left": 0,
+            "metaglio_right": 0
         },
         "garlic": {
             "hollow_heart": 0,
@@ -295,7 +339,11 @@
             "tiragisu": 0,
             "stone_mask": 0,
             "skull_o_maniac": 0,
-            "wings": 0
+            "wings": 0,
+            "silver_ring": 0,
+            "gold_ring": 0,
+            "metaglio_left": 0,
+            "metaglio_right": 0
         },
         "santa_water": {
             "hollow_heart": 0,
@@ -313,7 +361,11 @@
             "tiragisu": 0,
             "stone_mask": 0,
             "skull_o_maniac": 0,
-            "wings": 0
+            "wings": 0,
+            "silver_ring": 0,
+            "gold_ring": 0,
+            "metaglio_left": 0,
+            "metaglio_right": 0
         },
         "runetracer": {
             "hollow_heart": 0,
@@ -331,7 +383,11 @@
             "tiragisu": 0,
             "stone_mask": 0,
             "skull_o_maniac": 0,
-            "wings": 0
+            "wings": 0,
+            "silver_ring": 0,
+            "gold_ring": 0,
+            "metaglio_left": 0,
+            "metaglio_right": 0
         },
         "lightning_ring": {
             "hollow_heart": 0,
@@ -349,7 +405,11 @@
             "tiragisu": 0,
             "stone_mask": 0,
             "skull_o_maniac": 0,
-            "wings": 0
+            "wings": 0,
+            "silver_ring": 0,
+            "gold_ring": 0,
+            "metaglio_left": 0,
+            "metaglio_right": 0
         },
         "pentagram": {
             "hollow_heart": 0,
@@ -367,7 +427,11 @@
             "tiragisu": 0,
             "stone_mask": 0,
             "skull_o_maniac": 0,
-            "wings": 0
+            "wings": 0,
+            "silver_ring": 0,
+            "gold_ring": 0,
+            "metaglio_left": 0,
+            "metaglio_right": 0
         },
         "peachone": {
             "hollow_heart": 0,
@@ -385,7 +449,11 @@
             "tiragisu": 0,
             "stone_mask": 0,
             "skull_o_maniac": 0,
-            "wings": 1
+            "wings": 1,
+            "silver_ring": 0,
+            "gold_ring": 0,
+            "metaglio_left": 0,
+            "metaglio_right": 0
         },
         "ebony_wings": {
             "hollow_heart": 0,
@@ -403,7 +471,11 @@
             "tiragisu": 0,
             "stone_mask": 0,
             "skull_o_maniac": 0,
-            "wings": 1
+            "wings": 1,
+            "silver_ring": 0,
+            "gold_ring": 0,
+            "metaglio_left": 0,
+            "metaglio_right": 0
         },
         "phiera_der_tuphello": {
             "hollow_heart": 0,
@@ -421,7 +493,11 @@
             "tiragisu": 0,
             "stone_mask": 0,
             "skull_o_maniac": 0,
-            "wings": 0
+            "wings": 0,
+            "silver_ring": 0,
+            "gold_ring": 0,
+            "metaglio_left": 0,
+            "metaglio_right": 0
         },
         "eight_the_sparrow": {
             "hollow_heart": 0,
@@ -439,7 +515,11 @@
             "tiragisu": 0,
             "stone_mask": 0,
             "skull_o_maniac": 0,
-            "wings": 0
+            "wings": 0,
+            "silver_ring": 0,
+            "gold_ring": 0,
+            "metaglio_left": 0,
+            "metaglio_right": 0
         },
         "gatti_amari": {
             "hollow_heart": 0,
@@ -457,7 +537,11 @@
             "tiragisu": 0,
             "stone_mask": 0,
             "skull_o_maniac": 0,
-            "wings": 0
+            "wings": 0,
+            "silver_ring": 0,
+            "gold_ring": 0,
+            "metaglio_left": 0,
+            "metaglio_right": 0
         },
         "song_of_mana": {
             "hollow_heart": 0,
@@ -475,7 +559,11 @@
             "tiragisu": 0,
             "stone_mask": 0,
             "skull_o_maniac": 0,
-            "wings": 0
+            "wings": 0,
+            "silver_ring": 0,
+            "gold_ring": 0,
+            "metaglio_left": 0,
+            "metaglio_right": 0
         },
         "shadow_pinion": {
             "hollow_heart": 0,
@@ -493,7 +581,11 @@
             "tiragisu": 0,
             "stone_mask": 0,
             "skull_o_maniac": 0,
-            "wings": 1
+            "wings": 1,
+            "silver_ring": 0,
+            "gold_ring": 0,
+            "metaglio_left": 0,
+            "metaglio_right": 0
         },
         "clock_lancet": {
             "hollow_heart": 0,
@@ -511,7 +603,11 @@
             "tiragisu": 0,
             "stone_mask": 0,
             "skull_o_maniac": 0,
-            "wings": 0
+            "wings": 0,
+            "silver_ring": 0,
+            "gold_ring": 0,
+            "metaglio_left": 0,
+            "metaglio_right": 0
         },
         "laurel": {
             "hollow_heart": 0,
@@ -529,7 +625,11 @@
             "tiragisu": 0,
             "stone_mask": 0,
             "skull_o_maniac": 0,
-            "wings": 0
+            "wings": 0,
+            "silver_ring": 0,
+            "gold_ring": 0,
+            "metaglio_left": 0,
+            "metaglio_right": 0
         },
         "bone": {
             "hollow_heart": 0,
@@ -547,7 +647,11 @@
             "tiragisu": 0,
             "stone_mask": 0,
             "skull_o_maniac": 0,
-            "wings": 0
+            "wings": 0,
+            "silver_ring": 0,
+            "gold_ring": 0,
+            "metaglio_left": 0,
+            "metaglio_right": 0
         },
         "cherry_bomb": {
             "hollow_heart": 0,
@@ -565,7 +669,11 @@
             "tiragisu": 0,
             "stone_mask": 0,
             "skull_o_maniac": 0,
-            "wings": 0
+            "wings": 0,
+            "silver_ring": 0,
+            "gold_ring": 0,
+            "metaglio_left": 0,
+            "metaglio_right": 0
         },
         "carrello": {
             "hollow_heart": 0,
@@ -583,7 +691,11 @@
             "tiragisu": 0,
             "stone_mask": 0,
             "skull_o_maniac": 0,
-            "wings": 0
+            "wings": 0,
+            "silver_ring": 0,
+            "gold_ring": 0,
+            "metaglio_left": 0,
+            "metaglio_right": 0
         },
         "celestial_dusting": {
             "hollow_heart": 0,
@@ -601,7 +713,11 @@
             "tiragisu": 0,
             "stone_mask": 0,
             "skull_o_maniac": 0,
-            "wings": 1
+            "wings": 1,
+            "silver_ring": 0,
+            "gold_ring": 0,
+            "metaglio_left": 0,
+            "metaglio_right": 0
         },
         "bloody_tear": {
             "hollow_heart": 0,
@@ -619,7 +735,11 @@
             "tiragisu": 0,
             "stone_mask": 0,
             "skull_o_maniac": 0,
-            "wings": 0
+            "wings": 0,
+            "silver_ring": 0,
+            "gold_ring": 0,
+            "metaglio_left": 0,
+            "metaglio_right": 0
         },
         "holy_wand": {
             "hollow_heart": 0,
@@ -637,7 +757,11 @@
             "tiragisu": 0,
             "stone_mask": 0,
             "skull_o_maniac": 0,
-            "wings": 0
+            "wings": 0,
+            "silver_ring": 0,
+            "gold_ring": 0,
+            "metaglio_left": 0,
+            "metaglio_right": 0
         },
         "thousand_edge": {
             "hollow_heart": 0,
@@ -655,7 +779,11 @@
             "tiragisu": 0,
             "stone_mask": 0,
             "skull_o_maniac": 0,
-            "wings": 0
+            "wings": 0,
+            "silver_ring": 0,
+            "gold_ring": 0,
+            "metaglio_left": 0,
+            "metaglio_right": 0
         },
         "death_spiral": {
             "hollow_heart": 0,
@@ -673,7 +801,11 @@
             "tiragisu": 0,
             "stone_mask": 0,
             "skull_o_maniac": 0,
-            "wings": 0
+            "wings": 0,
+            "silver_ring": 0,
+            "gold_ring": 0,
+            "metaglio_left": 0,
+            "metaglio_right": 0
         },
         "heaven_sword": {
             "hollow_heart": 0,
@@ -691,7 +823,11 @@
             "tiragisu": 0,
             "stone_mask": 0,
             "skull_o_maniac": 0,
-            "wings": 0
+            "wings": 0,
+            "silver_ring": 0,
+            "gold_ring": 0,
+            "metaglio_left": 0,
+            "metaglio_right": 0
         },
         "unholy_vespers": {
             "hollow_heart": 0,
@@ -709,7 +845,11 @@
             "tiragisu": 0,
             "stone_mask": 0,
             "skull_o_maniac": 0,
-            "wings": 0
+            "wings": 0,
+            "silver_ring": 0,
+            "gold_ring": 0,
+            "metaglio_left": 0,
+            "metaglio_right": 0
         },
         "hellfire": {
             "hollow_heart": 0,
@@ -727,7 +867,11 @@
             "tiragisu": 0,
             "stone_mask": 0,
             "skull_o_maniac": 0,
-            "wings": 0
+            "wings": 0,
+            "silver_ring": 0,
+            "gold_ring": 0,
+            "metaglio_left": 0,
+            "metaglio_right": 0
         },
         "soul_eater": {
             "hollow_heart": 0,
@@ -745,7 +889,11 @@
             "tiragisu": 0,
             "stone_mask": 0,
             "skull_o_maniac": 0,
-            "wings": 0
+            "wings": 0,
+            "silver_ring": 0,
+            "gold_ring": 0,
+            "metaglio_left": 0,
+            "metaglio_right": 0
         },
         "la_borra": {
             "hollow_heart": 0,
@@ -763,7 +911,11 @@
             "tiragisu": 0,
             "stone_mask": 0,
             "skull_o_maniac": 0,
-            "wings": 1
+            "wings": 1,
+            "silver_ring": 0,
+            "gold_ring": 0,
+            "metaglio_left": 0,
+            "metaglio_right": 0
         },
         "no_future": {
             "hollow_heart": 0,
@@ -781,7 +933,11 @@
             "tiragisu": 0,
             "stone_mask": 0,
             "skull_o_maniac": 0,
-            "wings": 0
+            "wings": 0,
+            "silver_ring": 0,
+            "gold_ring": 0,
+            "metaglio_left": 0,
+            "metaglio_right": 0
         },
         "thunder_loop": {
             "hollow_heart": 0,
@@ -799,7 +955,11 @@
             "tiragisu": 0,
             "stone_mask": 0,
             "skull_o_maniac": 0,
-            "wings": 0
+            "wings": 0,
+            "silver_ring": 0,
+            "gold_ring": 0,
+            "metaglio_left": 0,
+            "metaglio_right": 0
         },
         "gorgeous_moon": {
             "hollow_heart": 0,
@@ -817,7 +977,11 @@
             "tiragisu": 0,
             "stone_mask": 0,
             "skull_o_maniac": 0,
-            "wings": 0
+            "wings": 0,
+            "silver_ring": 0,
+            "gold_ring": 0,
+            "metaglio_left": 0,
+            "metaglio_right": 0
         },
         "vandalier": {
             "hollow_heart": 0,
@@ -835,7 +999,11 @@
             "tiragisu": 0,
             "stone_mask": 0,
             "skull_o_maniac": 0,
-            "wings": 1
+            "wings": 1,
+            "silver_ring": 0,
+            "gold_ring": 0,
+            "metaglio_left": 0,
+            "metaglio_right": 0
         },
         "phieraggi": {
             "hollow_heart": 0,
@@ -853,7 +1021,11 @@
             "tiragisu": 1,
             "stone_mask": 0,
             "skull_o_maniac": 0,
-            "wings": 0
+            "wings": 0,
+            "silver_ring": 0,
+            "gold_ring": 0,
+            "metaglio_left": 0,
+            "metaglio_right": 0
         },
         "vicious_hunger": {
             "hollow_heart": 0,
@@ -871,7 +1043,11 @@
             "tiragisu": 0,
             "stone_mask": 0,
             "skull_o_maniac": 0,
-            "wings": 0
+            "wings": 0,
+            "silver_ring": 0,
+            "gold_ring": 0,
+            "metaglio_left": 0,
+            "metaglio_right": 0
         },
         "mannajja": {
             "hollow_heart": 0,
@@ -889,7 +1065,11 @@
             "tiragisu": 0,
             "stone_mask": 0,
             "skull_o_maniac": 0,
-            "wings": 0
+            "wings": 0,
+            "silver_ring": 0,
+            "gold_ring": 0,
+            "metaglio_left": 0,
+            "metaglio_right": 0
         },
         "valkyrie_turner": {
             "hollow_heart": 0,
@@ -907,7 +1087,55 @@
             "tiragisu": 0,
             "stone_mask": 0,
             "skull_o_maniac": 0,
-            "wings": 1
+            "wings": 1,
+            "silver_ring": 0,
+            "gold_ring": 0,
+            "metaglio_left": 0,
+            "metaglio_right": 0
+        },
+        "infinite_corridor": {
+            "hollow_heart": 0,
+            "empty_tome": 1,
+            "bracer": 0,
+            "candelabrador": 0,
+            "clover": 0,
+            "spellbinder": 1,
+            "spinach": 0,
+            "pummarola": 0,
+            "attractorb": 0,
+            "armor": 0,
+            "duplicator": 0,
+            "crown": 0,
+            "tiragisu": 0,
+            "stone_mask": 0,
+            "skull_o_maniac": 0,
+            "wings": 0,
+            "silver_ring": 0,
+            "gold_ring": 0,
+            "metaglio_left": 0,
+            "metaglio_right": 0
+        },
+        "crimson_shroud": {
+            "hollow_heart": 0,
+            "empty_tome": 1,
+            "bracer": 0,
+            "candelabrador": 1,
+            "clover": 0,
+            "spellbinder": 0,
+            "spinach": 1,
+            "pummarola": 0,
+            "attractorb": 0,
+            "armor": 1,
+            "duplicator": 0,
+            "crown": 0,
+            "tiragisu": 0,
+            "stone_mask": 0,
+            "skull_o_maniac": 0,
+            "wings": 0,
+            "silver_ring": 0,
+            "gold_ring": 0,
+            "metaglio_left": 0,
+            "metaglio_right": 0
         }
     },
     "labels": {
@@ -968,6 +1196,12 @@
         "vandalier": "Vandalier",
         "vicious_hunger": "Vicious Hunger",
         "whip": "Whip",
-        "wings": "Wings"
+        "wings": "Wings",
+        "metaglio_left": "Metaglio Left",
+        "metaglio_right": "Metaglio Right",
+        "silver_ring": "Silver Ring",
+        "gold_ring": "Gold Ring",
+        "crimson_shroud": "Crimson Shroud",
+        "infinite_corridor": "Infinite Corridor"
     }
 }
