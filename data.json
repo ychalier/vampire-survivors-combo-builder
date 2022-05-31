@@ -68,87 +68,87 @@
     "evolutions": [
         {
             "base_weapons": ["whip"],
-            "item": "hollow_heart",
+            "items": ["hollow_heart"],
             "evolved_weapon": "bloody_tear"
         },
         {
             "base_weapons": ["magic_wand"],
-            "item": "empty_tome",
+            "items": ["empty_tome"],
             "evolved_weapon": "holy_wand"
         },
         {
             "base_weapons": ["knife"],
-            "item": "bracer",
+            "items": ["bracer"],
             "evolved_weapon": "thousand_edge"
         },
         {
             "base_weapons": ["axe"],
-            "item": "candelabrador",
+            "items": ["candelabrador"],
             "evolved_weapon": "death_spiral"
         },
         {
             "base_weapons": ["cross"],
-            "item": "clover",
+            "items": ["clover"],
             "evolved_weapon": "heaven_sword"
         },
         {
             "base_weapons": ["king_bible"],
-            "item": "spellbinder",
+            "items": ["spellbinder"],
             "evolved_weapon": "unholy_vespers"
         },
         {
             "base_weapons": ["fire_wand"],
-            "item": "spinach",
+            "items": ["spinach"],
             "evolved_weapon": "hellfire"
         },
         {
             "base_weapons": ["garlic"],
-            "item": "pummarola",
+            "items": ["pummarola"],
             "evolved_weapon": "soul_eater"
         },
         {
             "base_weapons": ["santa_water"],
-            "item": "attractorb",
+            "items": ["attractorb"],
             "evolved_weapon": "la_borra"
         },
         {
             "base_weapons": ["runetracer"],
-            "item": "armor",
+            "items": ["armor"],
             "evolved_weapon": "no_future"
         },
         {
             "base_weapons": ["lightning_ring"],
-            "item": "duplicator",
+            "items": ["duplicator"],
             "evolved_weapon": "thunder_loop"
         },
         {
             "base_weapons": ["pentagram"],
-            "item": "crown",
+            "items": ["crown"],
             "evolved_weapon": "gorgeous_moon"
         },
         {
             "base_weapons": ["peachone", "ebony_wings"],
-            "item": null,
+            "items": [],
             "evolved_weapon": "vandalier"
         },
         {
             "base_weapons": ["phiera_der_tuphello", "eight_the_sparrow"],
-            "item": "tiragisu",
+            "items": ["tiragisu"],
             "evolved_weapon": "phieraggi"
         },
         {
             "base_weapons": ["gatti_amari"],
-            "item": "stone_mask",
+            "items": ["stone_mask"],
             "evolved_weapon": "vicious_hunger"
         },
         {
             "base_weapons": ["song_of_mana"],
-            "item": "skull_o_maniac",
+            "items": ["skull_o_maniac"],
             "evolved_weapon": "mannajja"
         },
         {
             "base_weapons": ["shadow_pinion"],
-            "item": "wings",
+            "items": ["wings"],
             "evolved_weapon": "valkyrie_turner"
         }
     ],

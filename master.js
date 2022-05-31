@@ -161,15 +161,15 @@ class Model {
             });
 
             // Evolution requires item
-            if (evolution.item != null) {
+            evolution.items.forEach(item => {
                 this.problem.subjectTo.push({
-                    name: `evolution_requires_item_${evolution.item}`,
+                    name: `evolution_requires_item_${item}`,
                     vars: [{
                             name: `e_${evolution.evolved_weapon}`,
                             coef: 1
                         },
                         {
-                            name: `i_${evolution.item}`,
+                            name: `i_${item}`,
                             coef: -1
                         }
                     ],
@@ -178,7 +178,7 @@ class Model {
                         ub: 0,
                     }
                 });
-            }
+            });
 
         });
 
