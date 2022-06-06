@@ -1,1207 +1,2319 @@
 {
+    "arcanas": [
+        {
+            "slug": "iv",
+            "label": "IV - Awake"
+        },
+        {
+            "slug": "v",
+            "label": "V - Chaos in the Dark Night"
+        },
+        {
+            "slug": "vi",
+            "label": "VI - Sarabande of Healing"
+        },
+        {
+            "slug": "vii",
+            "label": "VII - Iron Blue Will"
+        },
+        {
+            "slug": "xi",
+            "label": "XI - Waltz of Pearls"
+        },
+        {
+            "slug": "xii",
+            "label": "XII - Out of Bounds"
+        },
+        {
+            "slug": "xiv",
+            "label": "XIV - Jail of Crystal"
+        },
+        {
+            "slug": "xv",
+            "label": "XV - Disco of Gold"
+        },
+        {
+            "slug": "xvi",
+            "label": "XVI - Slash"
+        },
+        {
+            "slug": "xvii",
+            "label": "XVII - Lost & Found Painting"
+        },
+        {
+            "slug": "xviii",
+            "label": "XVIII - Boogaloo of Illusions"
+        },
+        {
+            "slug": "xix",
+            "label": "XIX - Heart of Fire"
+        }
+    ],
+    "items": [
+        {
+            "slug": "hollow_heart",
+            "label": "Hollow Heart",
+            "unlockable": true,
+            "rarity": 90,
+            "levels": 5
+        },
+        {
+            "slug": "empty_tome",
+            "label": "Empty Tome",
+            "unlockable": true,
+            "rarity": 50,
+            "levels": 5
+        },
+        {
+            "slug": "bracer",
+            "label": "Bracer",
+            "unlockable": true,
+            "rarity": 100,
+            "levels": 5
+        },
+        {
+            "slug": "candelabrador",
+            "label": "Candelabrador",
+            "unlockable": true,
+            "rarity": 100,
+            "levels": 5
+        },
+        {
+            "slug": "clover",
+            "label": "Clover",
+            "unlockable": true,
+            "rarity": 100,
+            "levels": 5
+        },
+        {
+            "slug": "spellbinder",
+            "label": "Spellbinder",
+            "unlockable": true,
+            "rarity": 100,
+            "levels": 5
+        },
+        {
+            "slug": "spinach",
+            "label": "Spinach",
+            "unlockable": true,
+            "rarity": 100,
+            "levels": 5
+        },
+        {
+            "slug": "pummarola",
+            "label": "Pummarola",
+            "unlockable": true,
+            "rarity": 90,
+            "levels": 5
+        },
+        {
+            "slug": "attractorb",
+            "label": "Attractorb",
+            "unlockable": true,
+            "rarity": 100,
+            "levels": 5
+        },
+        {
+            "slug": "armor",
+            "label": "Armor",
+            "unlockable": true,
+            "rarity": 100,
+            "levels": 5
+        },
+        {
+            "slug": "duplicator",
+            "label": "Duplicator",
+            "unlockable": true,
+            "rarity": 50,
+            "levels": 2
+        },
+        {
+            "slug": "crown",
+            "label": "Crown",
+            "unlockable": true,
+            "rarity": 80,
+            "levels": 5
+        },
+        {
+            "slug": "tiragisu",
+            "label": "Tiragisú",
+            "unlockable": true,
+            "rarity": 40,
+            "levels": 2
+        },
+        {
+            "slug": "stone_mask",
+            "label": "Stone Mask",
+            "unlockable": true,
+            "rarity": 80,
+            "levels": 5
+        },
+        {
+            "slug": "skull_o_maniac",
+            "label": "Skull O'Maniac",
+            "unlockable": true,
+            "rarity": 40,
+            "levels": 5
+        },
+        {
+            "slug": "wings",
+            "label": "Wings",
+            "unlockable": true,
+            "rarity": 50,
+            "levels": 5
+        },
+        {
+            "slug": "silver_ring",
+            "label": "Silver Ring",
+            "unlockable": false,
+            "rarity": 10,
+            "levels": 9
+        },
+        {
+            "slug": "gold_ring",
+            "label": "Gold Ring",
+            "unlockable": false,
+            "rarity": 10,
+            "levels": 9
+        },
+        {
+            "slug": "metaglio_left",
+            "label": "Metaglio Left",
+            "unlockable": false,
+            "rarity": 10,
+            "levels": 9
+        },
+        {
+            "slug": "metaglio_right",
+            "label": "Metaglio Right",
+            "unlockable": false,
+            "rarity": 10,
+            "levels": 9
+        }
+    ],
     "weapons": {
-        "base": [
-            "whip",
-            "magic_wand",
-            "knife",
-            "axe",
-            "cross",
-            "king_bible",
-            "fire_wand",
-            "garlic",
-            "santa_water",
-            "runetracer",
-            "lightning_ring",
-            "pentagram",
-            "peachone",
-            "ebony_wings",
-            "phiera_der_tuphello",
-            "eight_the_sparrow",
-            "gatti_amari",
-            "song_of_mana",
-            "shadow_pinion",
-            "clock_lancet",
-            "laurel",
-            "bone",
-            "cherry_bomb",
-            "carrello",
-            "celestial_dusting"
+        "basic": [
+            {
+                "slug": "whip",
+                "label": "Whip",
+                "rarity": 100,
+                "combos": [
+                    {
+                        "item": "empty_tome",
+                        "arcana": null
+                    },
+                    {
+                        "item": "candelabrador",
+                        "arcana": null
+                    },
+                    {
+                        "item": "clover",
+                        "arcana": "xvi"
+                    },
+                    {
+                        "item": "spinach",
+                        "arcana": null
+                    },
+                    {
+                        "item": "duplicator",
+                        "arcana": null
+                    },
+                    {
+                        "item": null,
+                        "arcana": "iv"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xvi"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xviii"
+                    }
+                ],
+                "levels": 8
+            },
+            {
+                "slug": "magic_wand",
+                "label": "Magic Wand",
+                "rarity": 100,
+                "combos": [
+                    {
+                        "item": "empty_tome",
+                        "arcana": null
+                    },
+                    {
+                        "item": "bracer",
+                        "arcana": null
+                    },
+                    {
+                        "item": "candelabrador",
+                        "arcana": null
+                    },
+                    {
+                        "item": "spinach",
+                        "arcana": null
+                    },
+                    {
+                        "item": "duplicator",
+                        "arcana": null
+                    },
+                    {
+                        "item": "candelabrador",
+                        "arcana": null
+                    },
+                    {
+                        "item": null,
+                        "arcana": "iv"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "v"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "iv"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xi"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xiv"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xviii"
+                    }
+                ],
+                "levels": 8
+            },
+            {
+                "slug": "knife",
+                "label": "Knife",
+                "rarity": 100,
+                "combos": [
+                    {
+                        "item": "empty_tome",
+                        "arcana": null
+                    },
+                    {
+                        "item": "bracer",
+                        "arcana": null
+                    },
+                    {
+                        "item": "candelabrador",
+                        "arcana": null
+                    },
+                    {
+                        "item": "clover",
+                        "arcana": null
+                    },
+                    {
+                        "item": "spinach",
+                        "arcana": null
+                    },
+                    {
+                        "item": "duplicator",
+                        "arcana": null
+                    },
+                    {
+                        "item": null,
+                        "arcana": "iv"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "v"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "vii"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xvi"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xviii"
+                    }
+                ],
+                "levels": 8
+            },
+            {
+                "slug": "axe",
+                "label": "Axe",
+                "rarity": 100,
+                "combos": [
+                    {
+                        "item": "empty_tome",
+                        "arcana": null
+                    },
+                    {
+                        "item": "bracer",
+                        "arcana": null
+                    },
+                    {
+                        "item": "candelabrador",
+                        "arcana": null
+                    },
+                    {
+                        "item": "clover",
+                        "arcana": "xvi"
+                    },
+                    {
+                        "item": "spinach",
+                        "arcana": null
+                    },
+                    {
+                        "item": "duplicator",
+                        "arcana": null
+                    },
+                    {
+                        "item": null,
+                        "arcana": "iv"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "v"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "vii"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xvi"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xviii"
+                    }
+                ],
+                "levels": 8
+            },
+            {
+                "slug": "cross",
+                "label": "Cross",
+                "rarity": 100,
+                "combos": [
+                    {
+                        "item": "empty_tome",
+                        "arcana": null
+                    },
+                    {
+                        "item": "bracer",
+                        "arcana": null
+                    },
+                    {
+                        "item": "candelabrador",
+                        "arcana": null
+                    },
+                    {
+                        "item": "spinach",
+                        "arcana": null
+                    },
+                    {
+                        "item": "duplicator",
+                        "arcana": null
+                    },
+                    {
+                        "item": null,
+                        "arcana": "iv"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "v"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xi"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xviii"
+                    }
+                ],
+                "levels": 8
+            },
+            {
+                "slug": "king_bible",
+                "label": "King Bible",
+                "rarity": 80,
+                "combos": [
+                    {
+                        "item": "empty_tome",
+                        "arcana": null
+                    },
+                    {
+                        "item": "bracer",
+                        "arcana": null
+                    },
+                    {
+                        "item": "candelabrador",
+                        "arcana": null
+                    },
+                    {
+                        "item": "spellbinder",
+                        "arcana": null
+                    },
+                    {
+                        "item": "spinach",
+                        "arcana": null
+                    },
+                    {
+                        "item": "duplicator",
+                        "arcana": null
+                    },
+                    {
+                        "item": null,
+                        "arcana": "iv"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "v"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xvii"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xviii"
+                    }
+                ],
+                "levels": 8
+            },
+            {
+                "slug": "fire_wand",
+                "label": "Fire Wand",
+                "rarity": 80,
+                "combos": [
+                    {
+                        "item": "empty_tome",
+                        "arcana": null
+                    },
+                    {
+                        "item": "bracer",
+                        "arcana": null
+                    },
+                    {
+                        "item": "candelabrador",
+                        "arcana": null
+                    },
+                    {
+                        "item": "spinach",
+                        "arcana": null
+                    },
+                    {
+                        "item": "duplicator",
+                        "arcana": null
+                    },
+                    {
+                        "item": null,
+                        "arcana": "iv"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "v"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xi"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xviii"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xix"
+                    }
+                ],
+                "levels": 8
+            },
+            {
+                "slug": "garlic",
+                "label": "Garlic",
+                "rarity": 70,
+                "combos": [
+                    {
+                        "item": "empty_tome",
+                        "arcana": null
+                    },
+                    {
+                        "item": "candelabrador",
+                        "arcana": null
+                    },
+                    {
+                        "item": "spinach",
+                        "arcana": null
+                    },
+                    {
+                        "item": null,
+                        "arcana": "iv"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xviii"
+                    }
+                ],
+                "levels": 8
+            },
+            {
+                "slug": "santa_water",
+                "label": "Santa Water",
+                "rarity": 100,
+                "combos": [
+                    {
+                        "item": "empty_tome",
+                        "arcana": null
+                    },
+                    {
+                        "item": "candelabrador",
+                        "arcana": null
+                    },
+                    {
+                        "item": "spinach",
+                        "arcana": null
+                    },
+                    {
+                        "item": "duplicator",
+                        "arcana": null
+                    },
+                    {
+                        "item": "silver_ring",
+                        "arcana": null
+                    },
+                    {
+                        "item": null,
+                        "arcana": "iv"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xvii"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xviii"
+                    }
+                ],
+                "levels": 8
+            },
+            {
+                "slug": "runetracer",
+                "label": "Runetracer",
+                "rarity": 80,
+                "combos": [
+                    {
+                        "item": "empty_tome",
+                        "arcana": null
+                    },
+                    {
+                        "item": "bracer",
+                        "arcana": null
+                    },
+                    {
+                        "item": "candelabrador",
+                        "arcana": null
+                    },
+                    {
+                        "item": "spellbinder",
+                        "arcana": null
+                    },
+                    {
+                        "item": "spinach",
+                        "arcana": null
+                    },
+                    {
+                        "item": "duplicator",
+                        "arcana": null
+                    },
+                    {
+                        "item": null,
+                        "arcana": "iv"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "v"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xiv"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xvii"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xviii"
+                    }
+                ],
+                "levels": 8
+            },
+            {
+                "slug": "lightning_ring",
+                "label": "Lightning Ring",
+                "rarity": 80,
+                "combos": [
+                    {
+                        "item": "empty_tome",
+                        "arcana": null
+                    },
+                    {
+                        "item": "candelabrador",
+                        "arcana": null
+                    },
+                    {
+                        "item": "spinach",
+                        "arcana": null
+                    },
+                    {
+                        "item": "duplicator",
+                        "arcana": null
+                    },
+                    {
+                        "item": null,
+                        "arcana": "iv"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xviii"
+                    }
+                ],
+                "levels": 8
+            },
+            {
+                "slug": "pentagram",
+                "label": "Pentagram",
+                "rarity": 60,
+                "combos": [
+                    {
+                        "item": "empty_tome",
+                        "arcana": null
+                    },
+                    {
+                        "item": "clover",
+                        "arcana": null
+                    }
+                ],
+                "levels": 8
+            },
+            {
+                "slug": "peachone",
+                "label": "Peachone",
+                "rarity": 50,
+                "combos": [
+                    {
+                        "item": "empty_tome",
+                        "arcana": null
+                    },
+                    {
+                        "item": "bracer",
+                        "arcana": null
+                    },
+                    {
+                        "item": "candelabrador",
+                        "arcana": null
+                    },
+                    {
+                        "item": "spellbinder",
+                        "arcana": null
+                    },
+                    {
+                        "item": "spinach",
+                        "arcana": null
+                    },
+                    {
+                        "item": "duplicator",
+                        "arcana": null
+                    },
+                    {
+                        "item": "wings",
+                        "arcana": null
+                    },
+                    {
+                        "item": null,
+                        "arcana": "iv"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "v"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xvii"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xviii"
+                    }
+                ],
+                "levels": 8
+            },
+            {
+                "slug": "ebony_wings",
+                "label": "Ebony Wings",
+                "rarity": 50,
+                "combos": [
+                    {
+                        "item": "empty_tome",
+                        "arcana": null
+                    },
+                    {
+                        "item": "bracer",
+                        "arcana": null
+                    },
+                    {
+                        "item": "candelabrador",
+                        "arcana": null
+                    },
+                    {
+                        "item": "spellbinder",
+                        "arcana": null
+                    },
+                    {
+                        "item": "spinach",
+                        "arcana": null
+                    },
+                    {
+                        "item": "duplicator",
+                        "arcana": null
+                    },
+                    {
+                        "item": "wings",
+                        "arcana": null
+                    },
+                    {
+                        "item": null,
+                        "arcana": "iv"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "v"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xvii"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xviii"
+                    }
+                ],
+                "levels": 8
+            },
+            {
+                "slug": "phiera_der_tuphello",
+                "label": "Phiera Der Tuphello",
+                "rarity": 50,
+                "combos": [
+                    {
+                        "item": "empty_tome",
+                        "arcana": null
+                    },
+                    {
+                        "item": "bracer",
+                        "arcana": null
+                    },
+                    {
+                        "item": "candelabrador",
+                        "arcana": null
+                    },
+                    {
+                        "item": "spinach",
+                        "arcana": null
+                    },
+                    {
+                        "item": "duplicator",
+                        "arcana": null
+                    },
+                    {
+                        "item": null,
+                        "arcana": "iv"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "v"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "vii"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xviii"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xix"
+                    }
+                ],
+                "levels": 8
+            },
+            {
+                "slug": "eight_the_sparrow",
+                "label": "Eight The Sparrow",
+                "rarity": 50,
+                "combos": [
+                    {
+                        "item": "empty_tome",
+                        "arcana": null
+                    },
+                    {
+                        "item": "bracer",
+                        "arcana": null
+                    },
+                    {
+                        "item": "candelabrador",
+                        "arcana": null
+                    },
+                    {
+                        "item": "spinach",
+                        "arcana": null
+                    },
+                    {
+                        "item": "duplicator",
+                        "arcana": null
+                    },
+                    {
+                        "item": null,
+                        "arcana": "iv"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "v"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "vii"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xiv"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xviii"
+                    }
+                ],
+                "levels": 8
+            },
+            {
+                "slug": "gatti_amari",
+                "label": "Gatti Amari",
+                "rarity": 50,
+                "combos": [
+                    {
+                        "item": "empty_tome",
+                        "arcana": null
+                    },
+                    {
+                        "item": "bracer",
+                        "arcana": null
+                    },
+                    {
+                        "item": "candelabrador",
+                        "arcana": null
+                    },
+                    {
+                        "item": "clover",
+                        "arcana": null
+                    },
+                    {
+                        "item": "spellbinder",
+                        "arcana": null
+                    },
+                    {
+                        "item": "spinach",
+                        "arcana": null
+                    },
+                    {
+                        "item": "duplicator",
+                        "arcana": null
+                    },
+                    {
+                        "item": null,
+                        "arcana": "iv"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "v"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xvii"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xviii"
+                    }
+                ],
+                "levels": 8
+            },
+            {
+                "slug": "song_of_mana",
+                "label": "Song of Mana",
+                "rarity": 50,
+                "combos": [
+                    {
+                        "item": "empty_tome",
+                        "arcana": null
+                    },
+                    {
+                        "item": "candelabrador",
+                        "arcana": null
+                    },
+                    {
+                        "item": "spellbinder",
+                        "arcana": null
+                    },
+                    {
+                        "item": "spinach",
+                        "arcana": null
+                    },
+                    {
+                        "item": "silver_ring",
+                        "arcana": null
+                    },
+                    {
+                        "item": null,
+                        "arcana": "iv"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xvii"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xviii"
+                    }
+                ],
+                "levels": 8
+            },
+            {
+                "slug": "shadow_pinion",
+                "label": "Shadow Pinion",
+                "rarity": 50,
+                "combos": [
+                    {
+                        "item": "empty_tome",
+                        "arcana": null
+                    },
+                    {
+                        "item": "bracer",
+                        "arcana": null
+                    },
+                    {
+                        "item": "candelabrador",
+                        "arcana": null
+                    },
+                    {
+                        "item": "spellbinder",
+                        "arcana": null
+                    },
+                    {
+                        "item": "spinach",
+                        "arcana": null
+                    },
+                    {
+                        "item": "duplicator",
+                        "arcana": null
+                    },
+                    {
+                        "item": "wings",
+                        "arcana": null
+                    },
+                    {
+                        "item": "silver_ring",
+                        "arcana": null
+                    },
+                    {
+                        "item": null,
+                        "arcana": "iv"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "v"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xvii"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xviii"
+                    }
+                ],
+                "levels": 8
+            },
+            {
+                "slug": "clock_lancet",
+                "label": "Clock Lancet",
+                "rarity": 70,
+                "combos": [
+                    {
+                        "item": "empty_tome",
+                        "arcana": null
+                    },
+                    {
+                        "item": "spellbinder",
+                        "arcana": null
+                    },
+                    {
+                        "item": "silver_ring",
+                        "arcana": null
+                    },
+                    {
+                        "item": null,
+                        "arcana": "iv"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xii"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xvii"
+                    }
+                ],
+                "levels": 7
+            },
+            {
+                "slug": "laurel",
+                "label": "Laurel",
+                "rarity": 60,
+                "combos": [
+                    {
+                        "item": "empty_tome",
+                        "arcana": null
+                    }
+                ],
+                "levels": 7
+            },
+            {
+                "slug": "bone",
+                "label": "Bone",
+                "rarity": 1,
+                "combos": [
+                    {
+                        "item": "empty_tome",
+                        "arcana": null
+                    },
+                    {
+                        "item": "bracer",
+                        "arcana": null
+                    },
+                    {
+                        "item": "candelabrador",
+                        "arcana": null
+                    },
+                    {
+                        "item": "spellbinder",
+                        "arcana": null
+                    },
+                    {
+                        "item": "spinach",
+                        "arcana": null
+                    },
+                    {
+                        "item": "duplicator",
+                        "arcana": null
+                    },
+                    {
+                        "item": null,
+                        "arcana": "iv"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "v"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xvii"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xviii"
+                    }
+                ],
+                "levels": 8
+            },
+            {
+                "slug": "cherry_bomb",
+                "label": "Cherry Bomb",
+                "rarity": 1,
+                "combos": [
+                    {
+                        "item": "empty_tome",
+                        "arcana": null
+                    },
+                    {
+                        "item": "bracer",
+                        "arcana": null
+                    },
+                    {
+                        "item": "candelabrador",
+                        "arcana": null
+                    },
+                    {
+                        "item": "clover",
+                        "arcana": null
+                    },
+                    {
+                        "item": "spellbinder",
+                        "arcana": null
+                    },
+                    {
+                        "item": "spinach",
+                        "arcana": null
+                    },
+                    {
+                        "item": "duplicator",
+                        "arcana": null
+                    },
+                    {
+                        "item": null,
+                        "arcana": "iv"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "v"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xvii"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xviii"
+                    }
+                ],
+                "levels": 8
+            },
+            {
+                "slug": "carrello",
+                "label": "Carréllo",
+                "rarity": 1,
+                "combos": [
+                    {
+                        "item": "empty_tome",
+                        "arcana": null
+                    },
+                    {
+                        "item": "bracer",
+                        "arcana": null
+                    },
+                    {
+                        "item": "candelabrador",
+                        "arcana": null
+                    },
+                    {
+                        "item": "spinach",
+                        "arcana": null
+                    },
+                    {
+                        "item": "duplicator",
+                        "arcana": null
+                    },
+                    {
+                        "item": null,
+                        "arcana": "iv"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "v"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "vii"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xi"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xviii"
+                    }
+                ],
+                "levels": 8
+            },
+            {
+                "slug": "celestial_dusting",
+                "label": "Celestial Dusting",
+                "rarity": 1,
+                "combos": [
+                    {
+                        "item": "empty_tome",
+                        "arcana": null
+                    },
+                    {
+                        "item": "candelabrador",
+                        "arcana": null
+                    },
+                    {
+                        "item": "spinach",
+                        "arcana": null
+                    },
+                    {
+                        "item": "duplicator",
+                        "arcana": null
+                    },
+                    {
+                        "item": "wings",
+                        "arcana": null
+                    },
+                    {
+                        "item": null,
+                        "arcana": "iv"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "vi"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xvii"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xviii"
+                    }
+                ],
+                "levels": 8
+            }
         ],
         "evolved": [
-            "bloody_tear",
-            "holy_wand",
-            "thousand_edge",
-            "death_spiral",
-            "heaven_sword",
-            "unholy_vespers",
-            "hellfire",
-            "soul_eater",
-            "la_borra",
-            "no_future",
-            "thunder_loop",
-            "gorgeous_moon",
-            "vandalier",
-            "phieraggi",
-            "vicious_hunger",
-            "mannajja",
-            "valkyrie_turner",
-            "infinite_corridor",
-            "crimson_shroud"
+            {
+                "slug": "bloody_tear",
+                "label": "Bloody Tear",
+                "evolution": {
+                    "weapons": [
+                        "whip"
+                    ],
+                    "items": [
+                        "hollow_heart"
+                    ]
+                },
+                "combos": [
+                    {
+                        "item": "empty_tome",
+                        "arcana": null
+                    },
+                    {
+                        "item": "candelabrador",
+                        "arcana": null
+                    },
+                    {
+                        "item": "clover",
+                        "arcana": null
+                    },
+                    {
+                        "item": "spinach",
+                        "arcana": null
+                    },
+                    {
+                        "item": "duplicator",
+                        "arcana": null
+                    },
+                    {
+                        "item": null,
+                        "arcana": "iv"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "vi"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xvi"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xviii"
+                    }
+                ],
+                "levels": 1
+            },
+            {
+                "slug": "holy_wand",
+                "label": "Holy Wand",
+                "evolution": {
+                    "weapons": [
+                        "magic_wand"
+                    ],
+                    "items": [
+                        "empty_tome"
+                    ]
+                },
+                "combos": [
+                    {
+                        "item": "empty_tome",
+                        "arcana": null
+                    },
+                    {
+                        "item": "bracer",
+                        "arcana": null
+                    },
+                    {
+                        "item": "candelabrador",
+                        "arcana": null
+                    },
+                    {
+                        "item": "spinach",
+                        "arcana": null
+                    },
+                    {
+                        "item": "duplicator",
+                        "arcana": null
+                    },
+                    {
+                        "item": null,
+                        "arcana": "iv"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "v"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xi"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xiv"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xviii"
+                    }
+                ],
+                "levels": 1
+            },
+            {
+                "slug": "thousand_edge",
+                "label": "Thousand Edge",
+                "evolution": {
+                    "weapons": [
+                        "knife"
+                    ],
+                    "items": [
+                        "bracer"
+                    ]
+                },
+                "combos": [
+                    {
+                        "item": "empty_tome",
+                        "arcana": null
+                    },
+                    {
+                        "item": "bracer",
+                        "arcana": null
+                    },
+                    {
+                        "item": "candelabrador",
+                        "arcana": null
+                    },
+                    {
+                        "item": "clover",
+                        "arcana": "xvi"
+                    },
+                    {
+                        "item": "spinach",
+                        "arcana": null
+                    },
+                    {
+                        "item": "duplicator",
+                        "arcana": null
+                    },
+                    {
+                        "item": null,
+                        "arcana": "iv"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "v"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "vii"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xvi"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xviii"
+                    }
+                ],
+                "levels": 1
+            },
+            {
+                "slug": "death_spiral",
+                "label": "Death Spiral",
+                "evolution": {
+                    "weapons": [
+                        "axe"
+                    ],
+                    "items": [
+                        "candelabrador"
+                    ]
+                },
+                "combos": [
+                    {
+                        "item": "empty_tome",
+                        "arcana": null
+                    },
+                    {
+                        "item": "bracer",
+                        "arcana": null
+                    },
+                    {
+                        "item": "candelabrador",
+                        "arcana": null
+                    },
+                    {
+                        "item": "clover",
+                        "arcana": "xvi"
+                    },
+                    {
+                        "item": "spinach",
+                        "arcana": null
+                    },
+                    {
+                        "item": "duplicator",
+                        "arcana": null
+                    },
+                    {
+                        "item": null,
+                        "arcana": "iv"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "v"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "vii"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xvi"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xviii"
+                    }
+                ],
+                "levels": 1
+            },
+            {
+                "slug": "heaven_sword",
+                "label": "Heaven Sword",
+                "evolution": {
+                    "weapons": [
+                        "cross"
+                    ],
+                    "items": [
+                        "clover"
+                    ]
+                },
+                "combos": [
+                    {
+                        "item": "empty_tome",
+                        "arcana": null
+                    },
+                    {
+                        "item": "bracer",
+                        "arcana": null
+                    },
+                    {
+                        "item": "candelabrador",
+                        "arcana": null
+                    },
+                    {
+                        "item": "clover",
+                        "arcana": "xvi"
+                    },
+                    {
+                        "item": "spinach",
+                        "arcana": null
+                    },
+                    {
+                        "item": "duplicator",
+                        "arcana": null
+                    },
+                    {
+                        "item": null,
+                        "arcana": "iv"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "v"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xi"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xvi"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xviii"
+                    }
+                ],
+                "levels": 1
+            },
+            {
+                "slug": "unholy_vespers",
+                "label": "Unholy Vespers",
+                "evolution": {
+                    "weapons": [
+                        "king_bible"
+                    ],
+                    "items": [
+                        "spellbinder"
+                    ]
+                },
+                "combos": [
+                    {
+                        "item": "empty_tome",
+                        "arcana": null
+                    },
+                    {
+                        "item": "bracer",
+                        "arcana": null
+                    },
+                    {
+                        "item": "candelabrador",
+                        "arcana": null
+                    },
+                    {
+                        "item": "spellbinder",
+                        "arcana": null
+                    },
+                    {
+                        "item": "spinach",
+                        "arcana": null
+                    },
+                    {
+                        "item": "duplicator",
+                        "arcana": null
+                    },
+                    {
+                        "item": null,
+                        "arcana": "iv"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "v"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xvii"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xviii"
+                    }
+                ],
+                "levels": 1
+            },
+            {
+                "slug": "hellfire",
+                "label": "Hellfire",
+                "evolution": {
+                    "weapons": [
+                        "fire_wand"
+                    ],
+                    "items": [
+                        "spinach"
+                    ]
+                },
+                "combos": [
+                    {
+                        "item": "empty_tome",
+                        "arcana": null
+                    },
+                    {
+                        "item": "bracer",
+                        "arcana": null
+                    },
+                    {
+                        "item": "candelabrador",
+                        "arcana": null
+                    },
+                    {
+                        "item": "spinach",
+                        "arcana": null
+                    },
+                    {
+                        "item": "duplicator",
+                        "arcana": null
+                    },
+                    {
+                        "item": "silver_ring",
+                        "arcana": null
+                    },
+                    {
+                        "item": null,
+                        "arcana": "iv"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "v"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xi"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xviii"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xix"
+                    }
+                ],
+                "levels": 1
+            },
+            {
+                "slug": "soul_eater",
+                "label": "Soul Eater",
+                "evolution": {
+                    "weapons": [
+                        "garlic"
+                    ],
+                    "items": [
+                        "pummarola"
+                    ]
+                },
+                "combos": [
+                    {
+                        "item": "empty_tome",
+                        "arcana": null
+                    },
+                    {
+                        "item": "candelabrador",
+                        "arcana": null
+                    },
+                    {
+                        "item": "spinach",
+                        "arcana": null
+                    },
+                    {
+                        "item": "pummarola",
+                        "arcana": null
+                    },
+                    {
+                        "item": "duplicator",
+                        "arcana": null
+                    },
+                    {
+                        "item": "tiragisu",
+                        "arcana": null
+                    },
+                    {
+                        "item": null,
+                        "arcana": "iv"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "v"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "vi"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xviii"
+                    }
+                ],
+                "levels": 1
+            },
+            {
+                "slug": "la_borra",
+                "label": "La Borra",
+                "evolution": {
+                    "weapons": [
+                        "santa_water"
+                    ],
+                    "items": [
+                        "attractorb"
+                    ]
+                },
+                "combos": [
+                    {
+                        "item": "empty_tome",
+                        "arcana": null
+                    },
+                    {
+                        "item": "bracer",
+                        "arcana": null
+                    },
+                    {
+                        "item": "candelabrador",
+                        "arcana": null
+                    },
+                    {
+                        "item": "spellbinder",
+                        "arcana": null
+                    },
+                    {
+                        "item": "spinach",
+                        "arcana": null
+                    },
+                    {
+                        "item": "duplicator",
+                        "arcana": null
+                    },
+                    {
+                        "item": "wings",
+                        "arcana": null
+                    },
+                    {
+                        "item": "silver_ring",
+                        "arcana": null
+                    },
+                    {
+                        "item": null,
+                        "arcana": "iv"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "v"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xvii"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xviii"
+                    }
+                ],
+                "levels": 1
+            },
+            {
+                "slug": "no_future",
+                "label": "NO FUTURE",
+                "evolution": {
+                    "weapons": [
+                        "runetracer"
+                    ],
+                    "items": [
+                        "armor"
+                    ]
+                },
+                "combos": [
+                    {
+                        "item": "empty_tome",
+                        "arcana": null
+                    },
+                    {
+                        "item": "bracer",
+                        "arcana": null
+                    },
+                    {
+                        "item": "candelabrador",
+                        "arcana": null
+                    },
+                    {
+                        "item": "spellbinder",
+                        "arcana": null
+                    },
+                    {
+                        "item": "spinach",
+                        "arcana": null
+                    },
+                    {
+                        "item": "armor",
+                        "arcana": null
+                    },
+                    {
+                        "item": "duplicator",
+                        "arcana": null
+                    },
+                    {
+                        "item": null,
+                        "arcana": "iv"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "v"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xiv"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xvii"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xviii"
+                    }
+                ],
+                "levels": 1
+            },
+            {
+                "slug": "thunder_loop",
+                "label": "Thunder Loop",
+                "evolution": {
+                    "weapons": [
+                        "lightning_ring"
+                    ],
+                    "items": [
+                        "duplicator"
+                    ]
+                },
+                "combos": [
+                    {
+                        "item": "empty_tome",
+                        "arcana": null
+                    },
+                    {
+                        "item": "candelabrador",
+                        "arcana": null
+                    },
+                    {
+                        "item": "spinach",
+                        "arcana": null
+                    },
+                    {
+                        "item": "duplicator",
+                        "arcana": null
+                    },
+                    {
+                        "item": "iv",
+                        "arcana": null
+                    },
+                    {
+                        "item": "xviii",
+                        "arcana": null
+                    }
+                ],
+                "levels": 1
+            },
+            {
+                "slug": "gorgeous_moon",
+                "label": "Gorgeous Moon",
+                "evolution": {
+                    "weapons": [
+                        "pentagram"
+                    ],
+                    "items": [
+                        "crown"
+                    ]
+                },
+                "combos": [
+                    {
+                        "item": "empty_tome",
+                        "arcana": null
+                    }
+                ],
+                "levels": 1
+            },
+            {
+                "slug": "vicious_hunger",
+                "label": "Vicious Hunger",
+                "evolution": {
+                    "weapons": [
+                        "gatti_amari"
+                    ],
+                    "items": [
+                        "stone_mask"
+                    ]
+                },
+                "combos": [
+                    {
+                        "item": "empty_tome",
+                        "arcana": null
+                    },
+                    {
+                        "item": "bracer",
+                        "arcana": null
+                    },
+                    {
+                        "item": "candelabrador",
+                        "arcana": null
+                    },
+                    {
+                        "item": "clover",
+                        "arcana": null
+                    },
+                    {
+                        "item": "spellbinder",
+                        "arcana": null
+                    },
+                    {
+                        "item": "spinach",
+                        "arcana": null
+                    },
+                    {
+                        "item": "duplicator",
+                        "arcana": null
+                    },
+                    {
+                        "item": "stone_mask",
+                        "arcana": null
+                    },
+                    {
+                        "item": "silver_ring",
+                        "arcana": null
+                    },
+                    {
+                        "item": null,
+                        "arcana": "iv"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "v"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xv"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xvii"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xviii"
+                    }
+                ],
+                "levels": 1
+            },
+            {
+                "slug": "mannajja",
+                "label": "Mannajja",
+                "evolution": {
+                    "weapons": [
+                        "song_of_mana"
+                    ],
+                    "items": [
+                        "skull_o_maniac"
+                    ]
+                },
+                "combos": [
+                    {
+                        "item": "empty_tome",
+                        "arcana": null
+                    },
+                    {
+                        "item": "candelabrador",
+                        "arcana": null
+                    },
+                    {
+                        "item": "spellbinder",
+                        "arcana": null
+                    },
+                    {
+                        "item": "spinach",
+                        "arcana": null
+                    },
+                    {
+                        "item": "duplicator",
+                        "arcana": null
+                    },
+                    {
+                        "item": null,
+                        "arcana": "iv"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xvii"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xviii"
+                    }
+                ],
+                "levels": 1
+            },
+            {
+                "slug": "valkyrie_turner",
+                "label": "Valkyrie Turner",
+                "evolution": {
+                    "weapons": [
+                        "shadow_pinion"
+                    ],
+                    "items": [
+                        "wings"
+                    ]
+                },
+                "combos": [
+                    {
+                        "item": "empty_tome",
+                        "arcana": null
+                    },
+                    {
+                        "item": "bracer",
+                        "arcana": null
+                    },
+                    {
+                        "item": "candelabrador",
+                        "arcana": null
+                    },
+                    {
+                        "item": "spellbinder",
+                        "arcana": null
+                    },
+                    {
+                        "item": "spinach",
+                        "arcana": null
+                    },
+                    {
+                        "item": "duplicator",
+                        "arcana": null
+                    },
+                    {
+                        "item": "wings",
+                        "arcana": null
+                    },
+                    {
+                        "item": "silver_ring",
+                        "arcana": null
+                    },
+                    {
+                        "item": null,
+                        "arcana": "iv"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "v"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xvii"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xviii"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xix"
+                    }
+                ],
+                "levels": 1
+            },
+            {
+                "slug": "infinite_corridor",
+                "label": "Infinite Corridor",
+                "evolution": {
+                    "weapons": [
+                        "clock_lancet"
+                    ],
+                    "items": [
+                        "silver_ring",
+                        "gold_ring"
+                    ]
+                },
+                "combos": [
+                    {
+                        "item": "empty_tome",
+                        "arcana": null
+                    },
+                    {
+                        "item": "spellbinder",
+                        "arcana": null
+                    },
+                    {
+                        "item": "silver_ring",
+                        "arcana": null
+                    },
+                    {
+                        "item": null,
+                        "arcana": "iv"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xii"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xvii"
+                    }
+                ],
+                "levels": 1
+            },
+            {
+                "slug": "crimson_shroud",
+                "label": "Crimson Shroud",
+                "evolution": {
+                    "weapons": [
+                        "laurel"
+                    ],
+                    "items": [
+                        "metaglio_left",
+                        "metaglio_right"
+                    ]
+                },
+                "combos": [
+                    {
+                        "item": "empty_tome",
+                        "arcana": null
+                    },
+                    {
+                        "item": "candelabrador",
+                        "arcana": null
+                    },
+                    {
+                        "item": "spinach",
+                        "arcana": null
+                    },
+                    {
+                        "item": "armor",
+                        "arcana": null
+                    },
+                    {
+                        "item": "skull_o_maniac",
+                        "arcana": null
+                    },
+                    {
+                        "item": "silver_ring",
+                        "arcana": null
+                    },
+                    {
+                        "item": "gold_ring",
+                        "arcana": null
+                    },
+                    {
+                        "item": "mantaglio_right",
+                        "arcana": null
+                    },
+                    {
+                        "item": null,
+                        "arcana": "iv"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xviii"
+                    }
+                ],
+                "levels": 1
+            },
+            {
+                "slug": "vandalier",
+                "label": "Vandalier",
+                "evolution": {
+                    "weapons": [
+                        "peachone",
+                        "ebony_wings"
+                    ],
+                    "items": []
+                },
+                "combos": [
+                    {
+                        "item": "empty_tome",
+                        "arcana": null
+                    },
+                    {
+                        "item": "bracer",
+                        "arcana": null
+                    },
+                    {
+                        "item": "candelabrador",
+                        "arcana": null
+                    },
+                    {
+                        "item": "spellbinder",
+                        "arcana": null
+                    },
+                    {
+                        "item": "spinach",
+                        "arcana": null
+                    },
+                    {
+                        "item": "duplicator",
+                        "arcana": null
+                    },
+                    {
+                        "item": "wings",
+                        "arcana": null
+                    },
+                    {
+                        "item": null,
+                        "arcana": "iv"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "v"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xvii"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xviii"
+                    }
+                ],
+                "levels": 8
+            },
+            {
+                "slug": "phieraggi",
+                "label": "Phieraggi",
+                "evolution": {
+                    "weapons": [
+                        "phiera_der_tuphello",
+                        "eight_the_sparrow"
+                    ],
+                    "items": [
+                        "tiragisu"
+                    ]
+                },
+                "combos": [
+                    {
+                        "item": "empty_tome",
+                        "arcana": null
+                    },
+                    {
+                        "item": "bracer",
+                        "arcana": null
+                    },
+                    {
+                        "item": "candelabrador",
+                        "arcana": null
+                    },
+                    {
+                        "item": "spinach",
+                        "arcana": null
+                    },
+                    {
+                        "item": "duplicator",
+                        "arcana": null
+                    },
+                    {
+                        "item": "tiragisu",
+                        "arcana": null
+                    },
+                    {
+                        "item": null,
+                        "arcana": "iv"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "v"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xviii"
+                    }
+                ],
+                "levels": 1
+            }
         ]
-    },
-    "items": [
-        "hollow_heart",
-        "empty_tome",
-        "bracer",
-        "candelabrador",
-        "clover",
-        "spellbinder",
-        "spinach",
-        "pummarola",
-        "attractorb",
-        "armor",
-        "duplicator",
-        "crown",
-        "tiragisu",
-        "stone_mask",
-        "skull_o_maniac",
-        "wings",
-        "silver_ring",
-        "gold_ring",
-        "metaglio_left",
-        "metaglio_right"
-    ],
-    "evolutions": [
-        {
-            "base_weapons": ["whip"],
-            "items": ["hollow_heart"],
-            "evolved_weapon": "bloody_tear"
-        },
-        {
-            "base_weapons": ["magic_wand"],
-            "items": ["empty_tome"],
-            "evolved_weapon": "holy_wand"
-        },
-        {
-            "base_weapons": ["knife"],
-            "items": ["bracer"],
-            "evolved_weapon": "thousand_edge"
-        },
-        {
-            "base_weapons": ["axe"],
-            "items": ["candelabrador"],
-            "evolved_weapon": "death_spiral"
-        },
-        {
-            "base_weapons": ["cross"],
-            "items": ["clover"],
-            "evolved_weapon": "heaven_sword"
-        },
-        {
-            "base_weapons": ["king_bible"],
-            "items": ["spellbinder"],
-            "evolved_weapon": "unholy_vespers"
-        },
-        {
-            "base_weapons": ["fire_wand"],
-            "items": ["spinach"],
-            "evolved_weapon": "hellfire"
-        },
-        {
-            "base_weapons": ["garlic"],
-            "items": ["pummarola"],
-            "evolved_weapon": "soul_eater"
-        },
-        {
-            "base_weapons": ["santa_water"],
-            "items": ["attractorb"],
-            "evolved_weapon": "la_borra"
-        },
-        {
-            "base_weapons": ["runetracer"],
-            "items": ["armor"],
-            "evolved_weapon": "no_future"
-        },
-        {
-            "base_weapons": ["lightning_ring"],
-            "items": ["duplicator"],
-            "evolved_weapon": "thunder_loop"
-        },
-        {
-            "base_weapons": ["pentagram"],
-            "items": ["crown"],
-            "evolved_weapon": "gorgeous_moon"
-        },
-        {
-            "base_weapons": ["peachone", "ebony_wings"],
-            "items": [],
-            "evolved_weapon": "vandalier"
-        },
-        {
-            "base_weapons": ["phiera_der_tuphello", "eight_the_sparrow"],
-            "items": ["tiragisu"],
-            "evolved_weapon": "phieraggi"
-        },
-        {
-            "base_weapons": ["gatti_amari"],
-            "items": ["stone_mask"],
-            "evolved_weapon": "vicious_hunger"
-        },
-        {
-            "base_weapons": ["song_of_mana"],
-            "items": ["skull_o_maniac"],
-            "evolved_weapon": "mannajja"
-        },
-        {
-            "base_weapons": ["shadow_pinion"],
-            "items": ["wings"],
-            "evolved_weapon": "valkyrie_turner"
-        },
-        {
-            "base_weapons": ["laurel"],
-            "items": ["metaglio_left", "metaglio_right"],
-            "evolved_weapon": "crimson_shroud"
-        },
-        {
-            "base_weapons": ["clock_lancet"],
-            "items": ["silver_ring", "gold_ring"],
-            "evolved_weapon": "infinite_corridor"
-        }
-    ],
-    "combos": {
-        "whip": {
-            "hollow_heart": 0,
-            "empty_tome": 1,
-            "bracer": 0,
-            "candelabrador": 1,
-            "clover": 0,
-            "spellbinder": 0,
-            "spinach": 1,
-            "pummarola": 0,
-            "attractorb": 0,
-            "armor": 0,
-            "duplicator": 1,
-            "crown": 0,
-            "tiragisu": 0,
-            "stone_mask": 0,
-            "skull_o_maniac": 0,
-            "wings": 0,
-            "silver_ring": 0,
-            "gold_ring": 0,
-            "metaglio_left": 0,
-            "metaglio_right": 0
-        },
-        "magic_wand": {
-            "hollow_heart": 0,
-            "empty_tome": 1,
-            "bracer": 1,
-            "candelabrador": 1,
-            "clover": 0,
-            "spellbinder": 0,
-            "spinach": 1,
-            "pummarola": 0,
-            "attractorb": 0,
-            "armor": 0,
-            "duplicator": 1,
-            "crown": 0,
-            "tiragisu": 0,
-            "stone_mask": 0,
-            "skull_o_maniac": 0,
-            "wings": 0,
-            "silver_ring": 0,
-            "gold_ring": 0,
-            "metaglio_left": 0,
-            "metaglio_right": 0
-        },
-        "knife": {
-            "hollow_heart": 0,
-            "empty_tome": 1,
-            "bracer": 1,
-            "candelabrador": 1,
-            "clover": 0,
-            "spellbinder": 0,
-            "spinach": 1,
-            "pummarola": 0,
-            "attractorb": 0,
-            "armor": 0,
-            "duplicator": 1,
-            "crown": 0,
-            "tiragisu": 0,
-            "stone_mask": 0,
-            "skull_o_maniac": 0,
-            "wings": 0,
-            "silver_ring": 0,
-            "gold_ring": 0,
-            "metaglio_left": 0,
-            "metaglio_right": 0
-        },
-        "axe": {
-            "hollow_heart": 0,
-            "empty_tome": 1,
-            "bracer": 1,
-            "candelabrador": 1,
-            "clover": 0,
-            "spellbinder": 0,
-            "spinach": 1,
-            "pummarola": 0,
-            "attractorb": 0,
-            "armor": 0,
-            "duplicator": 1,
-            "crown": 0,
-            "tiragisu": 0,
-            "stone_mask": 0,
-            "skull_o_maniac": 0,
-            "wings": 0,
-            "silver_ring": 0,
-            "gold_ring": 0,
-            "metaglio_left": 0,
-            "metaglio_right": 0
-        },
-        "cross": {
-            "hollow_heart": 0,
-            "empty_tome": 1,
-            "bracer": 1,
-            "candelabrador": 1,
-            "clover": 0,
-            "spellbinder": 0,
-            "spinach": 1,
-            "pummarola": 0,
-            "attractorb": 0,
-            "armor": 0,
-            "duplicator": 1,
-            "crown": 0,
-            "tiragisu": 0,
-            "stone_mask": 0,
-            "skull_o_maniac": 0,
-            "wings": 0,
-            "silver_ring": 0,
-            "gold_ring": 0,
-            "metaglio_left": 0,
-            "metaglio_right": 0
-        },
-        "king_bible": {
-            "hollow_heart": 0,
-            "empty_tome": 1,
-            "bracer": 1,
-            "candelabrador": 1,
-            "clover": 0,
-            "spellbinder": 1,
-            "spinach": 1,
-            "pummarola": 0,
-            "attractorb": 0,
-            "armor": 0,
-            "duplicator": 1,
-            "crown": 0,
-            "tiragisu": 0,
-            "stone_mask": 0,
-            "skull_o_maniac": 0,
-            "wings": 0,
-            "silver_ring": 0,
-            "gold_ring": 0,
-            "metaglio_left": 0,
-            "metaglio_right": 0
-        },
-        "fire_wand": {
-            "hollow_heart": 0,
-            "empty_tome": 1,
-            "bracer": 1,
-            "candelabrador": 1,
-            "clover": 0,
-            "spellbinder": 0,
-            "spinach": 1,
-            "pummarola": 0,
-            "attractorb": 0,
-            "armor": 0,
-            "duplicator": 1,
-            "crown": 0,
-            "tiragisu": 0,
-            "stone_mask": 0,
-            "skull_o_maniac": 0,
-            "wings": 0,
-            "silver_ring": 0,
-            "gold_ring": 0,
-            "metaglio_left": 0,
-            "metaglio_right": 0
-        },
-        "garlic": {
-            "hollow_heart": 0,
-            "empty_tome": 1,
-            "bracer": 0,
-            "candelabrador": 1,
-            "clover": 0,
-            "spellbinder": 0,
-            "spinach": 1,
-            "pummarola": 0,
-            "attractorb": 0,
-            "armor": 0,
-            "duplicator": 0,
-            "crown": 0,
-            "tiragisu": 0,
-            "stone_mask": 0,
-            "skull_o_maniac": 0,
-            "wings": 0,
-            "silver_ring": 0,
-            "gold_ring": 0,
-            "metaglio_left": 0,
-            "metaglio_right": 0
-        },
-        "santa_water": {
-            "hollow_heart": 0,
-            "empty_tome": 1,
-            "bracer": 0,
-            "candelabrador": 1,
-            "clover": 0,
-            "spellbinder": 1,
-            "spinach": 1,
-            "pummarola": 0,
-            "attractorb": 0,
-            "armor": 0,
-            "duplicator": 1,
-            "crown": 0,
-            "tiragisu": 0,
-            "stone_mask": 0,
-            "skull_o_maniac": 0,
-            "wings": 0,
-            "silver_ring": 0,
-            "gold_ring": 0,
-            "metaglio_left": 0,
-            "metaglio_right": 0
-        },
-        "runetracer": {
-            "hollow_heart": 0,
-            "empty_tome": 1,
-            "bracer": 1,
-            "candelabrador": 1,
-            "clover": 0,
-            "spellbinder": 1,
-            "spinach": 1,
-            "pummarola": 0,
-            "attractorb": 0,
-            "armor": 0,
-            "duplicator": 1,
-            "crown": 0,
-            "tiragisu": 0,
-            "stone_mask": 0,
-            "skull_o_maniac": 0,
-            "wings": 0,
-            "silver_ring": 0,
-            "gold_ring": 0,
-            "metaglio_left": 0,
-            "metaglio_right": 0
-        },
-        "lightning_ring": {
-            "hollow_heart": 0,
-            "empty_tome": 1,
-            "bracer": 0,
-            "candelabrador": 1,
-            "clover": 0,
-            "spellbinder": 0,
-            "spinach": 1,
-            "pummarola": 0,
-            "attractorb": 0,
-            "armor": 0,
-            "duplicator": 1,
-            "crown": 0,
-            "tiragisu": 0,
-            "stone_mask": 0,
-            "skull_o_maniac": 0,
-            "wings": 0,
-            "silver_ring": 0,
-            "gold_ring": 0,
-            "metaglio_left": 0,
-            "metaglio_right": 0
-        },
-        "pentagram": {
-            "hollow_heart": 0,
-            "empty_tome": 1,
-            "bracer": 0,
-            "candelabrador": 0,
-            "clover": 1,
-            "spellbinder": 0,
-            "spinach": 0,
-            "pummarola": 0,
-            "attractorb": 0,
-            "armor": 0,
-            "duplicator": 0,
-            "crown": 0,
-            "tiragisu": 0,
-            "stone_mask": 0,
-            "skull_o_maniac": 0,
-            "wings": 0,
-            "silver_ring": 0,
-            "gold_ring": 0,
-            "metaglio_left": 0,
-            "metaglio_right": 0
-        },
-        "peachone": {
-            "hollow_heart": 0,
-            "empty_tome": 1,
-            "bracer": 1,
-            "candelabrador": 1,
-            "clover": 0,
-            "spellbinder": 1,
-            "spinach": 1,
-            "pummarola": 0,
-            "attractorb": 0,
-            "armor": 0,
-            "duplicator": 1,
-            "crown": 0,
-            "tiragisu": 0,
-            "stone_mask": 0,
-            "skull_o_maniac": 0,
-            "wings": 1,
-            "silver_ring": 0,
-            "gold_ring": 0,
-            "metaglio_left": 0,
-            "metaglio_right": 0
-        },
-        "ebony_wings": {
-            "hollow_heart": 0,
-            "empty_tome": 1,
-            "bracer": 1,
-            "candelabrador": 1,
-            "clover": 0,
-            "spellbinder": 1,
-            "spinach": 1,
-            "pummarola": 0,
-            "attractorb": 0,
-            "armor": 0,
-            "duplicator": 1,
-            "crown": 0,
-            "tiragisu": 0,
-            "stone_mask": 0,
-            "skull_o_maniac": 0,
-            "wings": 1,
-            "silver_ring": 0,
-            "gold_ring": 0,
-            "metaglio_left": 0,
-            "metaglio_right": 0
-        },
-        "phiera_der_tuphello": {
-            "hollow_heart": 0,
-            "empty_tome": 1,
-            "bracer": 1,
-            "candelabrador": 1,
-            "clover": 0,
-            "spellbinder": 0,
-            "spinach": 1,
-            "pummarola": 0,
-            "attractorb": 0,
-            "armor": 0,
-            "duplicator": 1,
-            "crown": 0,
-            "tiragisu": 0,
-            "stone_mask": 0,
-            "skull_o_maniac": 0,
-            "wings": 0,
-            "silver_ring": 0,
-            "gold_ring": 0,
-            "metaglio_left": 0,
-            "metaglio_right": 0
-        },
-        "eight_the_sparrow": {
-            "hollow_heart": 0,
-            "empty_tome": 1,
-            "bracer": 1,
-            "candelabrador": 1,
-            "clover": 0,
-            "spellbinder": 0,
-            "spinach": 1,
-            "pummarola": 0,
-            "attractorb": 0,
-            "armor": 0,
-            "duplicator": 1,
-            "crown": 0,
-            "tiragisu": 0,
-            "stone_mask": 0,
-            "skull_o_maniac": 0,
-            "wings": 0,
-            "silver_ring": 0,
-            "gold_ring": 0,
-            "metaglio_left": 0,
-            "metaglio_right": 0
-        },
-        "gatti_amari": {
-            "hollow_heart": 0,
-            "empty_tome": 1,
-            "bracer": 1,
-            "candelabrador": 1,
-            "clover": 1,
-            "spellbinder": 1,
-            "spinach": 1,
-            "pummarola": 0,
-            "attractorb": 0,
-            "armor": 0,
-            "duplicator": 1,
-            "crown": 0,
-            "tiragisu": 0,
-            "stone_mask": 0,
-            "skull_o_maniac": 0,
-            "wings": 0,
-            "silver_ring": 0,
-            "gold_ring": 0,
-            "metaglio_left": 0,
-            "metaglio_right": 0
-        },
-        "song_of_mana": {
-            "hollow_heart": 0,
-            "empty_tome": 1,
-            "bracer": 0,
-            "candelabrador": 1,
-            "clover": 0,
-            "spellbinder": 1,
-            "spinach": 1,
-            "pummarola": 0,
-            "attractorb": 0,
-            "armor": 0,
-            "duplicator": 0,
-            "crown": 0,
-            "tiragisu": 0,
-            "stone_mask": 0,
-            "skull_o_maniac": 0,
-            "wings": 0,
-            "silver_ring": 0,
-            "gold_ring": 0,
-            "metaglio_left": 0,
-            "metaglio_right": 0
-        },
-        "shadow_pinion": {
-            "hollow_heart": 0,
-            "empty_tome": 1,
-            "bracer": 1,
-            "candelabrador": 1,
-            "clover": 0,
-            "spellbinder": 1,
-            "spinach": 1,
-            "pummarola": 0,
-            "attractorb": 0,
-            "armor": 0,
-            "duplicator": 1,
-            "crown": 0,
-            "tiragisu": 0,
-            "stone_mask": 0,
-            "skull_o_maniac": 0,
-            "wings": 1,
-            "silver_ring": 0,
-            "gold_ring": 0,
-            "metaglio_left": 0,
-            "metaglio_right": 0
-        },
-        "clock_lancet": {
-            "hollow_heart": 0,
-            "empty_tome": 1,
-            "bracer": 0,
-            "candelabrador": 0,
-            "clover": 0,
-            "spellbinder": 1,
-            "spinach": 0,
-            "pummarola": 0,
-            "attractorb": 0,
-            "armor": 0,
-            "duplicator": 0,
-            "crown": 0,
-            "tiragisu": 0,
-            "stone_mask": 0,
-            "skull_o_maniac": 0,
-            "wings": 0,
-            "silver_ring": 0,
-            "gold_ring": 0,
-            "metaglio_left": 0,
-            "metaglio_right": 0
-        },
-        "laurel": {
-            "hollow_heart": 0,
-            "empty_tome": 1,
-            "bracer": 0,
-            "candelabrador": 0,
-            "clover": 0,
-            "spellbinder": 0,
-            "spinach": 0,
-            "pummarola": 0,
-            "attractorb": 0,
-            "armor": 0,
-            "duplicator": 0,
-            "crown": 0,
-            "tiragisu": 0,
-            "stone_mask": 0,
-            "skull_o_maniac": 0,
-            "wings": 0,
-            "silver_ring": 0,
-            "gold_ring": 0,
-            "metaglio_left": 0,
-            "metaglio_right": 0
-        },
-        "bone": {
-            "hollow_heart": 0,
-            "empty_tome": 1,
-            "bracer": 1,
-            "candelabrador": 1,
-            "clover": 0,
-            "spellbinder": 1,
-            "spinach": 1,
-            "pummarola": 0,
-            "attractorb": 0,
-            "armor": 0,
-            "duplicator": 1,
-            "crown": 0,
-            "tiragisu": 0,
-            "stone_mask": 0,
-            "skull_o_maniac": 0,
-            "wings": 0,
-            "silver_ring": 0,
-            "gold_ring": 0,
-            "metaglio_left": 0,
-            "metaglio_right": 0
-        },
-        "cherry_bomb": {
-            "hollow_heart": 0,
-            "empty_tome": 1,
-            "bracer": 1,
-            "candelabrador": 1,
-            "clover": 1,
-            "spellbinder": 1,
-            "spinach": 1,
-            "pummarola": 0,
-            "attractorb": 0,
-            "armor": 0,
-            "duplicator": 1,
-            "crown": 0,
-            "tiragisu": 0,
-            "stone_mask": 0,
-            "skull_o_maniac": 0,
-            "wings": 0,
-            "silver_ring": 0,
-            "gold_ring": 0,
-            "metaglio_left": 0,
-            "metaglio_right": 0
-        },
-        "carrello": {
-            "hollow_heart": 0,
-            "empty_tome": 1,
-            "bracer": 1,
-            "candelabrador": 1,
-            "clover": 0,
-            "spellbinder": 0,
-            "spinach": 1,
-            "pummarola": 0,
-            "attractorb": 0,
-            "armor": 0,
-            "duplicator": 1,
-            "crown": 0,
-            "tiragisu": 0,
-            "stone_mask": 0,
-            "skull_o_maniac": 0,
-            "wings": 0,
-            "silver_ring": 0,
-            "gold_ring": 0,
-            "metaglio_left": 0,
-            "metaglio_right": 0
-        },
-        "celestial_dusting": {
-            "hollow_heart": 0,
-            "empty_tome": 1,
-            "bracer": 0,
-            "candelabrador": 1,
-            "clover": 0,
-            "spellbinder": 1,
-            "spinach": 1,
-            "pummarola": 0,
-            "attractorb": 0,
-            "armor": 0,
-            "duplicator": 1,
-            "crown": 0,
-            "tiragisu": 0,
-            "stone_mask": 0,
-            "skull_o_maniac": 0,
-            "wings": 1,
-            "silver_ring": 0,
-            "gold_ring": 0,
-            "metaglio_left": 0,
-            "metaglio_right": 0
-        },
-        "bloody_tear": {
-            "hollow_heart": 0,
-            "empty_tome": 1,
-            "bracer": 0,
-            "candelabrador": 1,
-            "clover": 1,
-            "spellbinder": 0,
-            "spinach": 1,
-            "pummarola": 0,
-            "attractorb": 0,
-            "armor": 0,
-            "duplicator": 1,
-            "crown": 0,
-            "tiragisu": 0,
-            "stone_mask": 0,
-            "skull_o_maniac": 0,
-            "wings": 0,
-            "silver_ring": 0,
-            "gold_ring": 0,
-            "metaglio_left": 0,
-            "metaglio_right": 0
-        },
-        "holy_wand": {
-            "hollow_heart": 0,
-            "empty_tome": 1,
-            "bracer": 1,
-            "candelabrador": 1,
-            "clover": 0,
-            "spellbinder": 0,
-            "spinach": 1,
-            "pummarola": 0,
-            "attractorb": 0,
-            "armor": 0,
-            "duplicator": 1,
-            "crown": 0,
-            "tiragisu": 0,
-            "stone_mask": 0,
-            "skull_o_maniac": 0,
-            "wings": 0,
-            "silver_ring": 0,
-            "gold_ring": 0,
-            "metaglio_left": 0,
-            "metaglio_right": 0
-        },
-        "thousand_edge": {
-            "hollow_heart": 0,
-            "empty_tome": 1,
-            "bracer": 1,
-            "candelabrador": 1,
-            "clover": 0,
-            "spellbinder": 0,
-            "spinach": 1,
-            "pummarola": 0,
-            "attractorb": 0,
-            "armor": 0,
-            "duplicator": 1,
-            "crown": 0,
-            "tiragisu": 0,
-            "stone_mask": 0,
-            "skull_o_maniac": 0,
-            "wings": 0,
-            "silver_ring": 0,
-            "gold_ring": 0,
-            "metaglio_left": 0,
-            "metaglio_right": 0
-        },
-        "death_spiral": {
-            "hollow_heart": 0,
-            "empty_tome": 1,
-            "bracer": 1,
-            "candelabrador": 1,
-            "clover": 1,
-            "spellbinder": 0,
-            "spinach": 1,
-            "pummarola": 0,
-            "attractorb": 0,
-            "armor": 0,
-            "duplicator": 1,
-            "crown": 0,
-            "tiragisu": 0,
-            "stone_mask": 0,
-            "skull_o_maniac": 0,
-            "wings": 0,
-            "silver_ring": 0,
-            "gold_ring": 0,
-            "metaglio_left": 0,
-            "metaglio_right": 0
-        },
-        "heaven_sword": {
-            "hollow_heart": 0,
-            "empty_tome": 1,
-            "bracer": 1,
-            "candelabrador": 1,
-            "clover": 1,
-            "spellbinder": 0,
-            "spinach": 1,
-            "pummarola": 0,
-            "attractorb": 0,
-            "armor": 0,
-            "duplicator": 1,
-            "crown": 0,
-            "tiragisu": 0,
-            "stone_mask": 0,
-            "skull_o_maniac": 0,
-            "wings": 0,
-            "silver_ring": 0,
-            "gold_ring": 0,
-            "metaglio_left": 0,
-            "metaglio_right": 0
-        },
-        "unholy_vespers": {
-            "hollow_heart": 0,
-            "empty_tome": 1,
-            "bracer": 1,
-            "candelabrador": 1,
-            "clover": 1,
-            "spellbinder": 0,
-            "spinach": 1,
-            "pummarola": 0,
-            "attractorb": 0,
-            "armor": 0,
-            "duplicator": 1,
-            "crown": 0,
-            "tiragisu": 0,
-            "stone_mask": 0,
-            "skull_o_maniac": 0,
-            "wings": 0,
-            "silver_ring": 0,
-            "gold_ring": 0,
-            "metaglio_left": 0,
-            "metaglio_right": 0
-        },
-        "hellfire": {
-            "hollow_heart": 0,
-            "empty_tome": 1,
-            "bracer": 1,
-            "candelabrador": 1,
-            "clover": 0,
-            "spellbinder": 0,
-            "spinach": 1,
-            "pummarola": 0,
-            "attractorb": 0,
-            "armor": 0,
-            "duplicator": 1,
-            "crown": 0,
-            "tiragisu": 0,
-            "stone_mask": 0,
-            "skull_o_maniac": 0,
-            "wings": 0,
-            "silver_ring": 0,
-            "gold_ring": 0,
-            "metaglio_left": 0,
-            "metaglio_right": 0
-        },
-        "soul_eater": {
-            "hollow_heart": 0,
-            "empty_tome": 1,
-            "bracer": 0,
-            "candelabrador": 1,
-            "clover": 0,
-            "spellbinder": 0,
-            "spinach": 1,
-            "pummarola": 1,
-            "attractorb": 0,
-            "armor": 0,
-            "duplicator": 0,
-            "crown": 0,
-            "tiragisu": 0,
-            "stone_mask": 0,
-            "skull_o_maniac": 0,
-            "wings": 0,
-            "silver_ring": 0,
-            "gold_ring": 0,
-            "metaglio_left": 0,
-            "metaglio_right": 0
-        },
-        "la_borra": {
-            "hollow_heart": 0,
-            "empty_tome": 1,
-            "bracer": 1,
-            "candelabrador": 1,
-            "clover": 0,
-            "spellbinder": 1,
-            "spinach": 1,
-            "pummarola": 0,
-            "attractorb": 0,
-            "armor": 0,
-            "duplicator": 1,
-            "crown": 0,
-            "tiragisu": 0,
-            "stone_mask": 0,
-            "skull_o_maniac": 0,
-            "wings": 1,
-            "silver_ring": 0,
-            "gold_ring": 0,
-            "metaglio_left": 0,
-            "metaglio_right": 0
-        },
-        "no_future": {
-            "hollow_heart": 0,
-            "empty_tome": 1,
-            "bracer": 1,
-            "candelabrador": 1,
-            "clover": 0,
-            "spellbinder": 1,
-            "spinach": 1,
-            "pummarola": 0,
-            "attractorb": 0,
-            "armor": 0,
-            "duplicator": 1,
-            "crown": 0,
-            "tiragisu": 0,
-            "stone_mask": 0,
-            "skull_o_maniac": 0,
-            "wings": 0,
-            "silver_ring": 0,
-            "gold_ring": 0,
-            "metaglio_left": 0,
-            "metaglio_right": 0
-        },
-        "thunder_loop": {
-            "hollow_heart": 0,
-            "empty_tome": 1,
-            "bracer": 0,
-            "candelabrador": 1,
-            "clover": 0,
-            "spellbinder": 0,
-            "spinach": 1,
-            "pummarola": 0,
-            "attractorb": 0,
-            "armor": 0,
-            "duplicator": 1,
-            "crown": 0,
-            "tiragisu": 0,
-            "stone_mask": 0,
-            "skull_o_maniac": 0,
-            "wings": 0,
-            "silver_ring": 0,
-            "gold_ring": 0,
-            "metaglio_left": 0,
-            "metaglio_right": 0
-        },
-        "gorgeous_moon": {
-            "hollow_heart": 0,
-            "empty_tome": 1,
-            "bracer": 0,
-            "candelabrador": 0,
-            "clover": 0,
-            "spellbinder": 0,
-            "spinach": 0,
-            "pummarola": 0,
-            "attractorb": 0,
-            "armor": 0,
-            "duplicator": 0,
-            "crown": 0,
-            "tiragisu": 0,
-            "stone_mask": 0,
-            "skull_o_maniac": 0,
-            "wings": 0,
-            "silver_ring": 0,
-            "gold_ring": 0,
-            "metaglio_left": 0,
-            "metaglio_right": 0
-        },
-        "vandalier": {
-            "hollow_heart": 0,
-            "empty_tome": 1,
-            "bracer": 1,
-            "candelabrador": 1,
-            "clover": 0,
-            "spellbinder": 1,
-            "spinach": 1,
-            "pummarola": 0,
-            "attractorb": 0,
-            "armor": 0,
-            "duplicator": 1,
-            "crown": 0,
-            "tiragisu": 0,
-            "stone_mask": 0,
-            "skull_o_maniac": 0,
-            "wings": 1,
-            "silver_ring": 0,
-            "gold_ring": 0,
-            "metaglio_left": 0,
-            "metaglio_right": 0
-        },
-        "phieraggi": {
-            "hollow_heart": 0,
-            "empty_tome": 1,
-            "bracer": 1,
-            "candelabrador": 1,
-            "clover": 0,
-            "spellbinder": 0,
-            "spinach": 1,
-            "pummarola": 0,
-            "attractorb": 0,
-            "armor": 0,
-            "duplicator": 1,
-            "crown": 0,
-            "tiragisu": 1,
-            "stone_mask": 0,
-            "skull_o_maniac": 0,
-            "wings": 0,
-            "silver_ring": 0,
-            "gold_ring": 0,
-            "metaglio_left": 0,
-            "metaglio_right": 0
-        },
-        "vicious_hunger": {
-            "hollow_heart": 0,
-            "empty_tome": 1,
-            "bracer": 1,
-            "candelabrador": 1,
-            "clover": 1,
-            "spellbinder": 1,
-            "spinach": 1,
-            "pummarola": 0,
-            "attractorb": 0,
-            "armor": 0,
-            "duplicator": 1,
-            "crown": 0,
-            "tiragisu": 0,
-            "stone_mask": 0,
-            "skull_o_maniac": 0,
-            "wings": 0,
-            "silver_ring": 0,
-            "gold_ring": 0,
-            "metaglio_left": 0,
-            "metaglio_right": 0
-        },
-        "mannajja": {
-            "hollow_heart": 0,
-            "empty_tome": 1,
-            "bracer": 0,
-            "candelabrador": 1,
-            "clover": 0,
-            "spellbinder": 1,
-            "spinach": 1,
-            "pummarola": 0,
-            "attractorb": 0,
-            "armor": 0,
-            "duplicator": 0,
-            "crown": 0,
-            "tiragisu": 0,
-            "stone_mask": 0,
-            "skull_o_maniac": 0,
-            "wings": 0,
-            "silver_ring": 0,
-            "gold_ring": 0,
-            "metaglio_left": 0,
-            "metaglio_right": 0
-        },
-        "valkyrie_turner": {
-            "hollow_heart": 0,
-            "empty_tome": 1,
-            "bracer": 1,
-            "candelabrador": 1,
-            "clover": 0,
-            "spellbinder": 1,
-            "spinach": 1,
-            "pummarola": 0,
-            "attractorb": 0,
-            "armor": 0,
-            "duplicator": 1,
-            "crown": 0,
-            "tiragisu": 0,
-            "stone_mask": 0,
-            "skull_o_maniac": 0,
-            "wings": 1,
-            "silver_ring": 0,
-            "gold_ring": 0,
-            "metaglio_left": 0,
-            "metaglio_right": 0
-        },
-        "infinite_corridor": {
-            "hollow_heart": 0,
-            "empty_tome": 1,
-            "bracer": 0,
-            "candelabrador": 0,
-            "clover": 0,
-            "spellbinder": 1,
-            "spinach": 0,
-            "pummarola": 0,
-            "attractorb": 0,
-            "armor": 0,
-            "duplicator": 0,
-            "crown": 0,
-            "tiragisu": 0,
-            "stone_mask": 0,
-            "skull_o_maniac": 0,
-            "wings": 0,
-            "silver_ring": 0,
-            "gold_ring": 0,
-            "metaglio_left": 0,
-            "metaglio_right": 0
-        },
-        "crimson_shroud": {
-            "hollow_heart": 0,
-            "empty_tome": 1,
-            "bracer": 0,
-            "candelabrador": 1,
-            "clover": 0,
-            "spellbinder": 0,
-            "spinach": 1,
-            "pummarola": 0,
-            "attractorb": 0,
-            "armor": 1,
-            "duplicator": 0,
-            "crown": 0,
-            "tiragisu": 0,
-            "stone_mask": 0,
-            "skull_o_maniac": 0,
-            "wings": 0,
-            "silver_ring": 0,
-            "gold_ring": 0,
-            "metaglio_left": 0,
-            "metaglio_right": 0
-        }
-    },
-    "labels": {
-        "armor": "Armor",
-        "attractorb": "Attractorb",
-        "axe": "Axe",
-        "bloody_tear": "Bloody Tear",
-        "bone": "Bone",
-        "bracer": "Bracer",
-        "candelabrador": "Candelabrado",
-        "carrello": "Carréllo",
-        "celestial_dusting": "Celestial Dusting",
-        "cherry_bomb": "Cherry Bomb",
-        "clock_lancet": "Clock Lancet",
-        "clover": "Clover",
-        "cross": "Cross",
-        "crown": "Crown",
-        "death_spiral": "Death Spiral",
-        "duplicator": "Duplicator",
-        "ebony_wings": "Ebony Wings",
-        "eight_the_sparrow": "Eight The Sparrow",
-        "empty_tome": "Empty Tome",
-        "fire_wand": "Fire Wand",
-        "garlic": "Garlic",
-        "gatti_amari": "Gatti Amari",
-        "gorgeous_moon": "Gorgeous Moon",
-        "heaven_sword": "Heaven Sword",
-        "hellfire": "Hellfire",
-        "hollow_heart": "Hollow Heart",
-        "holy_wand": "Holy Wand",
-        "king_bible": "King Bible",
-        "knife": "Knife",
-        "la_borra": "La Borra",
-        "laurel": "Laurel",
-        "lightning_ring": "Lightning Ring",
-        "magic_wand": "Magic Wand",
-        "mannajja": "Mannajja",
-        "no_future": "NO FUTURE",
-        "peachone": "Peachone",
-        "pentagram": "Pentagram",
-        "phiera_der_tuphello": "Phiera Der Tuphello",
-        "phieraggi": "Phieraggi",
-        "pummarola": "Pummarola",
-        "runetracer": "Runetracer",
-        "santa_water": "Santa Water",
-        "shadow_pinion": "Shadow Pinion",
-        "skull_o_maniac": "Skull O'Maniac",
-        "song_of_mana": "Song Of Mana",
-        "soul_eater": "Soul Eater",
-        "spellbinder": "Spellbinder",
-        "spinach": "Spinach",
-        "stone_mask": "Stone Mask",
-        "thousand_edge": "Thoushand Edge",
-        "thunder_loop": "Thunder Loop",
-        "tiragisu": "Tiragisú",
-        "unholy_vespers": "Unholy Vespers",
-        "valkyrie_turner": "Valkyrie Turner",
-        "vandalier": "Vandalier",
-        "vicious_hunger": "Vicious Hunger",
-        "whip": "Whip",
-        "wings": "Wings",
-        "metaglio_left": "Metaglio Left",
-        "metaglio_right": "Metaglio Right",
-        "silver_ring": "Silver Ring",
-        "gold_ring": "Gold Ring",
-        "crimson_shroud": "Crimson Shroud",
-        "infinite_corridor": "Infinite Corridor"
     }
 }

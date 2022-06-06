@@ -27,157 +27,180 @@
                 <h1>Combo Builder</h1>
 
                 <p>
-                    Drag weapons and items from the right to the left. Then, click the blue <i>Generate</i> button.
+                    Drag weapons and items from the right to the left. Click on an entity from the collection to (un)ban it. Then, click the blue <i>Generate</i> button.
                 </p>
+            
+            </div>
+        
+        </div>
 
-                <div class="highlight_box">
+        <div class="container">
 
-                    <div class="flex-row">
-                        <div class="inventory">
+            <div class="highlight_box">
+
+                <div class="flex-row">
+
+                    <div id="build" style="flex-shrink: 0;">
+                        <div>
                             <div>
-                                <div>
-                                    <b>Weapons</b><span class="popover popover-right"><span class="infobox">?</span>
-                                        <div class="popover-container">
-                                            Put weapons here to force the generator to choose them. Base weapons can be
-                                            replaced
-                                            by their evolved version.
-                                        </div>
-                                    </span>
-                                </div>
-                                <div class="inventory-row inventory-weapons">
-                                    <div class="inventory-cell"></div>
-                                    <div class="inventory-cell"></div>
-                                    <div class="inventory-cell"></div>
-                                    <div class="inventory-cell"></div>
-                                    <div class="inventory-cell"></div>
-                                    <div class="inventory-cell"></div>
-                                </div>
+                                <b>Weapons</b><span class="popover popover-right"><span class="infobox">?</span>
+                                    <div class="popover-container">
+                                        Put <b>weapons</b> here to force the generator to choose them. Base weapons can be
+                                        replaced
+                                        by their evolved version.
+                                    </div>
+                                </span>
                             </div>
-                            <div>
-                                <div>
-                                    <b>Items</b><span class="popover popover-right"><span class="infobox">?</span>
-                                        <div class="popover-container">
-                                            Put items here to force the generator to choose them.
-                                        </div>
-                                    </span>
-                                </div>
-                                <div class="inventory-row inventory-items">
-                                    <div class="inventory-cell"></div>
-                                    <div class="inventory-cell"></div>
-                                    <div class="inventory-cell"></div>
-                                    <div class="inventory-cell"></div>
-                                    <div class="inventory-cell"></div>
-                                    <div class="inventory-cell"></div>
-                                </div>
-                                <div>
-                                    <b>Stage Items</b><span class="popover popover-right"><span class="infobox">?</span>
-                                        <div class="popover-container">
-                                            On each normal stage, certain items spawn on the map.
-                                            Picking them up once the item inventory is full will add them as extras,
-                                            allowing the player to carry more than 6 items.
-                                            <dl>
-                                                <dt>Mad Forest</dt>
-                                                <dd>Spinach, Hollow Heart, Pummarola, Clover, Skull O'Maniac</dd>
-                                                <dt>Inlaid Library</dt>
-                                                <dd>Stone Mask, Empty Tome</dd>
-                                                <dt>Dairy Plant</dt>
-                                                <dd>Attractorb, Candelabrador, Wings, Armor</dd>
-                                                <dt>Gallo Tower</dt>
-                                                <dd>Bracer, Spellbinder</dd>
-                                            </dl>
-                                            Put items here to force the generator to choose them. Only put items you
-                                            plan to
-                                            pick up after you filled your item inventory.
-                                            <br>
-                                            <i>If unlocked, every stage should have a Silver Ring, a Gold Ring, a Metaglio Left and a Metaglio Right.</i>
-                                        </div>
-                                    </span>
-                                </div>
-                                <div class="inventory-row inventory-bonus-items">
-                                    <div class="inventory-cell"></div>
-                                    <div class="inventory-cell"></div>
-                                    <div class="inventory-cell"></div>
-                                    <div class="inventory-cell"></div>
-                                    <div class="inventory-cell"></div>
-                                    <div class="inventory-cell"></div>
-                                </div>
-                            </div>
-                            <div>
-                                <div>
-                                    <b>Ban</b><span class="popover popover-right"><span class="infobox">?</span>
-                                        <div class="popover-container">
-                                            Put weapons or items here to prevent the generator from choosing them.
-                                        </div>
-                                    </span>
-                                </div>
-                                <div class="inventory-row inventory-row-ban">
-                                    <div class="inventory-cell"></div>
-                                    <div class="inventory-cell"></div>
-                                    <div class="inventory-cell"></div>
-                                    <div class="inventory-cell"></div>
-                                    <div class="inventory-cell"></div>
-                                    <div class="inventory-cell"></div>
-                                    <div class="inventory-cell"></div>
-                                    <div class="inventory-cell"></div>
-                                    <div class="inventory-cell"></div>
-                                    <div class="inventory-cell"></div>
-                                    <div class="inventory-cell"></div>
-                                    <div class="inventory-cell"></div>
-                                </div>
+                            <div class="entity-row" entity-type="weapon" build-type="weapons">
+                                <div class="entity-cell"></div>
+                                <div class="entity-cell"></div>
+                                <div class="entity-cell"></div>
+                                <div class="entity-cell"></div>
+                                <div class="entity-cell"></div>
+                                <div class="entity-cell"></div>
                             </div>
                         </div>
-
-                        <div class="layout-column" style="width: 468px">
-                            <b>Base weapons</b>
-                            <div class="item-list list-weapons-base"></div>
-                            <b>Evolved weapons</b>
-                            <div class="item-list list-weapons-evolved"></div>
-                            <b>Items</b>
-                            <div class="item-list list-items"></div>
+                        <div>
+                            <div>
+                                <b>Items</b><span class="popover popover-right"><span class="infobox">?</span>
+                                    <div class="popover-container">
+                                        Put <b>items</b> here to force the generator to choose them.
+                                    </div>
+                                </span>
+                            </div>
+                            <div class="entity-row" entity-type="item" build-type="items">
+                                <div class="entity-cell"></div>
+                                <div class="entity-cell"></div>
+                                <div class="entity-cell"></div>
+                                <div class="entity-cell"></div>
+                                <div class="entity-cell"></div>
+                                <div class="entity-cell"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <b>Arcanas</b><span class="popover popover-right"><span class="infobox">?</span>
+                                    <div class="popover-container">
+                                        Put <b>arcanas</b> here to force the generator to choose them.
+                                    </div>
+                                </span>
+                            </div>
+                            <div class="entity-row" entity-type="arcana" build-type="arcanas">
+                                <div class="entity-cell"></div>
+                                <div class="entity-cell"></div>
+                                <div class="entity-cell"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <b>Stage Items</b><span class="popover popover-right"><span class="infobox">?</span>
+                                    <div class="popover-container">
+                                        On each normal stage, certain items spawn on the map.
+                                        Picking them up once the item inventory is full will add them as extras,
+                                        allowing the player to carry more than 6 items.
+                                        Put items here to force the generator to choose them. Only put items you
+                                        plan to pick up after you filled your item inventory.
+                                    </div>
+                                </span>
+                            </div>
+                            <div class="entity-row" entity-type="item" build-type="stage_items">
+                                <div class="entity-cell"></div>
+                                <div class="entity-cell"></div>
+                                <div class="entity-cell"></div>
+                                <div class="entity-cell"></div>
+                                <div class="entity-cell"></div>
+                                <div class="entity-cell"></div>
+                                <div class="entity-cell"></div>
+                                <div class="entity-cell"></div>
+                                <div class="entity-cell"></div>
+                                <div class="entity-cell"></div>
+                                <div class="entity-cell"></div>
+                                <div class="entity-cell"></div>
+                                <div class="entity-cell"></div>
+                                <div class="entity-cell"></div>
+                                <div class="entity-cell"></div>
+                                <div class="entity-cell"></div>
+                                <div class="entity-cell"></div>
+                                <div class="entity-cell"></div>
+                                <div class="entity-cell"></div>
+                                <div class="entity-cell"></div>
+                            </div>
+                            <div class="mt-1">
+                                <select name="stage">
+                                    <option>Mad Forest</option>
+                                    <option>Inlaid Library</option>
+                                    <option>Dairy Plant</option>
+                                    <option>Gallo Tower</option>
+                                    <option>Holy Forbidden</option>
+                                    <option>Il Molise</option>
+                                    <option>Moongolow</option>
+                                    <option>Green Acres</option>
+                                    <option>The Bone Zone</option>
+                                </select>
+                                <div id="btn-load-stage" class="button button-blue">Load</div>
+                            </div>
                         </div>
                     </div>
-                    
-                    <br>
 
-                    <div class="text-center">
-                        Combos: <span id="combo-score" class="label">0</span> <span class="popover popover-right"><span
-                                class="infobox">?</span>
-                            <div class="popover-container text-left">
-                                This is the total number of interactions between weapons and items in the inventory,
-                                which
-                                is maximized by the generator.
-                                All possible interactions are listed on the <a
-                                    href="https://vampire-survivors.fandom.com/wiki/Combos">wiki</a>.
-                            </div>
-                        </span>
-                    </div>
-
-                    <p>
-                    <div style="display: flex; justify-content: center;">
-                        <span style="width: 114px; text-align: right">Combos </span>
-                        <input id="config-coef" class="slider" style="width: 84px" type="range" min="1" max="3"
-                            value="2" />
-                        <span style="width: 114px;"> Evolutions</span>
-                        <span class="popover popover-right"><span class="infobox">?</span>
-                            <div class="popover-container text-left">
-                                Evolving a weapon may change its interactions with items.
-                                Thus we have to balance between maximizing evolutions or maximizing combos.
-                                This cursor allows you to choose between <i>combo first</i>, <i>evolution first</i> or
-                                <i>2
-                                    combos for 1 evolution</i> priority modes.
-                            </div>
-                        </span>
-                    </div>
-                    </p>
-
-                    <div class="commands">
-                        <div class="button button-blue" id="button-generate" title="Fill current inventory">Generate</div>
-                         
-                        <div class="button button-red" id="button-clear" title="Go back to the previous config">Clear</div>
-                         
-                        <div class="button button-red" id="button-reset" title="Empty current inventory">Reset</div>
+                    <div class="layout-column" id="collection">
+                        <b>Base weapons</b>
+                        <div class="entity-row" collection-type="basic_weapons"></div>
+                        <b>Evolved weapons</b>
+                        <div class="entity-row" collection-type="evolved_weapons"></div>
+                        <b>Items</b>
+                        <div class="entity-row" collection-type="items"></div>
+                        <b>Arcanas</b>
+                        <div class="entity-row" collection-type="arcanas"></div>
                     </div>
                 </div>
+                
+                <br>
+
+                <div class="text-center">
+                    Combos: <span id="combo-score" class="label">0</span> <span class="popover popover-right"><span
+                            class="infobox">?</span>
+                        <div class="popover-container text-left">
+                            This is the total number of interactions between weapons and items in the inventory,
+                            which
+                            is maximized by the generator.
+                            All possible interactions are listed on the <a
+                                href="https://vampire-survivors.fandom.com/wiki/Combos">wiki</a>.
+                        </div>
+                    </span>
+                </div>
+
+                <p>
+                <div style="display: flex; justify-content: center;">
+                    <span style="width: 114px; text-align: right">Combos </span>
+                    <input id="config-coef" class="slider" style="width: 84px" type="range" min="1" max="3"
+                        value="2" />
+                    <span style="width: 114px;"> Evolutions</span>
+                    <span class="popover popover-right"><span class="infobox">?</span>
+                        <div class="popover-container text-left">
+                            Evolving a weapon may change its interactions with items.
+                            Thus we have to balance between maximizing evolutions or maximizing combos.
+                            This cursor allows you to choose between <i>combo first</i>, <i>evolution first</i> or
+                            <i>2
+                                combos for 1 evolution</i> priority modes.
+                        </div>
+                    </span>
+                </div>
+                </p>
+
+                <div id="commands">
+                    <div class="button button-blue" id="button-generate" title="Fill current build">Generate</div>
+                     
+                    <div class="button button-red" id="button-clear" title="Go back to the previous config">Clear</div>
+                     
+                    <div class="button button-red" id="button-reset" title="Empty current build">Reset</div>
+                </div>
+            </div>
+        
+        </div>
+
+        <div class="columns">
+
+            <div class="column col-6 col-xl-10 col-lg-12 col-md-12 col-sm-12 col-xs-12 container">
 
                 <h2>About the generator</h2>
 
@@ -206,6 +229,31 @@
                         <span class="text-bold">This generator produces optimal builds, regarding two criteria: combos
                             and evolutions.</span> Any other criterion (DPS, rarity, character, …) is ignored.
                     </p>
+                </div>
+
+                <h2>Changelog</h2>
+
+                <div class="highlight_box">
+                    <dl>
+                        <dt>June 6, 2022</dt>
+                        <dd>Added arcanas. Stage-only items (such as Metaglio) are not picked up if not manually specified. Enhanced ban UI. Added stage items auto filler.</dd>
+                        <dt>May 31, 2022</dt>
+                        <dd>Added weapons and items from v0.6.660: Infinite Corridor, Crimson Shroud, Silver Ring, Gold Ring, Metaglio Left and Metaglio Right.</dd>
+                        <dt>May 18, 2022</dt>
+                        <dd>Initial release.</dd>
+                    </dl>
+                </div>
+
+                <h2>Upcoming Features</h2>
+
+                <div class="highlight_box">
+                    <ul>
+                        <li>Display additional build info (overall rarity, levels required, etc.)</li>
+                        <li>Display satisfied combos on the user interface</li>
+                        <li>Allow for rarity optimization</li>
+                        <li>Add sound effects and animations (especially while waiting for the generator to work)</li>
+                        <li>General UI improvements</li>
+                    </ul>
                 </div>
 
                 <br>

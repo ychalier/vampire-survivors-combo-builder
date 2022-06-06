@@ -27,14 +27,17 @@ body {
     justify-content: space-between;
 }
 
-.inventory-row {
+.entity-row {
     display: flex;
     flex-direction: row;
-    max-width: 312px;
     flex-wrap: wrap;
 }
 
-.inventory-cell {
+#build .entity-row {
+    max-width: 312px;
+}
+
+.entity-cell {
     width: 48px;
     height: 48px;
     background: url("assets/inventory.png");
@@ -46,7 +49,17 @@ body {
     user-select: none;
 }
 
-.inventory-item {
+#collection .entity-cell {
+    cursor: pointer;
+}
+
+.entity-cell.disabled {
+    filter: grayscale(100%);
+    opacity: 0.8;
+}
+
+.entity {
+    max-height: 16px;
     transform: scale(2);
 }
 
@@ -78,15 +91,9 @@ body {
     background: url("assets/button_red_pressed.png");
 }
 
-.commands {
+#commands {
     display: flex;
     justify-content: center;
-}
-
-.item-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
 }
 
 .bg-dark a {
@@ -119,4 +126,15 @@ body {
     padding: .8rem;
     border-radius: .2rem;
     background: #000000b0;
+}
+
+select {
+    background: #000000b0;
+    border: none;
+    padding: .4rem;
+    border-radius: .4rem;
+}
+
+select ~ .button {
+    display: inline-block;
 }
