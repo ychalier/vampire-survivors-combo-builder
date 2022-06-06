@@ -14,17 +14,28 @@ function removeEntityFromArray(array, entity) {
 }
 
 function createEntityImage(entity) {
+    let container = document.createElement("div");
+    container.className = "popover popover-bottom entity";
     let image = document.createElement("img");
     image.src = `./sprites/${entity.type}/${entity.slug}.png`;
-    image.className = "entity";
     image.draggable = true;
-    image.title = entity.label;
+    container.title = entity.label;
     image.setAttribute("type", entity.type);
     image.setAttribute("slug", entity.slug);
     image.addEventListener("dragstart", (event => {
         event.dataTransfer.setData("text/plain", entity.slug);
     }));
-    return image;
+    container.appendChild(image);
+    if (entity.type == "arcana") {
+        let popover = document.createElement("div");
+        popover.className = "popover-container text-center";
+        let popover_image = document.createElement("img");
+        popover_image.src = `./sprites/${entity.type}/${entity.slug}.png`;
+        popover_image.style.transform = "scale(2) translateY(25%)";
+        popover.appendChild(popover_image);
+        container.appendChild(popover);
+    }
+    return container;
 }
 
 function inflateBuildRow(row, entities) {
@@ -62,13 +73,26 @@ class Collection {
         });
     }
 
-    inflateRow(container, entities) {
+    inflateRow(container, entities, addPopover) {
         container.innerHTML = "";
         entities.forEach(entity => {
             let image = createEntityImage(entity);
             let cell = document.createElement("div");
             cell.className = "entity-cell";
             cell.appendChild(image);
+            /*
+            if (addPopover) {
+                cell.classList.add("popover");
+                cell.classList.add("popover-bottom");
+                let popover_container = document.createElement("div");
+                popover_container.className = "popover-container text-center";
+                let popover_image = document.createElement("img");
+                popover_image.src = `./sprites/${entity.type}/${entity.slug}.png`;
+                popover_image.style.transform = "scale(2) translateY(25%)";
+                popover_container.appendChild(popover_image);
+                cell.appendChild(popover_container);
+            }
+            */
             container.appendChild(cell);
             cell.addEventListener("click", () => {
                 if (cell.classList.contains("disabled")) {
@@ -81,10 +105,10 @@ class Collection {
     }
 
     inflate() {
-        this.inflateRow(document.querySelector(".entity-row[collection-type='basic_weapons']"), this.weapons.basic);
-        this.inflateRow(document.querySelector(".entity-row[collection-type='evolved_weapons']"), this.weapons.evolved);
-        this.inflateRow(document.querySelector(".entity-row[collection-type='items']"), this.items);
-        this.inflateRow(document.querySelector(".entity-row[collection-type='arcanas']"), this.arcanas);
+        this.inflateRow(document.querySelector(".entity-row[collection-type='basic_weapons']"), this.weapons.basic, false);
+        this.inflateRow(document.querySelector(".entity-row[collection-type='evolved_weapons']"), this.weapons.evolved, false);
+        this.inflateRow(document.querySelector(".entity-row[collection-type='items']"), this.items, false);
+        this.inflateRow(document.querySelector(".entity-row[collection-type='arcanas']"), this.arcanas, true);
     }
 }
 

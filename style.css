@@ -59,6 +59,14 @@ body {
 }
 
 .entity {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.entity > img {
     max-height: 16px;
     transform: scale(2);
 }
@@ -137,4 +145,12 @@ select {
 
 select ~ .button {
     display: inline-block;
+}
+
+#build {
+    max-width: 312px;
+}
+
+#collection {
+    max-width: 624px;
 }
