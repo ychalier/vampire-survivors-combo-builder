@@ -2,6 +2,7 @@ import GLPK from './glpk.js';
 
 const DATA_URL = "data.json";
 var glpk;
+var CURRENT_CONFIGURATION = null;
 var PREVIOUS_CONFIGURATION = null;
 
 function removeEntityFromArray(array, entity) {
@@ -140,6 +141,12 @@ class Configuration {
         aux.weights.combos = this.weights.combos;
         aux.weights.evolutions = this.weights.evolutions;
         return aux;
+    }
+
+    import(other) {
+        this.build = other.build;
+        this.ban = other.ban;
+        this.weights = other.weights;
     }
 
     read() {
@@ -734,10 +741,11 @@ function setupCommands(collection, configuration) {
     });
 
     document.getElementById("button-clear").addEventListener("click", () => {
-       configuration = PREVIOUS_CONFIGURATION.copy();
-       configuration.inflate();
+        if (PREVIOUS_CONFIGURATION != null) {
+            configuration.import(PREVIOUS_CONFIGURATION);
+            configuration.inflate();
+        }
     });
-
 
     document.getElementById("button-generate").addEventListener("click", () => {
         configuration.read();
