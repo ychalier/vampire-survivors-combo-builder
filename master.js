@@ -22,6 +22,7 @@ function createEntityImage(entity) {
     container.title = entity.label;
     image.setAttribute("type", entity.type);
     image.setAttribute("slug", entity.slug);
+    container.setAttribute("slug", entity.slug);
     image.addEventListener("dragstart", (event => {
         event.dataTransfer.setData("text/plain", entity.slug);
     }));
