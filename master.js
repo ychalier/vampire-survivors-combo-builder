@@ -55,6 +55,7 @@ class Collection {
         this.arcanas = data.arcanas;
         this.items = data.items;
         this.weapons = data.weapons;
+        this.stages = data.stages;
         this.entities = {};
         this.banned = [];
         this.arcanas.forEach(entity => {
@@ -75,26 +76,13 @@ class Collection {
         });
     }
 
-    inflateRow(container, entities, addPopover) {
+    inflateRow(container, entities) {
         container.innerHTML = "";
         entities.forEach(entity => {
             let image = createEntityImage(entity);
             let cell = document.createElement("div");
             cell.className = "entity-cell";
             cell.appendChild(image);
-            /*
-            if (addPopover) {
-                cell.classList.add("popover");
-                cell.classList.add("popover-bottom");
-                let popover_container = document.createElement("div");
-                popover_container.className = "popover-container text-center";
-                let popover_image = document.createElement("img");
-                popover_image.src = `./sprites/${entity.type}/${entity.slug}.png`;
-                popover_image.style.transform = "scale(2) translateY(25%)";
-                popover_container.appendChild(popover_image);
-                cell.appendChild(popover_container);
-            }
-            */
             container.appendChild(cell);
             cell.addEventListener("click", () => {
                 if (cell.classList.contains("disabled")) {
@@ -111,6 +99,13 @@ class Collection {
         this.inflateRow(document.querySelector(".entity-row[collection-type='evolved_weapons']"), this.weapons.evolved, false);
         this.inflateRow(document.querySelector(".entity-row[collection-type='items']"), this.items, false);
         this.inflateRow(document.querySelector(".entity-row[collection-type='arcanas']"), this.arcanas, true);
+        let stageSelect = document.querySelector("select[name='stage']");
+        this.stages.forEach(stage => {
+            let option = document.createElement("option");
+            option.value = stage.slug;
+            option.textContent = stage.label;
+            stageSelect.appendChild(option);
+        });
     }
 }
 
@@ -456,6 +451,8 @@ class Model {
                 name: `collect_${weapon.slug}`,
                 coef: 1
             });
+        });
+        this.collection.weapons.basic.concat(this.collection.weapons.evolved).forEach(weapon => {
             if (weapon.slug in hasEvolution) {
                 let evolvedWeapon = hasEvolution[weapon.slug];
                 this.problem.subjectTo.push({
@@ -478,6 +475,7 @@ class Model {
 
                 // Here we make sure that a basic weapon can not be collected
                 // if all the items required for its evolution are collected.
+                // TODO: there might be an issue if the weapon is banned
                 let sub_expr = [{ name: `collect_${weapon.slug}`, coef: 1 }];
                 evolvedWeapon.evolution.items.forEach(itemSlug => {
                     sub_expr.push({ name: `collect_${itemSlug}`, coef: 1 });
@@ -705,25 +703,11 @@ function setupDragAndDrop(collection, configuration) {
 
 function onLoadStageClick(configuration) {
     let select = document.querySelector("select[name='stage']");
-    if (select.value == "Mad Forest") {
-        configuration.set_stage_items("spinach", "clover", "hollow_heart", "pummarola", "skull_o_maniac", "silver_ring", "gold_ring", "metaglio_left", "metaglio_right");
-    } else if (select.value == "Inlaid Library") {
-        configuration.set_stage_items("empty_tome", "stone_mask", "silver_ring", "gold_ring", "metaglio_left", "metaglio_right");
-    } else if (select.value == "Dairy Plant") {
-        configuration.set_stage_items("attractorb", "armor", "wings", "candelabrador", "silver_ring", "gold_ring", "metaglio_left", "metaglio_right");
-    } else if (select.value == "Gallo Tower") {
-        configuration.set_stage_items("bracer", "spellbinder", "silver_ring", "gold_ring", "metaglio_left", "metaglio_right");
-    } else if (select.value == "Holy Forbidden") {
-        configuration.set_stage_items();
-    } else if (select.value == "Il Molise") {
-        configuration.set_stage_items("silver_ring", "gold_ring", "metaglio_left", "metaglio_right");
-    } else if (select.value == "Moongolow") {
-        configuration.set_stage_items("hollow_heart", "pummarola", "armor", "wings", "spinach", "bracer", "spellbinder", "candelabrador", "empty_tome", "duplicator", "tiragisu", "attractorb", "clover", "crown", "stone_mask", "skull_o_maniac", "silver_ring", "gold_ring", "metaglio_left", "metaglio_right");
-    } else if (select.value == "Green Acres") {
-        configuration.set_stage_items("silver_ring", "gold_ring", "metaglio_left", "metaglio_right");
-    } else if (select.value == "The Bone Zone") {
-        configuration.set_stage_items("silver_ring", "gold_ring", "metaglio_left", "metaglio_right");
-    }
+    configuration.collection.stages.forEach(stage => {
+        if (stage.slug == select.value) {
+            configuration.set_stage_items(...stage.items);
+        }
+    });
     configuration.inflate();
 }
 

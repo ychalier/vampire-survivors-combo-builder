@@ -17,6 +17,14 @@
             "label": "VII - Iron Blue Will"
         },
         {
+            "slug": "viii",
+            "label": "VIII - Mad Groove"
+        },
+        {
+            "slug": "x",
+            "label": "X - Beginning"
+        },
+        {
             "slug": "xi",
             "label": "XI - Waltz of Pearls"
         },
@@ -189,6 +197,13 @@
             "unlockable": false,
             "rarity": 10,
             "levels": 9
+        },
+        {
+            "slug": "torronas_box",
+            "label": "Torrona's Box",
+            "unlockable": true,
+            "rarity": 40,
+            "levels": 9
         }
     ],
     "weapons": {
@@ -219,8 +234,20 @@
                         "arcana": null
                     },
                     {
+                        "item": "silver_ring",
+                        "arcana": null
+                    },
+                    {
+                        "item": "torronas_box",
+                        "arcana": null
+                    },
+                    {
                         "item": null,
                         "arcana": "iv"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "x"
                     },
                     {
                         "item": null,
@@ -263,6 +290,18 @@
                         "arcana": null
                     },
                     {
+                        "item": "silver_ring",
+                        "arcana": null
+                    },
+                    {
+                        "item": "torronas_box",
+                        "arcana": null
+                    },
+                    {
+                        "item": null,
+                        "arcana": "iv"
+                    },
+                    {
                         "item": null,
                         "arcana": "iv"
                     },
@@ -272,7 +311,7 @@
                     },
                     {
                         "item": null,
-                        "arcana": "iv"
+                        "arcana": "x"
                     },
                     {
                         "item": null,
@@ -319,6 +358,14 @@
                         "arcana": null
                     },
                     {
+                        "item": "silver_ring",
+                        "arcana": null
+                    },
+                    {
+                        "item": "torronas_box",
+                        "arcana": null
+                    },
+                    {
                         "item": null,
                         "arcana": "iv"
                     },
@@ -329,6 +376,10 @@
                     {
                         "item": null,
                         "arcana": "vii"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "x"
                     },
                     {
                         "item": null,
@@ -371,6 +422,14 @@
                         "arcana": null
                     },
                     {
+                        "item": "silver_ring",
+                        "arcana": null
+                    },
+                    {
+                        "item": "torronas_box",
+                        "arcana": null
+                    },
+                    {
                         "item": null,
                         "arcana": "iv"
                     },
@@ -381,6 +440,10 @@
                     {
                         "item": null,
                         "arcana": "vii"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "x"
                     },
                     {
                         "item": null,
@@ -731,7 +794,11 @@
                         "arcana": null
                     },
                     {
-                        "item": "wings",
+                        "item": "silver_ring",
+                        "arcana": null
+                    },
+                    {
+                        "item": "torronas_box",
                         "arcana": null
                     },
                     {
@@ -741,6 +808,10 @@
                     {
                         "item": null,
                         "arcana": "v"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "x"
                     },
                     {
                         "item": null,
@@ -783,7 +854,11 @@
                         "arcana": null
                     },
                     {
-                        "item": "wings",
+                        "item": "silver_ring",
+                        "arcana": null
+                    },
+                    {
+                        "item": "torronas_box",
                         "arcana": null
                     },
                     {
@@ -793,6 +868,10 @@
                     {
                         "item": null,
                         "arcana": "v"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "x"
                     },
                     {
                         "item": null,
@@ -1094,6 +1173,70 @@
                 "levels": 7
             },
             {
+                "slug": "vento_sacro",
+                "label": "Vento Sacro",
+                "rarity": 50,
+                "combos": [
+                    {
+                        "item": "empty_tome",
+                        "arcana": null
+                    },
+                    {
+                        "item": "bracer",
+                        "arcana": null
+                    },
+                    {
+                        "item": "candelabrador",
+                        "arcana": null
+                    },
+                    {
+                        "item": "clover",
+                        "arcana": null
+                    },
+                    {
+                        "item": "spinach",
+                        "arcana": null
+                    },
+                    {
+                        "item": "duplicator",
+                        "arcana": null
+                    },
+                    {
+                        "item": "wings",
+                        "arcana": null
+                    },
+                    {
+                        "item": "silver_ring",
+                        "arcana": null
+                    },
+                    {
+                        "item": "torronas_box",
+                        "arcana": null
+                    },
+                    {
+                        "item": null,
+                        "arcana": "iv"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "v"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "x"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xvi"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xviii"
+                    }
+                ],
+                "levels": 8
+            },
+            {
                 "slug": "bone",
                 "label": "Bone",
                 "rarity": 1,
@@ -1129,6 +1272,10 @@
                     {
                         "item": null,
                         "arcana": "v"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "x"
                     },
                     {
                         "item": null,
@@ -1184,6 +1331,10 @@
                     },
                     {
                         "item": null,
+                        "arcana": "x"
+                    },
+                    {
+                        "item": null,
                         "arcana": "xvii"
                     },
                     {
@@ -1232,6 +1383,10 @@
                     },
                     {
                         "item": null,
+                        "arcana": "x"
+                    },
+                    {
+                        "item": null,
                         "arcana": "xi"
                     },
                     {
@@ -1267,12 +1422,24 @@
                         "arcana": null
                     },
                     {
+                        "item": "silver_ring",
+                        "arcana": null
+                    },
+                    {
+                        "item": "torronas_box",
+                        "arcana": null
+                    },
+                    {
                         "item": null,
                         "arcana": "iv"
                     },
                     {
                         "item": null,
                         "arcana": "vi"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "x"
                     },
                     {
                         "item": null,
@@ -1320,12 +1487,24 @@
                         "arcana": null
                     },
                     {
+                        "item": "silver_ring",
+                        "arcana": null
+                    },
+                    {
+                        "item": "torronas_box",
+                        "arcana": null
+                    },
+                    {
                         "item": null,
                         "arcana": "iv"
                     },
                     {
                         "item": null,
                         "arcana": "vi"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "x"
                     },
                     {
                         "item": null,
@@ -1371,12 +1550,24 @@
                         "arcana": null
                     },
                     {
+                        "item": "silver_ring",
+                        "arcana": null
+                    },
+                    {
+                        "item": "torronas_box",
+                        "arcana": null
+                    },
+                    {
                         "item": null,
                         "arcana": "iv"
                     },
                     {
                         "item": null,
                         "arcana": "v"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "x"
                     },
                     {
                         "item": null,
@@ -1430,12 +1621,24 @@
                         "arcana": null
                     },
                     {
+                        "item": "silver_ring",
+                        "arcana": null
+                    },
+                    {
+                        "item": "torronas_box",
+                        "arcana": null
+                    },
+                    {
                         "item": null,
                         "arcana": "iv"
                     },
                     {
                         "item": null,
                         "arcana": "v"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "x"
                     },
                     {
                         "item": null,
@@ -1489,6 +1692,14 @@
                         "arcana": null
                     },
                     {
+                        "item": "silver_ring",
+                        "arcana": null
+                    },
+                    {
+                        "item": "torronas_box",
+                        "arcana": null
+                    },
+                    {
                         "item": null,
                         "arcana": "iv"
                     },
@@ -1499,6 +1710,10 @@
                     {
                         "item": null,
                         "arcana": "vii"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "x"
                     },
                     {
                         "item": null,
@@ -2194,6 +2409,10 @@
                         "arcana": null
                     },
                     {
+                        "item": "torronas_box",
+                        "arcana": null
+                    },
+                    {
                         "item": null,
                         "arcana": "iv"
                     },
@@ -2240,7 +2459,11 @@
                         "arcana": null
                     },
                     {
-                        "item": "wings",
+                        "item": "silver_ring",
+                        "arcana": null
+                    },
+                    {
+                        "item": "torronas_box",
                         "arcana": null
                     },
                     {
@@ -2250,6 +2473,10 @@
                     {
                         "item": null,
                         "arcana": "v"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "x"
                     },
                     {
                         "item": null,
@@ -2300,6 +2527,14 @@
                         "arcana": null
                     },
                     {
+                        "item": "silver_ring",
+                        "arcana": null
+                    },
+                    {
+                        "item": "torronas_box",
+                        "arcana": null
+                    },
+                    {
                         "item": null,
                         "arcana": "iv"
                     },
@@ -2309,11 +2544,232 @@
                     },
                     {
                         "item": null,
+                        "arcana": "x"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xviii"
+                    }
+                ],
+                "levels": 1
+            },
+            {
+                "slug": "fuwalafuwaloo",
+                "label": "Fuwalafuwaloo",
+                "evolution": {
+                    "weapons": [
+                        "vento_sacro",
+                        "bloody_tear"
+                    ],
+                    "items": [
+                        "hollow_heart"
+                    ]
+                },
+                "combos": [
+                    {
+                        "item": "empty_tome",
+                        "arcana": null
+                    },
+                    {
+                        "item": "bracer",
+                        "arcana": null
+                    },
+                    {
+                        "item": "candelabrador",
+                        "arcana": null
+                    },
+                    {
+                        "item": "clover",
+                        "arcana": null
+                    },
+                    {
+                        "item": "spinach",
+                        "arcana": null
+                    },
+                    {
+                        "item": "duplicator",
+                        "arcana": null
+                    },
+                    {
+                        "item": "wings",
+                        "arcana": null
+                    },
+                    {
+                        "item": "silver_ring",
+                        "arcana": null
+                    },
+                    {
+                        "item": "torronas_box",
+                        "arcana": null
+                    },
+                    {
+                        "item": null,
+                        "arcana": "iv"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "v"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "vi"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "x"
+                    },
+                    {
+                        "item": null,
+                        "arcana": "xvi"
+                    },
+                    {
+                        "item": null,
                         "arcana": "xviii"
                     }
                 ],
                 "levels": 1
             }
         ]
-    }
+    },
+    "stages": [
+        {
+            "slug": "mad_forest",
+            "label": "Mad Forest",
+            "items": [
+                "spinach",
+                "hollow_heart",
+                "pummarola",
+                "clover",
+                "skull_o_maniac",
+                "silver_ring",
+                "gold_ring",
+                "metaglio_left",
+                "metaglio_right"
+            ]
+        },
+        {
+            "slug": "inlaid_library",
+            "label": "Inlaid Library",
+            "items": [
+                "stone_mask",
+                "empty_tome",
+                "silver_ring",
+                "gold_ring",
+                "metaglio_left",
+                "metaglio_right"
+            ]
+        },
+        {
+            "slug": "dairy_plant",
+            "label": "Dairy Plant",
+            "items": [
+                "attractorb",
+                "candelabrador",
+                "wings",
+                "armor",
+                "silver_ring",
+                "gold_ring",
+                "metaglio_left",
+                "metaglio_right"
+            ]
+        },
+        {
+            "slug": "gallo_tower",
+            "label": "Gallo Tower",
+            "items": [
+                "bracer",
+                "spellbinder",
+                "silver_ring",
+                "gold_ring",
+                "metaglio_left",
+                "metaglio_right"
+            ]
+        },
+        {
+            "slug": "cappella_magna",
+            "label": "Cappella Magna",
+            "items": [
+                "duplicator",
+                "crown",
+                "tiragisu",
+                "silver_ring",
+                "gold_ring",
+                "metaglio_left",
+                "metaglio_right"
+            ]
+        },
+        {
+            "slug": "inlaid_library",
+            "label": "Inlaid Library",
+            "items": [
+                "stone_mask",
+                "empty_tome",
+                "silver_ring",
+                "gold_ring",
+                "metaglio_left",
+                "metaglio_right"
+            ]
+        },
+        {
+            "slug": "holy_forbidden",
+            "label": "Holy Forbidden",
+            "items": []
+        },
+        {
+            "slug": "il_molise",
+            "label": "Il Molise",
+            "items": [
+                "silver_ring",
+                "gold_ring",
+                "metaglio_left",
+                "metaglio_right"
+            ]
+        },
+        {
+            "slug": "moongolow",
+            "label": "Moongolow",
+            "items": [
+                "hollow_heart",
+                "pummarola",
+                "armor",
+                "wings",
+                "spinach",
+                "bracer",
+                "spellbinder",
+                "candelabrador",
+                "empty_tome",
+                "duplicator",
+                "tiragisu",
+                "attractorb",
+                "clover",
+                "crown",
+                "stone_mask",
+                "skull_o_maniac",
+                "silver_ring",
+                "gold_ring",
+                "metaglio_left",
+                "metaglio_right"
+            ]
+        },
+        {
+            "slug": "green_acres",
+            "label": "Green Acres",
+            "items": [
+                "silver_ring",
+                "gold_ring",
+                "metaglio_left",
+                "metaglio_right"
+            ]
+        },
+        {
+            "slug": "the_bone_zone",
+            "label": "The Bone Zone",
+            "items": [
+                "silver_ring",
+                "gold_ring",
+                "metaglio_left",
+                "metaglio_right"
+            ]
+        }
+    ]
 }
