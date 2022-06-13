@@ -124,6 +124,7 @@ class Configuration {
             combos: 1,
             evolutions: 1
         }
+        this.reset();
     }
 
     copy() {
@@ -175,6 +176,74 @@ class Configuration {
         inflateBuildRow(document.querySelector("#build .entity-row[build-type='arcanas']"), this.build.arcanas);
         // TODO: remaining config
         document.getElementById("combo-score").textContent = this.get_combos().length;
+        this.inflate_combos();
+    }
+
+    inflate_combos() {
+        let table = document.getElementById("table-combos");
+        table.innerHTML = "";
+        let thead = document.createElement("thead");
+        table.appendChild(thead);
+        let tbody = document.createElement("tbody");
+        table.appendChild(tbody);
+        let thead_tr = document.createElement("tr");
+        thead.appendChild(thead_tr);
+        thead_tr.appendChild(document.createElement("th"));
+        let col_total = [];
+        this.build.items.concat(this.build.stage_items).concat(this.build.arcanas).forEach(entity => {
+            let image = createEntityImage(entity);
+            let th = document.createElement("th");
+            th.appendChild(image);
+            thead_tr.appendChild(th);
+            col_total.push(0);
+        });
+        this.build.weapons.forEach(weapon => {
+            let tr = document.createElement("tr");
+            tbody.appendChild(tr);
+            let td_weapon = document.createElement("td");
+            let image = createEntityImage(weapon);
+            td_weapon.appendChild(image);
+            tr.appendChild(td_weapon);
+            let row_total = 0;
+            this.build.items.concat(this.build.stage_items).concat(this.build.arcanas).forEach((entity, j) => {
+                let td = document.createElement("td");
+                tr.appendChild(td);
+                let found_a_combo = false;
+                for (let i = 0; i < weapon.combos.length; i++) {
+                    let combo = weapon.combos[i];
+                    if ((combo.arcana == null && combo.item == entity.slug) || (combo.item == null && combo.arcana == entity.slug)) {
+                        td.innerHTML += `<i class="icon icon-check text-success"></i>`;
+                        row_total++;
+                        col_total[j]++;
+                        found_a_combo = true;
+                    } else if (combo.arcana != null && combo.item != null) {
+                        if (entity.slug == combo.item && this.contains_arcana(combo.arcana)) {
+                            td.innerHTML += `<i class="icon icon-check text-success"></i>`;
+                            row_total++;
+                            col_total[j]++;
+                            found_a_combo = true;
+                        }
+                    }
+                }
+                if (!found_a_combo) {
+                    td.innerHTML = `<i class="icon icon-cross text-error"></i>`;
+                }
+            });
+            let td_total_row = document.createElement("td");
+            td_total_row.textContent = row_total;
+            tr.appendChild(td_total_row);
+        });
+        let tr_total_col = document.createElement("tr");
+        tr_total_col.appendChild(document.createElement("td"));
+        col_total.forEach(value => {
+            let td = document.createElement("td");
+            td.textContent = value;
+            tr_total_col.appendChild(td);
+        });
+        let td_total = document.createElement("td");
+        td_total.textContent = col_total.reduce((s, a) => s + a, 0);
+        tr_total_col.appendChild(td_total);
+        tbody.appendChild(tr_total_col);
     }
 
     get_combos() {
@@ -282,7 +351,7 @@ class Configuration {
             weapons: [],
             items: [],
             stage_items: [],
-            arcanas: [],
+            arcanas: []
         }
     }
 
@@ -812,6 +881,7 @@ function loadData(data) {
     let collection = new Collection(data);
     collection.inflate();
     let configuration = new Configuration(collection);
+    configuration.inflate();
     setupDragAndDrop(collection, configuration);
     setupCommands(collection, configuration);
 }
@@ -820,5 +890,7 @@ function loadData(data) {
 window.addEventListener("load", () => {
     SOUNDBOARD = new Soundboard();
     fetch(DATA_URL).then(res => res.json()).then(loadData);
+    document.getElementById("modal-combos").addEventListener("click", () => {document.getElementById("modal-combos").classList.remove("active")});
+    document.getElementById("btn-show-combos").addEventListener("click", () => {document.getElementById("modal-combos").classList.add("active")});
 });
 

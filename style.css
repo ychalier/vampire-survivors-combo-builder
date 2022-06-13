@@ -178,3 +178,37 @@ select ~ .button {
 #modal-generate.active {
     display: block;
 }
+
+#modal-combos.active {
+    display: flex;
+}
+
+#modal-combos {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #101010D0;
+    user-select: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#table-combos {
+    text-align: center;
+    background: #101010D0;
+    padding: .8rem;
+    border-radius: .4rem;
+}
+
+#btn-show-combos {
+    font-size: 80%;
+    background: #101010B0;
+    padding: .4rem;
+    border-radius: .4rem;
+    cursor: pointer;
+}
