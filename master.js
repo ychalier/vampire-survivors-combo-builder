@@ -152,9 +152,6 @@ class Configuration {
             this.weights.evolutions = 1;
         } else if (input.value == 2) {
             this.weights.combos = 1;
-            this.weights.evolutions = 1;
-        } else if (input.value == 3) {
-            this.weights.combos = 1;
             this.weights.evolutions = 100;
         }
         this.ban = [];
