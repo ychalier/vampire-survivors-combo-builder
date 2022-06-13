@@ -154,3 +154,27 @@ select ~ .button {
 #collection {
     max-width: 624px;
 }
+
+#modal-generate {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #101010D0;
+    user-select: none;
+    pointer-events: none;
+}
+
+#modal-generate > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#modal-generate.active {
+    display: block;
+}

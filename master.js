@@ -2,8 +2,8 @@ import GLPK from './glpk.js';
 
 const DATA_URL = "data.json";
 var glpk;
-var CURRENT_CONFIGURATION = null;
 var PREVIOUS_CONFIGURATION = null;
+var SOUNDBOARD = null;
 
 function removeEntityFromArray(array, entity) {
     for (let i = 0; i < array.length; i++) {
@@ -608,6 +608,64 @@ class Model {
 
 }
 
+class Soundboard {
+    constructor() {
+        this.sounds = {
+            click_clear: "sfx/VS_Gem_v04-01-B.ogg",
+            click_reset: "sfx/sfx_sounds_ban.ogg",
+            click_load: "sfx/sfx_sounds_powerup2.ogg",
+            drop_success: "sfx/sfx_sounds_pause7_in.ogg",
+            drop_error: "sfx/sfx_sounds_pause7_out.ogg",
+            gen_start: "sfx/sfx_moon_starter.ogg",
+            gen_loop: "sfx/sfx_moon_beat.ogg",
+            gen_end: "sfx/VS_LevelUp_v02-02.ogg",
+        }
+        this.players = {};
+        for (let sound in this.sounds) {
+            let player = document.createElement("audio");
+            player.src = this.sounds[sound];
+            player.type = "audio/ogg";
+            document.body.appendChild(player);
+            this.players[sound] = player;
+        }
+
+    }
+
+    force_start(player) {
+        player.currentTime = 0;
+        player.play();
+    }
+
+    click_clear() {
+        this.force_start(this.players.click_clear);
+    }
+
+    click_reset() {
+        this.force_start(this.players.click_reset);
+    }
+
+    click_load() {
+        this.force_start(this.players.click_load);
+    }
+
+    drop_success() {
+        this.force_start(this.players.drop_success);
+    }
+
+    drop_error() {
+        this.force_start(this.players.drop_error);
+    }
+
+    gen_start() {
+        this.force_start(this.players.gen_start);
+    }
+
+    gen_end() {
+        this.force_start(this.players.gen_end);
+    }
+
+}
+
 
 function get_solution_build(collection, configuration, solution) {
     console.log("Solution", solution);
@@ -645,6 +703,9 @@ async function solveProblem(collection, configuration) {
     const model = new Model(collection, configuration);
     console.log(model);
     const solution = await glpk.solve(model.problem, glpk.GLP_MSG_ERR);
+    configuration.build = get_solution_build(collection, configuration, solution);
+    SOUNDBOARD.gen_end();
+    document.getElementById("modal-generate").classList.remove("active");
     if (solution.status != glpk.GLP_OPT) {
         if (solution.status == glpk.GLP_UNDEF) {
             alert("Solution is undefined");
@@ -658,7 +719,6 @@ async function solveProblem(collection, configuration) {
             alert("Solution is unbounded");
         }
     }
-    configuration.build = get_solution_build(collection, configuration, solution);
     configuration.inflate();
 }
 
@@ -673,6 +733,7 @@ function setupDragAndDrop(collection, configuration) {
                 if (!cell.hasChildNodes() && (row_entity_type == null || row_entity_type == entity.type)) {
                     configuration.add(entity, row.getAttribute("build-type"));
                     configuration.inflate();
+                    SOUNDBOARD.drop_success();
                 }
             });
             cell.addEventListener("dragover", (event) => {
@@ -697,6 +758,7 @@ function setupDragAndDrop(collection, configuration) {
         event.stopPropagation();
         configuration.remove(entity);
         configuration.inflate();
+        SOUNDBOARD.drop_error();
     });
 }
 
@@ -715,6 +777,7 @@ function onLoadStageClick(configuration) {
 function setupCommands(collection, configuration) {
 
     document.getElementById("btn-load-stage").addEventListener("click", () => {
+        SOUNDBOARD.click_load();
         onLoadStageClick(configuration);
     });
 
@@ -722,6 +785,7 @@ function setupCommands(collection, configuration) {
     document.getElementById("button-reset").addEventListener("click", () => {
         configuration.reset();
         configuration.inflate();
+        SOUNDBOARD.click_reset();
     });
 
     document.getElementById("button-clear").addEventListener("click", () => {
@@ -729,9 +793,12 @@ function setupCommands(collection, configuration) {
             configuration.import(PREVIOUS_CONFIGURATION);
             configuration.inflate();
         }
+        SOUNDBOARD.click_clear();
     });
 
     document.getElementById("button-generate").addEventListener("click", () => {
+        SOUNDBOARD.gen_start();
+        document.getElementById("modal-generate").classList.add("active");
         configuration.read();
         PREVIOUS_CONFIGURATION = configuration.copy();
         solveProblem(collection, configuration);
@@ -751,6 +818,7 @@ function loadData(data) {
 
 
 window.addEventListener("load", () => {
+    SOUNDBOARD = new Soundboard();
     fetch(DATA_URL).then(res => res.json()).then(loadData);
 });
 
