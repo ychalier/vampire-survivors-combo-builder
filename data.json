@@ -204,17 +204,78 @@
       "unlockable": true,
       "rarity": 40,
       "levels": 9
-    },
-    {
-      "slug": "some_test_item",
-      "label": "Some Test Item",
-      "unlockable": true,
-      "rarity": 40,
-      "levels": 6
     }
   ],
   "weapons": {
     "basic": [
+      {
+        "slug": "victory_sword",
+        "label": "Victory Sword",
+        "rarity": 100,
+        "combos": [
+          {
+            "item": "empty_tome",
+            "arcana": null
+          },
+          {
+            "item": "candelabrador",
+            "arcana": null
+          },
+          {
+            "item": "clover",
+            "arcana": "xvi"
+          },
+          {
+            "item": "spinach",
+            "arcana": null
+          },
+          {
+            "item": "duplicator",
+            "arcana": null
+          },
+          {
+            "item": "silver_ring",
+            "arcana": null
+          },
+          {
+            "item": "torronas_box",
+            "arcana": null
+          },
+          {
+            "item": null,
+            "arcana": "iv"
+          },
+          {
+            "item": null,
+            "arcana": "ix"
+          },
+          {
+            "item": null,
+            "arcana": "x"
+          },
+          {
+            "item": null,
+            "arcana": "xi"
+          },
+          {
+            "item": null,
+            "arcana": "xiii"
+          },
+          {
+            "item": null,
+            "arcana": "xvi"
+          },
+          {
+            "item": null,
+            "arcana": "xviii"
+          },
+          {
+            "item": null,
+            "arcana": "xx"
+          }
+        ],
+        "levels": 12
+      },
       {
         "slug": "whip",
         "label": "Whip",
@@ -1461,6 +1522,33 @@
       }
     ],
     "evolved": [
+      {
+        "slug": "sole_solution",
+        "label": "Sole Solution",
+        "evolution": {
+          "weapons": ["victory_sword"],
+          "items": ["torronas_box"]
+        },
+        "combos": [
+          {
+            "item": "spinach",
+            "arcana": null
+          },
+          {
+            "item": null,
+            "arcana": "iv"
+          },
+          {
+            "item": null,
+            "arcana": "ix"
+          },
+          {
+            "item": null,
+            "arcana": "xx"
+          }
+        ],
+        "levels": 1
+      },
       {
         "slug": "bloody_tear",
         "label": "Bloody Tear",
