@@ -1667,6 +1667,78 @@
           }
         ],
         "levels": 8
+      },
+      {
+        "slug": "bracelet",
+        "label": "Bracelet",
+        "rarity": 40,
+        "combos": [
+          {
+            "item": "empty_tome",
+            "arcana": null
+          },
+          {
+            "item": "bracer",
+            "arcana": null
+          },
+          {
+            "item": "candelabrador",
+            "arcana": null
+          },
+          {
+            "item": "spellbinder",
+            "arcana": null
+          },
+          {
+            "item": "spinach",
+            "arcana": null
+          },
+          {
+            "item": "duplicator",
+            "arcana": null
+          },
+          {
+            "item": "silver_ring",
+            "arcana": null
+          },
+          {
+            "item": "torronas_box",
+            "arcana": null
+          },
+          {
+            "item": null,
+            "arcana": "iv"
+          },
+          {
+            "item": null,
+            "arcana": "vi"
+          },
+          {
+            "item": null,
+            "arcana": "ix"
+          },
+          {
+            "item": null,
+            "arcana": "x"
+          },
+          {
+            "item": null,
+            "arcana": "xiv"
+          },
+          {
+            "item": null,
+            "arcana": "xvii"
+          },
+          {
+            "item": null,
+            "arcana": "xviii"
+          },
+          {
+            "item": null,
+            "arcana": "xx"
+          }
+        ],
+        "levels": 6
       }
     ],
     "evolved": [
@@ -2860,6 +2932,157 @@
           }
         ],
         "levels": 1
+      },
+      {
+        "slug": "bi_bracelet",
+        "label": "Bi-Bracelet",
+        "evolution": {
+          "weapons": ["bracelet"],
+          "items": []
+        },
+        "combos": [
+          {
+            "item": "empty_tome",
+            "arcana": null
+          },
+          {
+            "item": "bracer",
+            "arcana": null
+          },
+          {
+            "item": "candelabrador",
+            "arcana": null
+          },
+          {
+            "item": "spellbinder",
+            "arcana": null
+          },
+          {
+            "item": "spinach",
+            "arcana": null
+          },
+          {
+            "item": "duplicator",
+            "arcana": null
+          },
+          {
+            "item": "silver_ring",
+            "arcana": null
+          },
+          {
+            "item": "torronas_box",
+            "arcana": null
+          },
+          {
+            "item": null,
+            "arcana": "ii"
+          },
+          {
+            "item": null,
+            "arcana": "iv"
+          },
+          {
+            "item": null,
+            "arcana": "vi"
+          },
+          {
+            "item": null,
+            "arcana": "ix"
+          },
+          {
+            "item": null,
+            "arcana": "x"
+          },
+          {
+            "item": null,
+            "arcana": "xvii"
+          },
+          {
+            "item": null,
+            "arcana": "xviii"
+          },
+          {
+            "item": null,
+            "arcana": "xx"
+          }
+        ],
+        "levels": 6
+      },
+
+      {
+        "slug": "tri_bracelet",
+        "label": "Tri-Bracelet",
+        "evolution": {
+          "weapons": ["bi_bracelet"],
+          "items": []
+        },
+        "combos": [
+          {
+            "item": "empty_tome",
+            "arcana": null
+          },
+          {
+            "item": "bracer",
+            "arcana": null
+          },
+          {
+            "item": "candelabrador",
+            "arcana": null
+          },
+          {
+            "item": "spellbinder",
+            "arcana": null
+          },
+          {
+            "item": "spinach",
+            "arcana": null
+          },
+          {
+            "item": "duplicator",
+            "arcana": null
+          },
+          {
+            "item": "silver_ring",
+            "arcana": null
+          },
+          {
+            "item": "torronas_box",
+            "arcana": null
+          },
+          {
+            "item": null,
+            "arcana": "iv"
+          },
+          {
+            "item": null,
+            "arcana": "vi"
+          },
+          {
+            "item": null,
+            "arcana": "ix"
+          },
+          {
+            "item": null,
+            "arcana": "x"
+          },
+          {
+            "item": null,
+            "arcana": "xvii"
+          },
+          {
+            "item": null,
+            "arcana": "xviii"
+          },
+          {
+            "item": null,
+            "arcana": "xix"
+          },
+          {
+            "item": null,
+            "arcana": "xx"
+          }
+        ],
+        "levels": 6
       }
     ]
   },
