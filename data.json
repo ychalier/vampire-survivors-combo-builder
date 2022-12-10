@@ -631,6 +631,10 @@
           },
           {
             "item": null,
+            "arcana": "ii"
+          },
+          {
+            "item": null,
             "arcana": "iv"
           },
           {
@@ -639,11 +643,23 @@
           },
           {
             "item": null,
+            "arcana": "ix"
+          },
+          {
+            "item": null,
+            "arcana": "x"
+          },
+          {
+            "item": null,
             "arcana": "xvii"
           },
           {
             "item": null,
             "arcana": "xviii"
+          },
+          {
+            "item": null,
+            "arcana": "xx"
           }
         ],
         "levels": 8
@@ -795,11 +811,23 @@
           },
           {
             "item": null,
+            "arcana": "ii"
+          },
+          {
+            "item": null,
             "arcana": "iv"
           },
           {
             "item": null,
             "arcana": "v"
+          },
+          {
+            "item": null,
+            "arcana": "ix"
+          },
+          {
+            "item": null,
+            "arcana": "x"
           },
           {
             "item": null,
@@ -812,6 +840,10 @@
           {
             "item": null,
             "arcana": "xviii"
+          },
+          {
+            "item": null,
+            "arcana": "xx"
           }
         ],
         "levels": 8
@@ -839,11 +871,31 @@
           },
           {
             "item": null,
+            "arcana": "ii"
+          },
+          {
+            "item": null,
+            "arcana": "iii"
+          },
+          {
+            "item": null,
             "arcana": "iv"
           },
           {
             "item": null,
+            "arcana": "ix"
+          },
+          {
+            "item": null,
+            "arcana": "x"
+          },
+          {
+            "item": null,
             "arcana": "xviii"
+          },
+          {
+            "item": null,
+            "arcana": "xx"
           }
         ],
         "levels": 8
@@ -903,11 +955,23 @@
           },
           {
             "item": null,
+            "arcana": "i"
+          },
+          {
+            "item": null,
+            "arcana": "ii"
+          },
+          {
+            "item": null,
             "arcana": "iv"
           },
           {
             "item": null,
             "arcana": "v"
+          },
+          {
+            "item": null,
+            "arcana": "ix"
           },
           {
             "item": null,
@@ -920,6 +984,10 @@
           {
             "item": null,
             "arcana": "xviii"
+          },
+          {
+            "item": null,
+            "arcana": "xx"
           }
         ],
         "levels": 8
@@ -963,11 +1031,23 @@
           },
           {
             "item": null,
+            "arcana": "i"
+          },
+          {
+            "item": null,
+            "arcana": "ii"
+          },
+          {
+            "item": null,
             "arcana": "iv"
           },
           {
             "item": null,
             "arcana": "v"
+          },
+          {
+            "item": null,
+            "arcana": "ix"
           },
           {
             "item": null,
@@ -980,6 +1060,10 @@
           {
             "item": null,
             "arcana": "xviii"
+          },
+          {
+            "item": null,
+            "arcana": "xx"
           }
         ],
         "levels": 8
@@ -1011,6 +1095,10 @@
           },
           {
             "item": null,
+            "arcana": "i"
+          },
+          {
+            "item": null,
             "arcana": "iv"
           },
           {
@@ -1023,11 +1111,23 @@
           },
           {
             "item": null,
+            "arcana": "ix"
+          },
+          {
+            "item": null,
+            "arcana": "x"
+          },
+          {
+            "item": null,
             "arcana": "xviii"
           },
           {
             "item": null,
             "arcana": "xix"
+          },
+          {
+            "item": null,
+            "arcana": "xx"
           }
         ],
         "levels": 8
@@ -1059,6 +1159,10 @@
           },
           {
             "item": null,
+            "arcana": "i"
+          },
+          {
+            "item": null,
             "arcana": "iv"
           },
           {
@@ -1071,11 +1175,23 @@
           },
           {
             "item": null,
+            "arcana": "ix"
+          },
+          {
+            "item": null,
+            "arcana": "x"
+          },
+          {
+            "item": null,
             "arcana": "xiv"
           },
           {
             "item": null,
             "arcana": "xviii"
+          },
+          {
+            "item": null,
+            "arcana": "xx"
           }
         ],
         "levels": 8
@@ -1926,6 +2042,10 @@
           },
           {
             "item": null,
+            "arcana": "ii"
+          },
+          {
+            "item": null,
             "arcana": "iv"
           },
           {
@@ -1934,11 +2054,23 @@
           },
           {
             "item": null,
+            "arcana": "ix"
+          },
+          {
+            "item": null,
+            "arcana": "x"
+          },
+          {
+            "item": null,
             "arcana": "xvii"
           },
           {
             "item": null,
             "arcana": "xviii"
+          },
+          {
+            "item": null,
+            "arcana": "xx"
           }
         ],
         "levels": 1
@@ -2154,6 +2286,14 @@
           },
           {
             "item": null,
+            "arcana": "ix"
+          },
+          {
+            "item": null,
+            "arcana": "x"
+          },
+          {
+            "item": null,
             "arcana": "xiv"
           },
           {
@@ -2163,6 +2303,10 @@
           {
             "item": null,
             "arcana": "xviii"
+          },
+          {
+            "item": null,
+            "arcana": "xx"
           }
         ],
         "levels": 1
@@ -2192,12 +2336,32 @@
             "arcana": null
           },
           {
-            "item": "iv",
-            "arcana": null
+            "item": null,
+            "arcana": "ii"
           },
           {
-            "item": "xviii",
-            "arcana": null
+            "item": null,
+            "arcana": "iii"
+          },
+          {
+            "item": null,
+            "arcana": "iv"
+          },
+          {
+            "item": null,
+            "arcana": "ix"
+          },
+          {
+            "item": null,
+            "arcana": "x"
+          },
+          {
+            "item": null,
+            "arcana": "xviii"
+          },
+          {
+            "item": null,
+            "arcana": "xx"
           }
         ],
         "levels": 1
@@ -2522,11 +2686,19 @@
           },
           {
             "item": null,
+            "arcana": "i"
+          },
+          {
+            "item": null,
             "arcana": "iv"
           },
           {
             "item": null,
             "arcana": "v"
+          },
+          {
+            "item": null,
+            "arcana": "ix"
           },
           {
             "item": null,
@@ -2539,6 +2711,10 @@
           {
             "item": null,
             "arcana": "xviii"
+          },
+          {
+            "item": null,
+            "arcana": "xx"
           }
         ],
         "levels": 8
@@ -2585,6 +2761,10 @@
           },
           {
             "item": null,
+            "arcana": "i"
+          },
+          {
+            "item": null,
             "arcana": "iv"
           },
           {
@@ -2593,11 +2773,19 @@
           },
           {
             "item": null,
+            "arcana": "ix"
+          },
+          {
+            "item": null,
             "arcana": "x"
           },
           {
             "item": null,
             "arcana": "xviii"
+          },
+          {
+            "item": null,
+            "arcana": "xx"
           }
         ],
         "levels": 1
