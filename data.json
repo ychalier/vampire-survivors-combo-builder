@@ -1,6 +1,26 @@
 {
   "arcanas": [
     {
+      "slug": "o",
+      "label": "o - Game Killer"
+    },
+    {
+      "slug": "i",
+      "label": "I - Gemini"
+    },
+    {
+      "slug": "ii",
+      "label": "II - Twilight Requiem"
+    },
+    {
+      "slug": "iii",
+      "label": "III - Tragic Princess"
+    },
+    {
+      "slug": "iv",
+      "label": "IV - Awake"
+    },
+    {
       "slug": "iv",
       "label": "IV - Awake"
     },
@@ -21,6 +41,10 @@
       "label": "VIII - Mad Groove"
     },
     {
+      "slug": "ix",
+      "label": "IX - Divine Bloodline"
+    },
+    {
       "slug": "x",
       "label": "X - Beginning"
     },
@@ -31,6 +55,10 @@
     {
       "slug": "xii",
       "label": "XII - Out of Bounds"
+    },
+    {
+      "slug": "xiii",
+      "label": "XIII - Wicked Season"
     },
     {
       "slug": "xiv",
@@ -55,6 +83,14 @@
     {
       "slug": "xix",
       "label": "XIX - Heart of Fire"
+    },
+    {
+      "slug": "xx",
+      "label": "XX - Silent Old Sanctuary"
+    },
+    {
+      "slug": "xxi",
+      "label": "XXI - Blood Astronomia"
     }
   ],
   "items": [
