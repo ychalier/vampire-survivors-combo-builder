@@ -1739,6 +1739,82 @@
           }
         ],
         "levels": 6
+      },
+      {
+        "slug": "jubilee",
+        "label": "Greatest Jubilee",
+        "rarity": 20,
+        "combos": [
+          {
+            "item": "empty_tome",
+            "arcana": null
+          },
+          {
+            "item": "candelabrador",
+            "arcana": null
+          },
+          {
+            "item": "clover",
+            "arcana": "xvi"
+          },
+          {
+            "item": "spellbinder",
+            "arcana": null
+          },
+          {
+            "item": "spinach",
+            "arcana": null
+          },
+          {
+            "item": "duplicator",
+            "arcana": null
+          },
+          {
+            "item": "silver_ring",
+            "arcana": null
+          },
+          {
+            "item": "torronas_box",
+            "arcana": null
+          },
+          {
+            "item": null,
+            "arcana": "iv"
+          },
+          {
+            "item": null,
+            "arcana": "ix"
+          },
+          {
+            "item": null,
+            "arcana": "x"
+          },
+          {
+            "item": null,
+            "arcana": "xi"
+          },
+          {
+            "item": null,
+            "arcana": "xiii"
+          },
+          {
+            "item": null,
+            "arcana": "xvi"
+          },
+          {
+            "item": null,
+            "arcana": "xvii"
+          },
+          {
+            "item": null,
+            "arcana": "xviii"
+          },
+          {
+            "item": null,
+            "arcana": "xx"
+          }
+        ],
+        "levels": 9
       }
     ],
     "evolved": [
