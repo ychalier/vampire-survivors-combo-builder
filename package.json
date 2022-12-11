@@ -1,8 +1,0 @@
-{
-  "name": "vampire-survivors-combo-builder",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "git@github.com:aneuhold/vampire-survivors-combo-builder.git",
-  "author": "Anton G Neuhold Jr <agneuhold@gmail.com>",
-  "license": "MIT"
-} 
