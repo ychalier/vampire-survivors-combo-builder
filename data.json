@@ -241,74 +241,6 @@
   "weapons": {
     "basic": [
       {
-        "slug": "victory_sword",
-        "label": "Victory Sword",
-        "rarity": 100,
-        "combos": [
-          {
-            "item": "empty_tome",
-            "arcana": null
-          },
-          {
-            "item": "candelabrador",
-            "arcana": null
-          },
-          {
-            "item": "clover",
-            "arcana": "xvi"
-          },
-          {
-            "item": "spinach",
-            "arcana": null
-          },
-          {
-            "item": "duplicator",
-            "arcana": null
-          },
-          {
-            "item": "silver_ring",
-            "arcana": null
-          },
-          {
-            "item": "torronas_box",
-            "arcana": null
-          },
-          {
-            "item": null,
-            "arcana": "iv"
-          },
-          {
-            "item": null,
-            "arcana": "ix"
-          },
-          {
-            "item": null,
-            "arcana": "x"
-          },
-          {
-            "item": null,
-            "arcana": "xi"
-          },
-          {
-            "item": null,
-            "arcana": "xiii"
-          },
-          {
-            "item": null,
-            "arcana": "xvi"
-          },
-          {
-            "item": null,
-            "arcana": "xviii"
-          },
-          {
-            "item": null,
-            "arcana": "xx"
-          }
-        ],
-        "levels": 12
-      },
-      {
         "slug": "whip",
         "label": "Whip",
         "rarity": 100,
@@ -1669,78 +1601,6 @@
         "levels": 8
       },
       {
-        "slug": "bracelet",
-        "label": "Bracelet",
-        "rarity": 40,
-        "combos": [
-          {
-            "item": "empty_tome",
-            "arcana": null
-          },
-          {
-            "item": "bracer",
-            "arcana": null
-          },
-          {
-            "item": "candelabrador",
-            "arcana": null
-          },
-          {
-            "item": "spellbinder",
-            "arcana": null
-          },
-          {
-            "item": "spinach",
-            "arcana": null
-          },
-          {
-            "item": "duplicator",
-            "arcana": null
-          },
-          {
-            "item": "silver_ring",
-            "arcana": null
-          },
-          {
-            "item": "torronas_box",
-            "arcana": null
-          },
-          {
-            "item": null,
-            "arcana": "iv"
-          },
-          {
-            "item": null,
-            "arcana": "vi"
-          },
-          {
-            "item": null,
-            "arcana": "ix"
-          },
-          {
-            "item": null,
-            "arcana": "x"
-          },
-          {
-            "item": null,
-            "arcana": "xiv"
-          },
-          {
-            "item": null,
-            "arcana": "xvii"
-          },
-          {
-            "item": null,
-            "arcana": "xviii"
-          },
-          {
-            "item": null,
-            "arcana": "xx"
-          }
-        ],
-        "levels": 6
-      },
-      {
         "slug": "jubilee",
         "label": "Greatest Jubilee",
         "rarity": 20,
@@ -1815,19 +1675,110 @@
           }
         ],
         "levels": 9
-      }
-    ],
-    "evolved": [
+      },
       {
-        "slug": "sole_solution",
-        "label": "Sole Solution",
-        "evolution": {
-          "weapons": ["victory_sword"],
-          "items": ["torronas_box"]
-        },
+        "slug": "bracelet",
+        "label": "Bracelet",
+        "rarity": 40,
         "combos": [
           {
+            "item": "empty_tome",
+            "arcana": null
+          },
+          {
+            "item": "bracer",
+            "arcana": null
+          },
+          {
+            "item": "candelabrador",
+            "arcana": null
+          },
+          {
+            "item": "spellbinder",
+            "arcana": null
+          },
+          {
             "item": "spinach",
+            "arcana": null
+          },
+          {
+            "item": "duplicator",
+            "arcana": null
+          },
+          {
+            "item": "silver_ring",
+            "arcana": null
+          },
+          {
+            "item": "torronas_box",
+            "arcana": null
+          },
+          {
+            "item": null,
+            "arcana": "iv"
+          },
+          {
+            "item": null,
+            "arcana": "vi"
+          },
+          {
+            "item": null,
+            "arcana": "ix"
+          },
+          {
+            "item": null,
+            "arcana": "x"
+          },
+          {
+            "item": null,
+            "arcana": "xiv"
+          },
+          {
+            "item": null,
+            "arcana": "xvii"
+          },
+          {
+            "item": null,
+            "arcana": "xviii"
+          },
+          {
+            "item": null,
+            "arcana": "xx"
+          }
+        ],
+        "levels": 6
+      },
+      {
+        "slug": "victory_sword",
+        "label": "Victory Sword",
+        "rarity": 100,
+        "combos": [
+          {
+            "item": "empty_tome",
+            "arcana": null
+          },
+          {
+            "item": "candelabrador",
+            "arcana": null
+          },
+          {
+            "item": "clover",
+            "arcana": "xvi"
+          },
+          {
+            "item": "spinach",
+            "arcana": null
+          },
+          {
+            "item": "duplicator",
+            "arcana": null
+          },
+          {
+            "item": "silver_ring",
+            "arcana": null
+          },
+          {
+            "item": "torronas_box",
             "arcana": null
           },
           {
@@ -1840,17 +1791,43 @@
           },
           {
             "item": null,
+            "arcana": "x"
+          },
+          {
+            "item": null,
+            "arcana": "xi"
+          },
+          {
+            "item": null,
+            "arcana": "xiii"
+          },
+          {
+            "item": null,
+            "arcana": "xvi"
+          },
+          {
+            "item": null,
+            "arcana": "xviii"
+          },
+          {
+            "item": null,
             "arcana": "xx"
           }
         ],
-        "levels": 1
-      },
+        "levels": 12
+      }
+    ],
+    "evolved": [
       {
         "slug": "bloody_tear",
         "label": "Bloody Tear",
         "evolution": {
-          "weapons": ["whip"],
-          "items": ["hollow_heart"]
+          "weapons": [
+            "whip"
+          ],
+          "items": [
+            "hollow_heart"
+          ]
         },
         "combos": [
           {
@@ -1908,8 +1885,12 @@
         "slug": "holy_wand",
         "label": "Holy Wand",
         "evolution": {
-          "weapons": ["magic_wand"],
-          "items": ["empty_tome"]
+          "weapons": [
+            "magic_wand"
+          ],
+          "items": [
+            "empty_tome"
+          ]
         },
         "combos": [
           {
@@ -1971,8 +1952,12 @@
         "slug": "thousand_edge",
         "label": "Thousand Edge",
         "evolution": {
-          "weapons": ["knife"],
-          "items": ["bracer"]
+          "weapons": [
+            "knife"
+          ],
+          "items": [
+            "bracer"
+          ]
         },
         "combos": [
           {
@@ -2038,8 +2023,12 @@
         "slug": "death_spiral",
         "label": "Death Spiral",
         "evolution": {
-          "weapons": ["axe"],
-          "items": ["candelabrador"]
+          "weapons": [
+            "axe"
+          ],
+          "items": [
+            "candelabrador"
+          ]
         },
         "combos": [
           {
@@ -2105,8 +2094,12 @@
         "slug": "heaven_sword",
         "label": "Heaven Sword",
         "evolution": {
-          "weapons": ["cross"],
-          "items": ["clover"]
+          "weapons": [
+            "cross"
+          ],
+          "items": [
+            "clover"
+          ]
         },
         "combos": [
           {
@@ -2160,8 +2153,12 @@
         "slug": "unholy_vespers",
         "label": "Unholy Vespers",
         "evolution": {
-          "weapons": ["king_bible"],
-          "items": ["spellbinder"]
+          "weapons": [
+            "king_bible"
+          ],
+          "items": [
+            "spellbinder"
+          ]
         },
         "combos": [
           {
@@ -2227,8 +2224,12 @@
         "slug": "hellfire",
         "label": "Hellfire",
         "evolution": {
-          "weapons": ["fire_wand"],
-          "items": ["spinach"]
+          "weapons": [
+            "fire_wand"
+          ],
+          "items": [
+            "spinach"
+          ]
         },
         "combos": [
           {
@@ -2282,8 +2283,12 @@
         "slug": "soul_eater",
         "label": "Soul Eater",
         "evolution": {
-          "weapons": ["garlic"],
-          "items": ["pummarola"]
+          "weapons": [
+            "garlic"
+          ],
+          "items": [
+            "pummarola"
+          ]
         },
         "combos": [
           {
@@ -2333,8 +2338,12 @@
         "slug": "la_borra",
         "label": "La Borra",
         "evolution": {
-          "weapons": ["santa_water"],
-          "items": ["attractorb"]
+          "weapons": [
+            "santa_water"
+          ],
+          "items": [
+            "attractorb"
+          ]
         },
         "combos": [
           {
@@ -2392,8 +2401,12 @@
         "slug": "no_future",
         "label": "NO FUTURE",
         "evolution": {
-          "weapons": ["runetracer"],
-          "items": ["armor"]
+          "weapons": [
+            "runetracer"
+          ],
+          "items": [
+            "armor"
+          ]
         },
         "combos": [
           {
@@ -2463,8 +2476,12 @@
         "slug": "thunder_loop",
         "label": "Thunder Loop",
         "evolution": {
-          "weapons": ["lightning_ring"],
-          "items": ["duplicator"]
+          "weapons": [
+            "lightning_ring"
+          ],
+          "items": [
+            "duplicator"
+          ]
         },
         "combos": [
           {
@@ -2518,8 +2535,12 @@
         "slug": "gorgeous_moon",
         "label": "Gorgeous Moon",
         "evolution": {
-          "weapons": ["pentagram"],
-          "items": ["crown"]
+          "weapons": [
+            "pentagram"
+          ],
+          "items": [
+            "crown"
+          ]
         },
         "combos": [
           {
@@ -2533,8 +2554,12 @@
         "slug": "vicious_hunger",
         "label": "Vicious Hunger",
         "evolution": {
-          "weapons": ["gatti_amari"],
-          "items": ["stone_mask"]
+          "weapons": [
+            "gatti_amari"
+          ],
+          "items": [
+            "stone_mask"
+          ]
         },
         "combos": [
           {
@@ -2600,8 +2625,12 @@
         "slug": "mannajja",
         "label": "Mannajja",
         "evolution": {
-          "weapons": ["song_of_mana"],
-          "items": ["skull_o_maniac"]
+          "weapons": [
+            "song_of_mana"
+          ],
+          "items": [
+            "skull_o_maniac"
+          ]
         },
         "combos": [
           {
@@ -2643,8 +2672,12 @@
         "slug": "valkyrie_turner",
         "label": "Valkyrie Turner",
         "evolution": {
-          "weapons": ["shadow_pinion"],
-          "items": ["wings"]
+          "weapons": [
+            "shadow_pinion"
+          ],
+          "items": [
+            "wings"
+          ]
         },
         "combos": [
           {
@@ -2706,8 +2739,13 @@
         "slug": "infinite_corridor",
         "label": "Infinite Corridor",
         "evolution": {
-          "weapons": ["clock_lancet"],
-          "items": ["silver_ring", "gold_ring"]
+          "weapons": [
+            "clock_lancet"
+          ],
+          "items": [
+            "silver_ring",
+            "gold_ring"
+          ]
         },
         "combos": [
           {
@@ -2741,8 +2779,13 @@
         "slug": "crimson_shroud",
         "label": "Crimson Shroud",
         "evolution": {
-          "weapons": ["laurel"],
-          "items": ["metaglio_left", "metaglio_right"]
+          "weapons": [
+            "laurel"
+          ],
+          "items": [
+            "metaglio_left",
+            "metaglio_right"
+          ]
         },
         "combos": [
           {
@@ -2796,7 +2839,10 @@
         "slug": "vandalier",
         "label": "Vandalier",
         "evolution": {
-          "weapons": ["peachone", "ebony_wings"],
+          "weapons": [
+            "peachone",
+            "ebony_wings"
+          ],
           "items": []
         },
         "combos": [
@@ -2871,8 +2917,13 @@
         "slug": "phieraggi",
         "label": "Phieraggi",
         "evolution": {
-          "weapons": ["phiera_der_tuphello", "eight_the_sparrow"],
-          "items": ["tiragisu"]
+          "weapons": [
+            "phiera_der_tuphello",
+            "eight_the_sparrow"
+          ],
+          "items": [
+            "tiragisu"
+          ]
         },
         "combos": [
           {
@@ -2942,8 +2993,13 @@
         "slug": "fuwalafuwaloo",
         "label": "Fuwalafuwaloo",
         "evolution": {
-          "weapons": ["vento_sacro", "bloody_tear"],
-          "items": ["hollow_heart"]
+          "weapons": [
+            "vento_sacro",
+            "bloody_tear"
+          ],
+          "items": [
+            "hollow_heart"
+          ]
         },
         "combos": [
           {
@@ -3013,7 +3069,9 @@
         "slug": "bi_bracelet",
         "label": "Bi-Bracelet",
         "evolution": {
-          "weapons": ["bracelet"],
+          "weapons": [
+            "bracelet"
+          ],
           "items": []
         },
         "combos": [
@@ -3084,12 +3142,13 @@
         ],
         "levels": 6
       },
-
       {
         "slug": "tri_bracelet",
         "label": "Tri-Bracelet",
         "evolution": {
-          "weapons": ["bi_bracelet"],
+          "weapons": [
+            "bi_bracelet"
+          ],
           "items": []
         },
         "combos": [
@@ -3159,6 +3218,37 @@
           }
         ],
         "levels": 6
+      },
+      {
+        "slug": "sole_solution",
+        "label": "Sole Solution",
+        "evolution": {
+          "weapons": [
+            "victory_sword"
+          ],
+          "items": [
+            "torronas_box"
+          ]
+        },
+        "combos": [
+          {
+            "item": "spinach",
+            "arcana": null
+          },
+          {
+            "item": null,
+            "arcana": "iv"
+          },
+          {
+            "item": null,
+            "arcana": "ix"
+          },
+          {
+            "item": null,
+            "arcana": "xx"
+          }
+        ],
+        "levels": 1
       }
     ]
   },
@@ -3249,7 +3339,12 @@
     {
       "slug": "il_molise",
       "label": "Il Molise",
-      "items": ["silver_ring", "gold_ring", "metaglio_left", "metaglio_right"]
+      "items": [
+        "silver_ring",
+        "gold_ring",
+        "metaglio_left",
+        "metaglio_right"
+      ]
     },
     {
       "slug": "moongolow",
@@ -3280,12 +3375,22 @@
     {
       "slug": "green_acres",
       "label": "Green Acres",
-      "items": ["silver_ring", "gold_ring", "metaglio_left", "metaglio_right"]
+      "items": [
+        "silver_ring",
+        "gold_ring",
+        "metaglio_left",
+        "metaglio_right"
+      ]
     },
     {
       "slug": "the_bone_zone",
       "label": "The Bone Zone",
-      "items": ["silver_ring", "gold_ring", "metaglio_left", "metaglio_right"]
+      "items": [
+        "silver_ring",
+        "gold_ring",
+        "metaglio_left",
+        "metaglio_right"
+      ]
     }
   ]
 }

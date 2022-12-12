@@ -17,3 +17,14 @@ Some mitigations:
 The generator relies on an [integer linear programming (ILP)](https://en.wikipedia.org/wiki/Integer_programming) problem solved using [GLPK](https://www.gnu.org/software/glpk/). Data comes from [Vampire Survivors Wiki](https://vampire-survivors.fandom.com/wiki/Vampire_Survivors_Wiki). Assets are extracted from original game assets.
 
 [Try it yourself!](https://ychalier.github.io/vampire-survivors-combo-builder/) 
+
+## Contributing
+
+Contributions are welcome! Don't hesitate to open an issue or a PR.
+
+If you are adding sprites, it looks better if they are taken from original game files. I wrote a little script `extract.py` to do this: pass an asset list as argument, which is a JSON file found in *Steam* > *steamapps* > *common* > *Vampire Survivors* > *resources* > *app* > *.webpack* > *renderer* > *assets* > *img*. For instance:
+
+- `items.json` for items and weapons,
+- `randomazzo.json` for arcanas.
+
+Thanks!

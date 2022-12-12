@@ -19,8 +19,8 @@ def extract(path, output):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("input", type=str)
-    parser.add_argument("output", type=str)
+    parser.add_argument("input", type=str, help="path to the JSON listing")
+    parser.add_argument("output", type=str, help="path to an output directory (will be created)")
     args = parser.parse_args()
     extract(args.input, args.output)
 
