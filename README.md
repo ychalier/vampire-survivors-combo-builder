@@ -27,4 +27,6 @@ If you are adding sprites, it looks better if they are taken from original game 
 - `items.json` for items and weapons,
 - `randomazzo.json` for arcanas.
 
+Also, beware that adding more items and weapons to the game increases the complexity of the ILP problem, which can become too hard for a web browser to solve. Try to test the generator a bit to make sure it does not hang after your changes!
+
 Thanks!
