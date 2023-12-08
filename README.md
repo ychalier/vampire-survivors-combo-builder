@@ -16,7 +16,7 @@ Some mitigations:
 
 The generator relies on an [integer linear programming (ILP)](https://en.wikipedia.org/wiki/Integer_programming) problem solved using [GLPK](https://www.gnu.org/software/glpk/). Data comes from [Vampire Survivors Wiki](https://vampire-survivors.fandom.com/wiki/Vampire_Survivors_Wiki). Assets are extracted from original game assets.
 
-[Try it yourself!](https://ychalier.github.io/vampire-survivors-combo-builder/) 
+[Try it yourself!](https://chalier.fr/vampire-survivors-combo-builder/) 
 
 ## Contributing
 
